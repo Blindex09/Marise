@@ -1,0 +1,21 @@
+/* Classe para esconder descrições visualmente, mas mantê-las acessíveis para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Ocultar todas as imagens inicialmente */
+.slide {
+    display: none;
+}
+
+/* Mostrar apenas a imagem ativa */
+.slide.active {
+    display: block;
+}

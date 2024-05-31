@@ -1,3 +1,430 @@
+/* Estilos Gerais */
+body {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: auto;
+    background: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Accessibility Buttons */
+.accessibility-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.accessibility-buttons button {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background: #f4c57f;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.accessibility-buttons button:hover,
+.accessibility-buttons button:focus {
+    background: #e3b555;
+    text-decoration: none;
+}
+
+/* Skip Links */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+/* Rectangle 3 */
+.rectangle-3 {
+    width: 100%;
+    height: auto;
+    background: #FFFCF6;
+    padding: 20px 0;
+}
+
+/* Rectangle 4 */
+.rectangle-4 {
+    width: 100%;
+    height: auto;
+    background: #F4C57F;
+    padding: 20px 0;
+}
+
+/* Rectangle 1 */
+.header-bg {
+    width: 100%;
+    height: auto;
+    background: #F7F0CA;
+    padding: 20px 0;
+}
+
+/* Logosite_350x100_horizontal2-300x51 1 */
+.logo img {
+    width: 100%;
+    max-width: 388px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Nav List */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-list a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    background: #f4c57f;
+    text-decoration: none;
+}
+
+/* Project List */
+.project-list,
+.audiodescricao-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* PROJETOS */
+.projetos {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* SOBRE */
+.sobre {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* ÁUDIO-DESCRIÇÃO */
+.audio-descricao {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* GALERIA */
+.galeria {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* CONTATO */
+.contato {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Rectangle 2 */
+.rectangle-2 {
+    width: 100%;
+    height: 14px;
+    background: #F4C57F;
+}
+
+/* História oral, a voz plena no tempo presente. */
+.historias {
+    width: 100%;
+    max-width: 916px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Rectangle 6 */
+.rectangle-6 {
+    width: 100%;
+    height: auto;
+    background: #FFFCF6;
+    padding: 20px 0;
+}
+
+/* Galeria */
+.galeria-title {
+    width: 100%;
+    max-width: 916px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Projetos */
+.projetos-title {
+    width: 100%;
+    max-width: 916px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+}
+
+/* As pesquisas em estreita conexão com os universos onde a experiência de "pertenço, logo existo" têm sido referências para construir o meu ser em deslocamento... */
+.text-content,
+.text-content-small {
+    width: 100%;
+    max-width: 762px;
+    margin: 0 auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão */
+.link-title,
+.link-title-small {
+    width: 100%;
+    max-width: 632px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.link-title:hover,
+.link-title:focus,
+.link-title-small:hover,
+.link-title-small:focus {
+    text-decoration: none;
+    background: #f4c57f;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Rectangle 5 */
+.rectangle-5 {
+    width: 100%;
+    height: auto;
+    background: #EEE5B2;
+    padding: 20px 0;
+}
+
+/* Audiodescrição */
+.audio-descricao-title {
+    width: 100%;
+    max-width: 916px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+}
+
+/* A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com baixa visão que, por esse caminho, pode acessar conteúdos imagéticos... */
+.audio-descricao-text {
+    width: 100%;
+    max-width: 772px;
+    margin: 0 auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Fauna Brasileira em Cores */
+.link-title-small {
+    width: 100%;
+    max-width: 737px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* Chapada dos Veadeiros: Povos dos Campos Gerais */
+.link-title-small {
+    width: 100%;
+    max-width: 577px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* O Coração do Brasil */
+.link-title-small {
+    width: 100%;
+    max-width: 644px;
+    margin: 0 auto;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* galeria_marise 1 */
+.galeria-marise {
+    width: 100%;
+    max-width: 741px;
+    margin: 0 auto;
+    height: auto;
+    background: url('galeria_marise');
+}
+
+/* Rectangle 7 */
+.rectangle-7 {
+    width: 100%;
+    height: auto;
+    background: #F4C57F;
+    padding: 20px 0;
+}
+
+/* Ellipse 5 */
+.ellipse-5,
+.ellipse-6,
+.ellipse-7,
+.ellipse-8 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background: #FFFFFF;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/* Social Links */
+.social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    text-decoration: none;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Footer Text */
+.footer-text {
+    width: 100%;
+    max-width: 611px;
+    margin: 0 auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Screen Reader Only */
+.sr-only {
   .menu-accessibility {
     display: none;
     position: fixed;
@@ -24,5 +451,141 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .accessibility-buttons {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .historias,
+    .projetos-title,
+    .galeria-title,
+    .audio-descricao-title {
+        font-size: 32px;
+        line-height: 41px;
+    }
+
+    .text-content,
+    .text-content-small {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .link-title,
+    .link-title-small {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .accessibility-buttons button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        text-align: left;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .logo img {
+        max-width: 300px;
+    }
+
+    .accessibility-buttons {
+        width: 100%;
+        padding: 10px 5px;
+    }
     clip-path: inset(50%);
   }
+
+    .accessibility-buttons button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .ellipse-5,
+    .ellipse-6,
+    .ellipse-7,
+    .ellipse-8 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .historias,
+    .projetos-title,
+    .galeria-title,
+    .audio-descricao-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .text-content,
+    .text-content-small {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .link-title,
+    .link-title-small {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .footer-text {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .nav-list {
+        text-align: left;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    .accessibility-buttons {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .accessibility-buttons button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .ellipse-5,
+    .ellipse-6,
+    .ellipse-7,
+    .ellipse-8 {
+        width: 35px;
+        height: 35px;
+    }
+}

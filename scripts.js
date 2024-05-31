@@ -69,4 +69,80 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateCarousel(); // Atualiza o carrossel imediatamente na carga inicial
     startCarousel();
+
+    // Adicionando event listeners para os botões de ajuste de fonte
+    const fontIncreaseButton = document.getElementById("font-increase");
+    const fontDecreaseButton = document.getElementById("font-decrease");
+
+    fontIncreaseButton.addEventListener("click", () => adjustFontSize('increase'));
+    fontDecreaseButton.addEventListener("click", () => adjustFontSize('decrease'));
 });
+
+let fontSize = 1;  // 1 represents 100% font size
+let zoomLevel = 1;  // 1 represents 100% zoom level
+let contrast = 'normal';  // default contrast
+
+function adjustFontSize(action) {
+    if (action === 'increase') {
+        fontSize += 0.1;
+    } else if (action === 'decrease') {
+        fontSize -= 0.1;
+    }
+    document.body.style.fontSize = `${fontSize}em`;
+    announceFontSize();
+}
+
+function adjustZoom(action) {
+    if (action === 'increase') {
+        zoomLevel += 0.1;
+    } else if (action === 'decrease') {
+        zoomLevel -= 0.1;
+    }
+    document.body.style.zoom = zoomLevel;
+    announceZoom();
+}
+
+function adjustContrast(level) {
+    if (level === 'high') {
+        document.body.style.filter = 'contrast(150%)';
+    } else if (level === 'low') {
+        document.body.style.filter = 'contrast(50%)';
+    } else {
+        document.body.style.filter = 'contrast(100%)';
+    }
+    contrast = level;
+    announceContrast();
+}
+
+function announceFontSize() {
+    const announcement = document.createElement('div');
+    announcement.className = 'sr-only';
+    announcement.setAttribute('role', 'alert');
+    announcement.textContent = `Fonte ajustada para ${fontSize * 100}%`;
+    document.body.appendChild(announcement);
+    setTimeout(() => {
+        document.body.removeChild(announcement);
+    }, 1000);
+}
+
+function announceZoom() {
+    const announcement = document.createElement('div');
+    announcement.className = 'sr-only';
+    announcement.setAttribute('role', 'alert');
+    announcement.textContent = `Zoom ajustado para ${zoomLevel * 100}%`;
+    document.body.appendChild(announcement);
+    setTimeout(() => {
+        document.body.removeChild(announcement);
+    }, 1000);
+}
+
+function announceContrast() {
+    const announcement = document.createElement('div');
+    announcement.className = 'sr-only';
+    announcement.setAttribute('role', 'alert');
+    announcement.textContent = `Contraste ajustado para ${contrast}`;
+    document.body.appendChild(announcement);
+    setTimeout(() => {
+        document.body.removeChild(announcement);
+    }, 1000);
+}

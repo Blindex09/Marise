@@ -85,7 +85,8 @@ body {
     width: 100%;
     height: auto;
     background: #F7F0CA;
-    padding: 20px 0;
+    padding: 0 32px;
+    display: flex;
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
@@ -93,16 +94,14 @@ body {
     width: 100%;
     max-width: 388px;
     height: auto;
-    margin: 0 auto;
+    margin: 12px auto;
     display: block;
 }
 
 /* Nav List */
 .nav-list {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin-bottom: 6px;
     text-align: center;
 }
 
@@ -119,14 +118,15 @@ body {
     line-height: 29px;
     color: #000000;
     text-decoration: underline;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 8px;
 }
 
+.nav-list.active,
 .nav-list a:hover,
 .nav-list a:focus {
-    background: #f4c57f;
+    background: #f5eec9;
     text-decoration: none;
+    border-top: 8px solid #f2c37f;
 }
 
 /* Project List */
@@ -183,7 +183,7 @@ body {
 .historias {
     width: 100%;
     max-width: 916px;
-    margin: 0 auto;
+    margin: 32px auto;
     font-family: 'Abel';
     font-style: normal;
     font-weight: 400;
@@ -219,7 +219,7 @@ body {
 .projetos-title {
     width: 100%;
     max-width: 916px;
-    margin: 0 auto;
+    margin: 32px auto;
     font-family: 'Abel';
     font-style: normal;
     font-weight: 400;
@@ -245,6 +245,11 @@ body {
 }
 
 /* Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão */
+.center-list {
+    text-align: center;
+    margin: 24px 0;
+}
+
 .link-title,
 .link-title-small {
     width: 100%;
@@ -282,7 +287,7 @@ body {
 .audio-descricao-title {
     width: 100%;
     max-width: 916px;
-    margin: 0 auto;
+    margin: 32px auto;
     font-family: 'Abel';
     font-style: normal;
     font-weight: 400;
@@ -588,4 +593,14 @@ body {
         width: 35px;
         height: 35px;
     }
+}
+
+/* Ocultar todas as imagens inicialmente */
+.slide {
+    display: none;
+}
+
+/* Mostrar apenas a imagem ativa */
+.slide.active {
+    display: block;
 }

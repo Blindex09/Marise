@@ -121,7 +121,6 @@ body {
     padding: 8px;
 }
 
-.nav-list.active,
 .nav-list a:hover,
 .nav-list a:focus {
     background: #f5eec9;
@@ -363,6 +362,14 @@ body {
     margin: 0 auto;
     height: auto;
     background: url('galeria_marise');
+}
+
+.carousel-image {
+    object-fit: scale-down;
+    height: 400px;
+    width: 100%;
+    max-width: 741px;
+    margin: 0 auto;
 }
 
 /* Rectangle 7 */

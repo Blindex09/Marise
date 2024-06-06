@@ -184,7 +184,7 @@ body {
     width: 100%;
     max-width: 916px;
     margin: 32px auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -206,7 +206,7 @@ body {
     width: 100%;
     max-width: 916px;
     margin: 0 auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -220,7 +220,7 @@ body {
     width: 100%;
     max-width: 916px;
     margin: 32px auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -255,7 +255,7 @@ body {
     width: 100%;
     max-width: 632px;
     margin: 0 auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -288,7 +288,7 @@ body {
     width: 100%;
     max-width: 916px;
     margin: 32px auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -316,7 +316,7 @@ body {
     width: 100%;
     max-width: 737px;
     margin: 0 auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -331,7 +331,7 @@ body {
     width: 100%;
     max-width: 577px;
     margin: 0 auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -346,7 +346,7 @@ body {
     width: 100%;
     max-width: 644px;
     margin: 0 auto;
-    font-family: 'Abel';
+    font-family: 'Abel', Serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;

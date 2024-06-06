@@ -68,7 +68,7 @@ body {
 .rectangle-3 {
     width: 100%;
     height: auto;
-    background: #FFFCF6;
+    background: #E5D6B7;
     padding: 20px 0;
 }
 
@@ -76,7 +76,7 @@ body {
 .rectangle-4 {
     width: 100%;
     height: auto;
-    background: #F4C57F;
+    background: #F7C57A;
     padding: 20px 0;
 }
 
@@ -84,9 +84,10 @@ body {
 .header-bg {
     width: 100%;
     height: auto;
-    background: #F7F0CA;
+    background: #FFFCF6;
     padding: 0 32px;
     display: flex;
+    position: fixed;
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
@@ -123,7 +124,7 @@ body {
 
 .nav-list a:hover,
 .nav-list a:focus {
-    background: #f5eec9;
+    background: #FFFCF6;
     text-decoration: none;
     border-top: 8px solid #f2c37f;
 }
@@ -278,7 +279,7 @@ body {
 .rectangle-5 {
     width: 100%;
     height: auto;
-    background: #EEE5B2;
+    background: #C2D690;
     padding: 20px 0;
 }
 

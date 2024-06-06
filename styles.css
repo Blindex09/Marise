@@ -1,8 +1,12 @@
 /* Estilos Gerais */
+html {
+    font-size: 6.25%;
+}
+
 body {
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1440rem;
     margin: 0 auto;
     height: auto;
     background: #FFFFFF;
@@ -12,24 +16,24 @@ body {
 /* Accessibility Buttons */
 .accessibility-buttons {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 10rem;
+    right: 10rem;
     z-index: 1000;
     background: #fff;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 5px;
+    padding: 10rem;
+    border: 2rem solid #000;
+    border-radius: 5rem;
 }
 
 .accessibility-buttons button {
     display: block;
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 16px;
+    margin-bottom: 5rem;
+    padding: 10rem;
+    font-size: 16rem;
     background: #f4c57f;
     color: #000;
     border: none;
-    border-radius: 3px;
+    border-radius: 3rem;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -43,23 +47,23 @@ body {
 /* Skip Links */
 .skip-link {
     position: absolute;
-    left: -9999px;
+    left: -9999rem;
     top: auto;
-    width: 1px;
-    height: 1px;
+    width: 1rem;
+    height: 1rem;
     overflow: hidden;
 }
 
 .skip-link:focus {
-    left: 10px;
-    top: 10px;
+    left: 10rem;
+    top: 10rem;
     width: auto;
     height: auto;
-    padding: 10px;
+    padding: 10rem;
     background: #fff;
     color: #000;
-    border: 2px solid #000;
-    border-radius: 5px;
+    border: 2rem solid #000;
+    border-radius: 5rem;
     z-index: 1000;
     text-decoration: none;
 }
@@ -69,7 +73,7 @@ body {
     width: 100%;
     height: auto;
     background: #E5D6B7;
-    padding: 20px 0;
+    padding: 20rem 0;
 }
 
 /* Rectangle 4 */
@@ -77,7 +81,7 @@ body {
     width: 100%;
     height: auto;
     background: #F7C57A;
-    padding: 20px 0;
+    padding: 20rem 0;
 }
 
 /* Rectangle 1 */
@@ -85,7 +89,7 @@ body {
     width: 100%;
     height: auto;
     background: #FFFCF6;
-    padding: 0 32px;
+    padding: 0 32rem;
     display: flex;
     position: fixed;
 }
@@ -93,40 +97,40 @@ body {
 /* Logosite_350x100_horizontal2-300x51 1 */
 .logo img {
     width: 100%;
-    max-width: 388px;
+    max-width: 388rem;
     height: auto;
-    margin: 12px auto;
+    margin: 12rem auto;
     display: block;
 }
 
 /* Nav List */
 .nav-list {
     list-style-type: none;
-    margin-bottom: 6px;
+    margin-bottom: 6rem;
     text-align: center;
 }
 
 .nav-list li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10rem;
 }
 
 .nav-list a {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     color: #000000;
     text-decoration: underline;
-    padding: 8px;
+    padding: 8rem;
 }
 
 .nav-list a:hover,
 .nav-list a:focus {
     background: #FFFCF6;
     text-decoration: none;
-    border-top: 8px solid #f2c37f;
+    border-top: 8rem solid #f2c37f;
 }
 
 /* Project List */
@@ -139,56 +143,56 @@ body {
 
 /* PROJETOS */
 .projetos {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* SOBRE */
 .sobre {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* ÁUDIO-DESCRIÇÃO */
 .audio-descricao {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* GALERIA */
 .galeria {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* CONTATO */
 .contato {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* Rectangle 2 */
 .rectangle-2 {
     width: 100%;
-    height: 14px;
+    height: 14rem;
     background: #F4C57F;
 }
 
 /* História oral, a voz plena no tempo presente. */
 .historias {
     width: 100%;
-    max-width: 916px;
-    margin: 32px auto;
+    max-width: 916rem;
+    margin: 32rem auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 36rem;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -198,19 +202,19 @@ body {
     width: 100%;
     height: auto;
     background: #FFFCF6;
-    padding: 20px 0;
+    padding: 20rem 0;
 }
 
 /* Galeria */
 .galeria-title {
     width: 100%;
-    max-width: 916px;
+    max-width: 916rem;
     margin: 0 auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 36rem;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -218,13 +222,13 @@ body {
 /* Projetos */
 .projetos-title {
     width: 100%;
-    max-width: 916px;
-    margin: 32px auto;
+    max-width: 916rem;
+    margin: 32rem auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 36rem;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -233,13 +237,13 @@ body {
 .text-content,
 .text-content-small {
     width: 100%;
-    max-width: 762px;
+    max-width: 762rem;
     margin: 0 auto;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 20rem;
+    line-height: 30rem;
     text-align: center;
     color: #000000;
 }
@@ -247,19 +251,19 @@ body {
 /* Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão */
 .center-list {
     text-align: center;
-    margin: 24px 0;
+    margin: 24rem 0;
 }
 
 .link-title,
 .link-title-small {
     width: 100%;
-    max-width: 632px;
+    max-width: 632rem;
     margin: 0 auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -271,8 +275,8 @@ body {
 .link-title-small:focus {
     text-decoration: none;
     background: #f4c57f;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5rem;
+    border-radius: 5rem;
 }
 
 /* Rectangle 5 */
@@ -280,19 +284,19 @@ body {
     width: 100%;
     height: auto;
     background: #C2D690;
-    padding: 20px 0;
+    padding: 20rem 0;
 }
 
 /* Audiodescrição */
 .audio-descricao-title {
     width: 100%;
-    max-width: 916px;
-    margin: 32px auto;
+    max-width: 916rem;
+    margin: 32rem auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 36rem;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -300,13 +304,13 @@ body {
 /* A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com baixa visão que, por esse caminho, pode acessar conteúdos imagéticos... */
 .audio-descricao-text {
     width: 100%;
-    max-width: 772px;
+    max-width: 772rem;
     margin: 0 auto;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 20rem;
+    line-height: 30rem;
     text-align: center;
     color: #000000;
 }
@@ -314,13 +318,13 @@ body {
 /* Fauna Brasileira em Cores */
 .link-title-small {
     width: 100%;
-    max-width: 737px;
+    max-width: 737rem;
     margin: 0 auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -329,13 +333,13 @@ body {
 /* Chapada dos Veadeiros: Povos dos Campos Gerais */
 .link-title-small {
     width: 100%;
-    max-width: 577px;
+    max-width: 577rem;
     margin: 0 auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -344,13 +348,13 @@ body {
 /* O Coração do Brasil */
 .link-title-small {
     width: 100%;
-    max-width: 644px;
+    max-width: 644rem;
     margin: 0 auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -359,7 +363,7 @@ body {
 /* galeria_marise 1 */
 .galeria-marise {
     width: 100%;
-    max-width: 741px;
+    max-width: 741rem;
     margin: 0 auto;
     height: auto;
     background: url('galeria_marise');
@@ -367,9 +371,9 @@ body {
 
 .carousel-image {
     object-fit: scale-down;
-    height: 400px;
+    height: 400rem;
     width: 100%;
-    max-width: 741px;
+    max-width: 741rem;
     margin: 0 auto;
 }
 
@@ -378,7 +382,7 @@ body {
     width: 100%;
     height: auto;
     background: #F4C57F;
-    padding: 20px 0;
+    padding: 20rem 0;
 }
 
 /* Ellipse 5 */
@@ -387,11 +391,11 @@ body {
 .ellipse-7,
 .ellipse-8 {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    width: 50rem;
+    height: 50rem;
+    margin: 5rem;
     background: #FFFFFF;
-    border: 2px solid #000;
+    border: 2rem solid #000;
     border-radius: 50%;
 }
 
@@ -405,11 +409,11 @@ body {
 
 .social-links li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 10rem;
 }
 
 .social-links a {
-    font-size: 18px;
+    font-size: 18rem;
     color: #000;
     text-decoration: underline;
 }
@@ -418,20 +422,20 @@ body {
 .social-links a:focus {
     text-decoration: none;
     background: #fff;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5rem;
+    border-radius: 5rem;
 }
 
 /* Footer Text */
 .footer-text {
     width: 100%;
-    max-width: 611px;
+    max-width: 611rem;
     margin: 0 auto;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     text-align: center;
     color: #000000;
 }
@@ -439,116 +443,116 @@ body {
 /* Screen Reader Only */
 .sr-only {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 1rem;
+    height: 1rem;
     padding: 0;
-    margin: -1px;
+    margin: -1rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 1200rem) {
     .nav-list li {
         display: block;
-        margin: 10px 0;
+        margin: 10rem 0;
     }
 
     .accessibility-buttons {
-        right: 10px;
-        top: 10px;
+        right: 10rem;
+        top: 10rem;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992rem) {
     .historias,
     .projetos-title,
     .galeria-title,
     .audio-descricao-title {
-        font-size: 32px;
-        line-height: 41px;
+        font-size: 32rem;
+        line-height: 41rem;
     }
 
     .text-content,
     .text-content-small {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 18rem;
+        line-height: 28rem;
     }
 
     .link-title,
     .link-title-small {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 22rem;
+        line-height: 28rem;
     }
 
     .footer-text {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 12rem;
+        line-height: 16rem;
     }
 
     .accessibility-buttons button {
-        font-size: 14px;
+        font-size: 14rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768rem) {
     .nav-list {
         text-align: left;
     }
 
     .nav-list li {
         display: block;
-        margin: 5px 0;
+        margin: 5rem 0;
     }
 
     .logo img {
-        max-width: 300px;
+        max-width: 300rem;
     }
 
     .accessibility-buttons {
         width: 100%;
-        padding: 10px 5px;
+        padding: 10rem 5rem;
     }
 
     .accessibility-buttons button {
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 5rem;
     }
 
     .ellipse-5,
     .ellipse-6,
     .ellipse-7,
     .ellipse-8 {
-        width: 40px;
-        height: 40px;
+        width: 40rem;
+        height: 40rem;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576rem) {
     .historias,
     .projetos-title,
     .galeria-title,
     .audio-descricao-title {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 28rem;
+        line-height: 36rem;
     }
 
     .text-content,
     .text-content-small {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 16rem;
+        line-height: 26rem;
     }
 
     .link-title,
     .link-title-small {
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 20rem;
+        line-height: 26rem;
     }
 
     .footer-text {
-        font-size: 11px;
-        line-height: 14px;
+        font-size: 11rem;
+        line-height: 14rem;
     }
 
     .nav-list {
@@ -557,29 +561,29 @@ body {
 
     .nav-list li {
         display: block;
-        margin: 5px 0;
+        margin: 5rem 0;
     }
 
     .logo img {
-        max-width: 250px;
+        max-width: 250rem;
     }
 
     .accessibility-buttons {
         width: 100%;
-        padding: 10px 5px;
+        padding: 10rem 5rem;
     }
 
     .accessibility-buttons button {
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 5rem;
     }
 
     .ellipse-5,
     .ellipse-6,
     .ellipse-7,
     .ellipse-8 {
-        width: 35px;
-        height: 35px;
+        width: 35rem;
+        height: 35rem;
     }
 }
 

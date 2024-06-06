@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fontDecreaseButton.addEventListener("click", () => adjustFontSize('decrease'));
 });
 
-let fontSize = 1;  // 1 represents 100% font size
+let fontSize = 6.25;  // 1 represents 100% font size
 let zoomLevel = 1;  // 1 represents 100% zoom level
 let contrast = 'normal';  // default contrast
 
@@ -88,7 +88,8 @@ function adjustFontSize(action) {
     } else if (action === 'decrease') {
         fontSize -= 0.1;
     }
-    document.body.style.fontSize = `${fontSize}em`;
+    document.styleSheets[0].cssRules[0].style.setProperty('font-size', `${fontSize}%`);
+
     announceFontSize();
 }
 

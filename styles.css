@@ -1,8 +1,11 @@
 /* Estilos Gerais */
+html {
+    font-size: 6.25%;
+}
+
 body {
     position: relative;
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     height: auto;
     background: #FFFFFF;
@@ -25,7 +28,7 @@ body {
     display: block;
     margin-bottom: 5px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 16rem;
     background: #f4c57f;
     color: #000;
     border: none;
@@ -81,7 +84,7 @@ body {
 }
 
 /* Rectangle 1 */
-.header-bg {
+.header{
     width: 100%;
     height: auto;
     background: #FFFCF6;
@@ -115,7 +118,7 @@ body {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 29px;
     color: #000000;
     text-decoration: underline;
@@ -139,35 +142,35 @@ body {
 
 /* PROJETOS */
 .projetos {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 29px;
     color: #000000;
 }
 
 /* SOBRE */
 .sobre {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 29px;
     color: #000000;
 }
 
 /* ÁUDIO-DESCRIÇÃO */
 .audio-descricao {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 29px;
     color: #000000;
 }
 
 /* GALERIA */
 .galeria {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 29px;
     color: #000000;
 }
 
 /* CONTATO */
 .contato {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 29px;
     color: #000000;
 }
@@ -187,7 +190,7 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 36rem;
     line-height: 46px;
     text-align: center;
     color: #000000;
@@ -209,7 +212,7 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 36rem;
     line-height: 46px;
     text-align: center;
     color: #000000;
@@ -223,7 +226,7 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 36rem;
     line-height: 46px;
     text-align: center;
     color: #000000;
@@ -238,7 +241,7 @@ body {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 20rem;
     line-height: 30px;
     text-align: center;
     color: #000000;
@@ -258,7 +261,7 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 31px;
     text-align: center;
     text-decoration: underline;
@@ -291,8 +294,8 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 36rem;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -305,8 +308,8 @@ body {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 20rem;
+    line-height: 30rem;
     text-align: center;
     color: #000000;
 }
@@ -319,8 +322,8 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -334,8 +337,8 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -349,8 +352,8 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 24rem;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;
@@ -409,7 +412,7 @@ body {
 }
 
 .social-links a {
-    font-size: 18px;
+    font-size: 18rem;
     color: #000;
     text-decoration: underline;
 }
@@ -430,36 +433,18 @@ body {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     text-align: center;
     color: #000000;
 }
 
 /* Screen Reader Only */
 .sr-only {
-  .menu-accessibility {
-    display: none;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background: white;
-    z-index: 1000;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    margin-bottom: 5px;
-  }
-  .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
+    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
@@ -484,29 +469,29 @@ body {
     .projetos-title,
     .galeria-title,
     .audio-descricao-title {
-        font-size: 32px;
-        line-height: 41px;
+        font-size: 32rem;
+        line-height: 41rem;
     }
 
     .text-content,
     .text-content-small {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 18rem;
+        line-height: 28rem;
     }
 
     .link-title,
     .link-title-small {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 22rem;
+        line-height: 28rem;
     }
 
     .footer-text {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 12rem;
+        line-height: 16rem;
     }
 
     .accessibility-buttons button {
-        font-size: 14px;
+        font-size: 14rem;
     }
 }
 
@@ -528,8 +513,6 @@ body {
         width: 100%;
         padding: 10px 5px;
     }
-    clip-path: inset(50%);
-  }
 
     .accessibility-buttons button {
         width: 100%;
@@ -550,25 +533,25 @@ body {
     .projetos-title,
     .galeria-title,
     .audio-descricao-title {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 28rem;
+        line-height: 36rem;
     }
 
     .text-content,
     .text-content-small {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 16rem;
+        line-height: 26rem;
     }
 
     .link-title,
     .link-title-small {
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 20rem;
+        line-height: 26rem;
     }
 
     .footer-text {
-        font-size: 11px;
-        line-height: 14px;
+        font-size: 11rem;
+        line-height: 14rem;
     }
 
     .nav-list {

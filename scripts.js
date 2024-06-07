@@ -181,3 +181,28 @@ function announceStaus(status) {
     }, 1000);
     console.log(status)
 }
+
+document.getElementById("accessibilityButton").onclick = function() {
+    var menu = document.getElementById("menuAccessibility");
+    var feedback = document.getElementById("accessibilityFeedback");
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        feedback.textContent = 'Menu de acessibilidade fechado.';
+        console.log(feedback.textContent)
+        setTimeout(() => feedback.textContent = '', 500); // Clear feedback after half a second
+    } else {
+        menu.style.display = 'block';
+        feedback.textContent = 'Menu de acessibilidade aberto.';
+        console.log(feedback.textContent)
+        setTimeout(() => feedback.textContent = '', 500); // Clear feedback after half a second
+    }
+};
+
+function closeMenu() {
+    var menu = document.getElementById("menuAccessibility");
+    var feedback = document.getElementById("accessibilityFeedback");
+    menu.style.display = 'none';
+    feedback.textContent = 'Menu de acessibilidade fechado.';
+    console.log(feedback.textContent)
+    setTimeout(() => feedback.textContent = '', 500); // Clear feedback after half a second
+}

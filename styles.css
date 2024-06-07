@@ -16,7 +16,7 @@ body {
 /* Accessibility Buttons */
 .accessibility-buttons {
     position: fixed;
-    top: 10rem;
+    top: 50rem;
     right: 10rem;
     z-index: 1000;
     background: #fff;
@@ -44,6 +44,18 @@ body {
     text-decoration: none;
 }
 
+#accessibilityButton {
+    position: fixed;
+    top: 10rem;
+    right: 10rem;
+    z-index: 1000;
+    background: #fff;
+    padding: 10rem;
+    border: 2rem solid #000;
+    border-radius: 5rem;
+}
+
+
 /* Skip Links */
 .skip-link {
     position: absolute;
@@ -59,6 +71,7 @@ body {
     top: 10rem;
     width: auto;
     height: auto;
+    font-size: 24rem;
     padding: 10rem;
     background: #fff;
     color: #000;

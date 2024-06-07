@@ -31,10 +31,11 @@ body {
     padding: 10rem;
     font-size: 20rem;
     background: white;
-    color: #000;
-    font-family: 'Abel', serif;
+    color: #485652;
+    font-family: 'Inter', serif;
     border: none;
     text-align: center;
+    width: 100%;
     border-radius: 3rem;
     cursor: pointer;
     text-decoration: underline;
@@ -53,8 +54,10 @@ ul {
 #accessibilityButton {
     position: fixed;
     top: 10rem;
+    font-family: 'Inter', serif;
     right: 10rem;
     z-index: 1000;
+    font-size: 20rem;
     background: white;
     padding: 10rem;
     border: 2rem solid #000;
@@ -163,7 +166,7 @@ ul {
     font-weight: 500;
     font-size: 24rem;
     line-height: 29px;
-    color: #000000;
+    color: #485652;
     text-decoration: underline;
     padding: 8px;
 }
@@ -172,7 +175,7 @@ ul {
 .nav-list a:focus {
     background: #FFFCF6;
     text-decoration: none;
-    border-top: 8px solid #f2c37f;
+    border-top: 8px solid #485652;
 }
 
 /* Project List */

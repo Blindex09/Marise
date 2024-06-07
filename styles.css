@@ -185,7 +185,7 @@ ul {
 
 /* PROJETOS */
 .projetos {
-    font-style: 'Inter', serif;
+    font-style: 'Inter';
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;
@@ -193,7 +193,7 @@ ul {
 
 /* SOBRE */
 .sobre {
-    font-style: 'Inter', serif;
+    font-style: 'Inter';
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;
@@ -201,7 +201,7 @@ ul {
 
 /* ÁUDIO-DESCRIÇÃO */
 .audio-descricao {
-    font-style: 'Inter', serif;
+    font-style: 'Inter';
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;
@@ -216,7 +216,7 @@ ul {
 
 /* CONTATO */
 .contato {
-    font-style: 'Inter', serif;
+    font-style: 'Inter';
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;

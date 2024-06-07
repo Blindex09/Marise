@@ -4,12 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const stopButton = document.querySelector(".carousel-stop");
     const prevButton = document.querySelector(".carousel-prev");
     const nextButton = document.querySelector(".carousel-next");
+    const startButton = document.querySelector(".carousel-start");
     const status = document.getElementById("carousel-status");
     let index = 0;
     let interval;
 
     function startCarousel() {
         interval = setInterval(showNextSlide, 15000); // Muda de imagem a cada 15 segundos
+        announceStaus(status.textContent)
     }
 
     function stopCarousel() {
@@ -39,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
             slide.classList.remove('active');
         });
         status.textContent = "Carrossel parado";
+        announceStaus(status.textContent)
     }
 
     function updateStatus() {
@@ -46,9 +49,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const descriptionId = currentSlide.querySelector("img").getAttribute("aria-describedby");
         const description = document.getElementById(descriptionId).textContent;
         status.textContent = `Slide ${index + 1}: ${description}`;
+        announceStaus(status.textContent)
     }
 
     stopButton.addEventListener("click", stopCarousel);
+    startButton.addEventListener("click", startCarousel);
     prevButton.addEventListener("click", () => {
         stopCarousel();
         showPreviousSlide();
@@ -68,7 +73,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updateCarousel(); // Atualiza o carrossel imediatamente na carga inicial
-    startCarousel();
+    //startCarousel();
+
+
+
+
+
 
     // Adicionando event listeners para os botões de ajuste de fonte
     const fontIncreaseButton = document.getElementById("font-increase");
@@ -81,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let fontSize = 6.25;  // 1 represents 100% font size
 let zoomLevel = 1;  // 1 represents 100% zoom level
 let contrast = 'normal';  // default contrast
+
 
 function adjustFontSize(action) {
     if (action === 'increase') {
@@ -146,4 +157,27 @@ function announceContrast() {
     setTimeout(() => {
         document.body.removeChild(announcement);
     }, 1000);
+}
+
+//verifica se está focado no carrossel
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+function announceStaus(status) {
+    const announcement = document.createElement('div');
+    announcement.className = 'sr-only';
+    announcement.setAttribute('role', 'alert');
+    announcement.textContent = status;
+    document.body.appendChild(announcement);
+    setTimeout(() => {
+        document.body.removeChild(announcement);
+    }, 1000);
+    console.log(status)
 }

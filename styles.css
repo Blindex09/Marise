@@ -382,8 +382,25 @@ body {
     width: 100%;
     height: auto;
     background: #F4C57F;
-    padding: 20rem 0;
+    padding: 20px 0;
 }
+
+#contato-heading {
+    margin: 10px auto;
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36rem;}
+
+.numbertext {
+    color: #000000;
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-size: 16rem;
+    margin-top:10px ;
+}
+
 
 /* Ellipse 5 */
 .ellipse-5,
@@ -391,11 +408,12 @@ body {
 .ellipse-7,
 .ellipse-8 {
     display: inline-block;
-    width: 50rem;
-    height: 50rem;
-    margin: 5rem;
+    /*display: none;*/
+    width: 50px;
+    height: 50px;
+    margin: 5px;
     background: #FFFFFF;
-    border: 2rem solid #000;
+    border: 2px solid #000;
     border-radius: 50%;
 }
 
@@ -429,7 +447,7 @@ body {
 /* Footer Text */
 .footer-text {
     width: 100%;
-    max-width: 611rem;
+    max-width: 611px;
     margin: 0 auto;
     font-family: 'Inter', serif;
     font-style: normal;

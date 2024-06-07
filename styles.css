@@ -73,7 +73,7 @@ body {
     width: 100%;
     height: auto;
     background: #E5D6B7;
-    padding: 20rem 0;
+    padding: 20px 0;
 }
 
 /* Rectangle 4 */
@@ -81,7 +81,7 @@ body {
     width: 100%;
     height: auto;
     background: #F7C57A;
-    padding: 20rem 0;
+    padding: 20px 0;
 }
 
 /* Rectangle 1 */
@@ -89,30 +89,30 @@ body {
     width: 100%;
     height: auto;
     background: #FFFCF6;
-    padding: 0 32rem;
+    padding: 0 32px;
     display: flex;
-    position: fixed;
+    /*position: fixed;*/
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
 .logo img {
     width: 100%;
-    max-width: 388rem;
+    max-width: 388px;
     height: auto;
-    margin: 12rem auto;
+    margin: 12px auto;
     display: block;
 }
 
 /* Nav List */
 .nav-list {
     list-style-type: none;
-    margin-bottom: 6rem;
+    margin-bottom: 6px;
     text-align: center;
 }
 
 .nav-list li {
     display: inline-block;
-    margin: 0 10rem;
+    margin: 0 10px;
 }
 
 .nav-list a {
@@ -120,17 +120,17 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 24rem;
-    line-height: 29rem;
+    line-height: 29px;
     color: #000000;
     text-decoration: underline;
-    padding: 8rem;
+    padding: 8px;
 }
 
 .nav-list a:hover,
 .nav-list a:focus {
     background: #FFFCF6;
     text-decoration: none;
-    border-top: 8rem solid #f2c37f;
+    border-top: 8px solid #f2c37f;
 }
 
 /* Project List */
@@ -179,7 +179,7 @@ body {
 /* Rectangle 2 */
 .rectangle-2 {
     width: 100%;
-    height: 14rem;
+    height: 14px;
     background: #F4C57F;
 }
 
@@ -187,7 +187,7 @@ body {
 .historias {
     width: 100%;
     max-width: 916rem;
-    margin: 32rem auto;
+    margin: 32px auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
@@ -202,7 +202,7 @@ body {
     width: 100%;
     height: auto;
     background: #FFFCF6;
-    padding: 20rem 0;
+    padding: 20px 0;
 }
 
 /* Galeria */
@@ -251,7 +251,7 @@ body {
 /* Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão */
 .center-list {
     text-align: center;
-    margin: 24rem 0;
+    margin: 24px 0;
 }
 
 .link-title,
@@ -275,8 +275,8 @@ body {
 .link-title-small:focus {
     text-decoration: none;
     background: #f4c57f;
-    padding: 5rem;
-    border-radius: 5rem;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Rectangle 5 */
@@ -284,7 +284,7 @@ body {
     width: 100%;
     height: auto;
     background: #C2D690;
-    padding: 20rem 0;
+    padding: 20px 0;
 }
 
 /* Audiodescrição */
@@ -453,7 +453,7 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 1200rem) {
+@media (max-width: 1200px) {
     .nav-list li {
         display: block;
         margin: 10rem 0;
@@ -465,7 +465,7 @@ body {
     }
 }
 
-@media (max-width: 992rem) {
+@media (max-width: 992px) {
     .historias,
     .projetos-title,
     .galeria-title,
@@ -496,14 +496,14 @@ body {
     }
 }
 
-@media (max-width: 768rem) {
+@media (max-width: 768px) {
     .nav-list {
         text-align: left;
     }
 
     .nav-list li {
         display: block;
-        margin: 5rem 0;
+        margin: 5px 0;
     }
 
     .logo img {
@@ -524,12 +524,12 @@ body {
     .ellipse-6,
     .ellipse-7,
     .ellipse-8 {
-        width: 40rem;
-        height: 40rem;
+        width: 40px;
+        height: 40px;
     }
 }
 
-@media (max-width: 576rem) {
+@media (max-width: 576px) {
     .historias,
     .projetos-title,
     .galeria-title,
@@ -561,7 +561,7 @@ body {
 
     .nav-list li {
         display: block;
-        margin: 5rem 0;
+        margin: 5px 0;
     }
 
     .logo img {
@@ -582,8 +582,8 @@ body {
     .ellipse-6,
     .ellipse-7,
     .ellipse-8 {
-        width: 35rem;
-        height: 35rem;
+        width: 35px;
+        height: 35px;
     }
 }
 

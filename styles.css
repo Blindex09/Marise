@@ -6,6 +6,7 @@ html {
 body {
     position: relative;
     width: 100%;
+    max-width: 1440rem;
     margin: 0 auto;
     height: auto;
     background: #FFFFFF;
@@ -119,7 +120,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 24rem;
-    line-height: 29px;
+    line-height: 29rem;
     color: #000000;
     text-decoration: underline;
     padding: 8px;
@@ -143,35 +144,35 @@ body {
 /* PROJETOS */
 .projetos {
     font-size: 24rem;
-    line-height: 29px;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* SOBRE */
 .sobre {
     font-size: 24rem;
-    line-height: 29px;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* ÁUDIO-DESCRIÇÃO */
 .audio-descricao {
     font-size: 24rem;
-    line-height: 29px;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* GALERIA */
 .galeria {
     font-size: 24rem;
-    line-height: 29px;
+    line-height: 29rem;
     color: #000000;
 }
 
 /* CONTATO */
 .contato {
     font-size: 24rem;
-    line-height: 29px;
+    line-height: 29rem;
     color: #000000;
 }
 
@@ -191,7 +192,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 36rem;
-    line-height: 46px;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -213,7 +214,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 36rem;
-    line-height: 46px;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -227,7 +228,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 36rem;
-    line-height: 46px;
+    line-height: 46rem;
     text-align: center;
     color: #000000;
 }
@@ -242,7 +243,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 20rem;
-    line-height: 30px;
+    line-height: 30rem;
     text-align: center;
     color: #000000;
 }
@@ -262,7 +263,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 24rem;
-    line-height: 31px;
+    line-height: 31rem;
     text-align: center;
     text-decoration: underline;
     color: #000000;

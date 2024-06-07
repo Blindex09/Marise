@@ -119,7 +119,7 @@ function announceFontSize() {
     const announcement = document.createElement('div');
     announcement.className = 'sr-only';
     announcement.setAttribute('role', 'alert');
-    announcement.textContent = `Fonte ajustada para ${fontSize * 100}%`;
+    announcement.textContent = `Fonte ajustada para ${Math.round(fontSize * 100/6.25)}%`;
     document.body.appendChild(announcement);
     setTimeout(() => {
         document.body.removeChild(announcement);

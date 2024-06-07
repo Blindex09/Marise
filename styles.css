@@ -21,7 +21,7 @@ body {
     z-index: 1000;
     background: #fff;
     padding: 10rem;
-    border: 2rem solid #000;
+    text-align: center;
     border-radius: 5rem;
 }
 
@@ -29,10 +29,12 @@ body {
     display: block;
     margin-bottom: 5rem;
     padding: 10rem;
-    font-size: 16rem;
-    background: #f4c57f;
+    font-size: 20rem;
+    background: white;
     color: #000;
+    font-family: 'Abel', serif;
     border: none;
+    text-align: center;
     border-radius: 3rem;
     cursor: pointer;
     text-decoration: underline;
@@ -183,6 +185,7 @@ ul {
 
 /* PROJETOS */
 .projetos {
+    font-style: 'Inter', serif;
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;
@@ -190,6 +193,7 @@ ul {
 
 /* SOBRE */
 .sobre {
+    font-style: 'Inter', serif;
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;
@@ -197,6 +201,7 @@ ul {
 
 /* ÁUDIO-DESCRIÇÃO */
 .audio-descricao {
+    font-style: 'Inter', serif;
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;
@@ -211,6 +216,7 @@ ul {
 
 /* CONTATO */
 .contato {
+    font-style: 'Inter', serif;
     font-size: 24rem;
     line-height: 29rem;
     color: #000000;

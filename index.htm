@@ -10,16 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-<button id="accessibilityButton" >Abrir o menu de Acessibilidade</button>
-<div id="menuAccessibility" class="menu-accessibility">
-    <button onclick="adjustFontSize('increase')">Aumentar Fonte</button>
-    <button onclick="adjustFontSize('decrease')">Diminuir Fonte</button>
-    <button onclick="adjustZoom('increase')">Aumentar Zoom</button>
-    <button onclick="adjustZoom('decrease')">Diminuir Zoom</button>
-    <button onclick="adjustContrast('high')">Aumentar Contraste</button>
-    <button onclick="adjustContrast('low')">Diminuir Contraste</button>
-    <button onclick="adjustContrast('normal')">Contraste Normal</button>
+<button id="accessibilityButton" >Menu de Acessibilidade</button>
+<div class="accessibility-buttons" id="menuAccessibility">
+    <ul>
+    <li><button onclick="adjustFontSize('increase')">Aumentar Fonte</button></li>
+    <li><button onclick="adjustFontSize('decrease')">Diminuir Fonte</button></li>
+    <li><button onclick="adjustZoom('increase')">Aumentar Zoom</button></li>
+    <li><button onclick="adjustZoom('decrease')">Diminuir Zoom</button></li>
+    <li><button onclick="adjustContrast('high')">Aumentar Contraste</button></li>
+    <li><button onclick="adjustContrast('low')">Diminuir Contraste</button></li>
+    <li><button onclick="adjustContrast('normal')">Contraste Normal</button></li>
+<!--    <li><button onclick="closeMenu()">Fechar o menu de acessibilidade</button></li>-->
+    </ul>
 </div>
+<div id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></div>
 <a class="skip-link" href="#projetos-heading">Pular para o conteúdo principal</a>
 <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
 <header class="header-bg">

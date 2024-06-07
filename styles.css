@@ -43,18 +43,45 @@ body {
     background: #e3b555;
     text-decoration: none;
 }
-
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 #accessibilityButton {
     position: fixed;
     top: 10rem;
     right: 10rem;
     z-index: 1000;
-    background: #fff;
+    background: white;
     padding: 10rem;
     border: 2rem solid #000;
     border-radius: 5rem;
 }
+#accessibilityButton1 {
+    position: fixed;
+    top: 10rem;
+    right: 10rem;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24rem;
+    line-height: 29px;
+    color: #000000;
+    text-decoration: underline;
+    padding: 8px;
+}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    clip-path: inset(50%);
+}
 
 /* Skip Links */
 .skip-link {
@@ -99,7 +126,6 @@ body {
 
 /* Rectangle 1 */
 .header-bg {
-    width: 100%;
     height: auto;
     background: #FFFCF6;
     padding: 0 32px;
@@ -121,6 +147,7 @@ body {
     list-style-type: none;
     margin-bottom: 6px;
     text-align: center;
+    margin-top: 16px;
 }
 
 .nav-list li {
@@ -288,7 +315,6 @@ body {
 .link-title-small:focus {
     text-decoration: none;
     background: #f4c57f;
-    padding: 5px;
     border-radius: 5px;
 }
 
@@ -381,9 +407,11 @@ body {
     height: auto;
     background: url('galeria_marise');
 }
-.slides{
+
+.slides {
     margin-top: 10px;
 }
+
 .carousel-image {
     object-fit: scale-down;
     height: 400rem;
@@ -405,7 +433,8 @@ body {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36rem;}
+    font-size: 36rem;
+}
 
 .numbertext {
     color: #000000;
@@ -413,7 +442,7 @@ body {
     font-family: 'Inter', serif;
     font-style: normal;
     font-size: 16rem;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
 
@@ -436,8 +465,32 @@ body {
 .social-links {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5rem;
     text-align: center;
+}
+
+
+/* CSS */
+.button {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
 }
 
 .social-links li {
@@ -449,13 +502,14 @@ body {
     font-size: 18rem;
     color: #000;
     text-decoration: underline;
+    padding: 5rem;
 }
 
 .social-links a:hover,
 .social-links a:focus {
     text-decoration: none;
     background: #fff;
-    padding: 5rem;
+
     border-radius: 5rem;
 }
 

@@ -171,14 +171,14 @@ function isScrolledIntoView(elem) {
 }
 
 function announceStaus(status) {
-    const announcement = document.createElement('div');
-    announcement.className = 'sr-only';
-    announcement.setAttribute('role', 'alert');
-    announcement.textContent = status;
-    document.body.appendChild(announcement);
-    setTimeout(() => {
-        document.body.removeChild(announcement);
-    }, 1000);
+    // const announcement = document.createElement('div');
+    // announcement.className = 'sr-only';
+    // announcement.setAttribute('role', 'alert');
+    // announcement.textContent = status;
+    // document.body.appendChild(announcement);
+    // setTimeout(() => {
+    //     document.body.removeChild(announcement);
+    // }, 1000);
     console.log(status)
 }
 

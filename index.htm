@@ -5,124 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marise Glória Barbosa</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <button id="accessibilityButton">Menu de Acessibilidade</button>
+    <section class="accessibility-buttons" id="menuAccessibility" style="display: none;">
+        <ul>
+            <li><button id="font-increase">Aumentar Fonte</button></li>
+            <li><button id="font-decrease">Diminuir Fonte</button></li>
+            <li><button id="zoom-increase">Aumentar Zoom</button></li>
+            <li><button id="zoom-decrease">Diminuir Zoom</button></li>
+            <li><button id="contrast-high">Aumentar Contraste</button></li>
+            <li><button id="contrast-low">Diminuir Contraste</button></li>
+            <li><button id="contrast-normal">Contraste Normal</button></li>
+            <li><button id="close-menu">Fechar o menu de acessibilidade</button></li>
+        </ul>
+    </section>
+    <section id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></section>
+    <a class="skip-link" href="#projetos-heading">Pular para o conteúdo principal</a>
+<a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+<header class="header-bg">
+    <a href="index.htm" class="logo">
+        <img src="Logosite_350x100_horizontal2-300x51.png" alt="">
+        <span class="sr-only">Página Inicial</span>
+    </a>
     <nav>
-        <ul>
-            <li><a href="#sobre-mim">Pular para o conteúdo principal</a></li>
-            <li><a href="#contato-heading">Pular para o rodapé</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#audio-descricao">Áudio-descrição</a></li>
-            <li><a href="#galeria">Galeria</a></li>
+        <ul class="nav-list">
+            <li><a class="sobre" href="#sobre-mim">Sobre Mim</a></li>
+            <li><a class="projetos" href="#projetos">Projetos</a></li>
+            <li><a class="audio-descricao" href="#audiodescricao">Audiodescrição</a></li>
+            <li><a class="contato" href="#contato-heading">Contato</a></li>
         </ul>
-    </nav>    </header>
+    </nav>
+            <a class="galeria" href="#galeria">Galeria</a>
+</header>
+<main>
+    <section id="sobre-mim">
+            <h2 id="sobre-mim-heading">Sobre mim</h2>
+            <p class="text-content">História oral, a voz plena no tempo presente</h2>
+            <p class="text-content">As pesquisas em estreita conexão com os universos onde a experiência de "pertenço,
+                logo existo" têm sido referências para construir o meu ser em deslocamento...</p>
 
-    <main>
-        <section id="sobre-mim">
-            <h1>História oral, a voz plena no tempo presente</h1>
-            <p>As pesquisas em estreita conexão com os universos onde a experiência de “pertenço, logo existo” têm sido referências para construir o meu ser em deslocamento...</p>
-        </section>
-        <section id="projetos" aria-labelledby="projetos-heading">
-            <h2 id="projetos-heading">Projetos</h2>
-            <ul>
-                <li>
-                    <h3>As Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão</h3>
-<a href="link_para_saiba_mais">Assista ao documentário sobre As Caixeiras do Divino no Maranhão</a>
-</li>
-                <li>
-                    <h3>O Que é O Que é? Infâncias Kalunga</h3>
-<a href="link_para_infancias_kalunga">Saiba mais sobre o projeto Infâncias Kalunga</a>                
-</li>
-                <li>
-                    <h3>No bater da minha caixa estou convidando as foliãs</h3>
-<a href="link_para_no_bater_da_minha_caixa">Acesse o conteúdo musical das caixeiras: No bater da minha caixa estou convidando as foliãs</a>                
-</li>
+    </section>
+    <section id="projetos" aria-labelledby="projetos-heading">
+            <h2 id="projetos-heading" class="projetos-title">Projetos</h2>
+            <p class="text-content-small">Espaço de acolhimento para os trabalhos que tenho realizado ou participado,
+                caminhos por onde tenho andado articulando experiências.</p>
+            <ul class="project-list">
+                <li class="center-list"><a class="link-title" href="index2.htm">Assista ao documentário sobre As
+                    Caixeiras do Divino no Maranhão</a></li>
+                <li class="center-list"><a class="link-title" href="index3.htm">Projeto Infâncias Kalunga</a></li>
+                <li class="center-list"><a class="link-title" href="index4.htm">Acesse o conteúdo
+                    musical das caixeiras: No bater da minha caixa estou convidando as foliãs</a></li>
             </ul>
-            <span>Espaço de acolhimento para os trabalhos que tenho realizado ou participado, caminhos por onde tenho andado articulando experiências.</span>
-        </section>
 
-        <section id="audio-descricao">
-            <h2>Áudio-descrição</h2>
-            <p>A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com baixa visão que, por esse caminho, pode acessar conteúdos imagéticos...</p>
-        </section>
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <div class="carousel" aria-live="polite">
-            <button class="carousel-stop">Parar Carrossel</button>
-            <button class="carousel-prev">Slide Anterior</button>
-            <button class="carousel-next">Próximo Slide</button>
-            <div class="slides">
-                <div class="slide">
-                    <img src="imagens/Banner_slide_02.jpg" alt="Três mulheres de pele escura tocam tambores em um palco azul." aria-describedby="desc1">
-                    <p id="desc1" class="sr-only">Duas cantam ao microfone. A terceira, mais velha, toca sentada. Todas transmitem energia e tradição.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise7.jpg" alt="Quatro meninos de pele escura brincam e sorriem." aria-describedby="desc2">
-                    <p id="desc2" class="sr-only">Três usam bonés. Um veste camiseta do Brasil. Há um tambor à esquerda e um edifício ao fundo.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/Banner_slide_04.jpg" alt="Crianças brincam de roda ao ar livre." aria-describedby="desc3">
-                    <p id="desc3" class="sr-only">No centro, um menino com camiseta do Hulk sorri. Outras crianças, incluindo uma de vestido vermelho, observam e interagem.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/Banner_slide_05.jpg" alt="Duas pessoas: mulher de cabelos ruivos canta com blusa floral; homem de chapéu e barba toca rabeca." aria-describedby="desc4">
-                    <p id="desc4" class="sr-only">Ao fundo, ambiente ao ar livre com vegetação e uma criança.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise1.jpeg" alt="Mulher de cabelos ruivos toca pandeiro, blusa floral, expressão concentrada." aria-describedby="desc5">
-                    <p id="desc5" class="sr-only">À esquerda, homem com chapéu de palha. Céu nublado ao fundo, ambiente ao ar livre.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise2.jpeg" alt="Mulher ruiva com blusa azul segura bandeira e sorri. Homens com violões ao redor. Fundo laranja com prateleiras de livros. Ambiente festivo e musical." aria-describedby="desc6">
-                    <p id="desc6" class="sr-only">Mulher ruiva com blusa azul segura bandeira e sorri. Homens com violões ao redor. Fundo laranja com prateleiras de livros. Ambiente festivo e musical.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise4.jpeg" alt="Sete pessoas vestidas de branco sorriem para a câmera. Mulheres de pele escura e clara no centro. Fundo escuro destaca a iluminação quente, ambiente festivo." aria-describedby="desc7">
-                    <p id="desc7" class="sr-only">Sete pessoas vestidas de branco sorriem para a câmera. Mulheres de pele escura e clara no centro. Fundo escuro destaca a iluminação quente, ambiente festivo.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/foto_facebook_05.jpeg" alt="Três mulheres tocam tambor em ambiente interno com parede laranja. Mulher ruiva à esquerda, idosa ao centro, mulher de pele escura à direita. Atmosfera de tradição e cultura." aria-describedby="desc8">
-                    <p id="desc8" class="sr-only">Três mulheres tocam tambor em ambiente interno com parede laranja. Mulher ruiva à esquerda, idosa ao centro, mulher de pele escura à direita. Atmosfera de tradição e cultura.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/foto_facebook_06.jpeg" alt="Grupo grande em círculo ao ar livre sob telhado de palha. Mulheres de blusa rosa e branca em primeiro plano. Mulher ruiva com papéis à direita. Ambiente natural e acolhedor." aria-describedby="desc9">
-                    <p id="desc9" class="sr-only">Grupo grande em círculo ao ar livre sob telhado de palha. Mulheres de blusa rosa e branca em primeiro plano. Mulher ruiva com papéis à direita. Ambiente natural e acolhedor.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/foto_facebook_10.jpeg" alt="Grupo em espaço interno decorado com flores e tecidos coloridos, sugerindo ambiente cerimonial. Mulheres com tambores, altar com imagens e oferendas ao fundo." aria-describedby="desc10">
-                    <p id="desc10" class="sr-only">Grupo em espaço interno decorado com flores e tecidos coloridos, sugerindo ambiente cerimonial. Mulheres com tambores, altar com imagens e oferendas ao fundo.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise6.jpeg" alt="Grupo em ambiente natural, leito rochoso de rio, em filmagem artística. Pessoas com pinturas corporais e tambores. Equipe de filmagem ao redor. Riacho ao fundo." aria-describedby="desc11">
-                    <p id="desc11" class="sr-only">Grupo em ambiente natural, leito rochoso de rio, em filmagem artística. Pessoas com pinturas corporais e tambores. Equipe de filmagem ao redor. Riacho ao fundo.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise7.jpeg" alt="Descrição da Imagem 12" aria-describedby="desc12">
-                    <p id="desc12" class="sr-only">Descrição da Imagem 12.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise8-1.jpeg" alt="Mulher de cabelos grisalhos curtos sorri para a câmera, usando brincos pequenos e blusa clara. Fundo com pintura de rosto estilizado, ambiente artístico, iluminação suave." aria-describedby="desc13">
-                    <p id="desc13" class="sr-only">Mulher de cabelos grisalhos curtos sorri para a câmera, usando brincos pequenos e blusa clara. Fundo com pintura de rosto estilizado, ambiente artístico, iluminação suave.</p>
-                </div>
-                <div class="slide">
-                    <img src="imagens/marise9.jpeg" alt="Duas mulheres sorriem para a câmera. Ruiva de blusa preta à esquerda, idosa de pele escura com blusa azul e gorro vermelho à direita. Fundo neutro. Alegria e conexão." aria-describedby="desc14">
-                    <p id="desc14" class="sr-only">Duas mulheres sorriem para a câmera. Ruiva de blusa preta à esquerda, idosa de pele escura com blusa azul e gorro vermelho à direita. Fundo neutro. Alegria e conexão.</p>
-                </div>
-            </div>
-            <div id="carousel-status" aria-live="polite" class="sr-only"></div>
-        </div>
-    </section>    
+    </section>
+    <section id="audiodescricao" aria-labelledby="audiodescricao-heading">
+            <h2 id="audiodescricao-heading" class="audio-descricao-title">Audiodescrição</h2>
+            <p class="audio-descricao-text">A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com
+                baixa visão que, por esse caminho, pode acessar conteúdos imagéticos...</p>
+            <ul class="audiodescricao-list">
+                <li class="center-list"><a class="link-title-small"
+                                           href="https://exemplo.com/fauna-brasileira-em-cores">Saiba mais sobre o
+                    projeto Fauna Brasileira em Cores, de Marcos Brasil</a></li>
+                <li class="center-list"><a class="link-title-small" href="https://exemplo.com/o-coracao-do-brasil">Acesse
+                    a playlist O Coração do Brasil, de Cris Maia</a></li>
+                <li class="center-list"><a class="link-title-small"
+                                           href="https://exemplo.com/chapada-dos-veadeiros-povos-dos-campos-gerais">Chapada
+                    dos Veadeiros - Povos dos Campos Gerais</a></li>
+                <li class="center-list"><a class="link-title-small"
+                                           href="https://exemplo.com/chapada-dos-veadeiros-povos-dos-campos-gerais">Audiodescrição do Mundo</a></li>
+            </ul>
+    </section>
+
+<section id="galeria">
+    <h2>Galeria</h2>
+</section> 
 </main>
-<footer>
-    <h2 id="contato-heading">Redes sociais</h2>
-        <ul>
-            <li><a href="https://wa.me/seunumerodewhatsapp">Whatsapp</a></li>
-            <li><a href="https://www.youtube.com/seucanal">YouTube</a></li>
-            <li><a href="https://www.facebook.com/seuperfil">Facebook</a></li>
-        </ul>
-    </footer>
+<footer class="footer rectangle-7">
 
-    <script src="scripts.js"></script>
+            <h2 id="contato-heading">Redes sociais</h2>
+            <ul>
+                <li><a href="https://wa.me/yourwhatsapplink" target="_blank">WhatsApp. O link Abre em uma nova janela.</a></li>
+                <li><a href="https://www.youtube.com/youryoutubelink" target="_blank">YouTube. O link Abre em uma nova janela.</a></li>
+                <li><a href="https://www.facebook.com/yourfacebooklink" target="_blank">Facebook. O link Abre em uma nova janela.</a></li>
+                <li><a href="https://www.instagram.com/yourinstagramlink" target="_blank">Instagram. O link Abre em uma nova janela.</a></li>
+            </ul>
+    </section>
+    <p class="footer-text">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
+</footer>
+<script src="accessibility.js"></script>
+<script src="carousel.js"></script>
+<script src="navigation.js"></script>
 </body>
 </html>

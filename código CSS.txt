@@ -1,0 +1,535 @@
+/* Desktop - 1 */
+
+position: relative;
+width: 1440px;
+height: 2764px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 1440px;
+height: 626px;
+left: 0px;
+top: 104px;
+
+background: #FFFCF6;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 1440px;
+height: 472px;
+left: 0px;
+top: 730px;
+
+background: #F4C57F;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 104px;
+left: 0px;
+top: 0px;
+
+background: #F7F0CA;
+
+
+/* Logosite_350x100_horizontal2-300x51 1 */
+
+position: absolute;
+width: 388px;
+height: 66px;
+left: 75px;
+top: 22px;
+
+background: url(Logosite_350x100_horizontal2-300x51.png);
+
+
+/* PROJETOS */
+
+position: absolute;
+width: 108px;
+height: 42px;
+left: 665px;
+top: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* SOBRE */
+
+position: absolute;
+width: 70px;
+height: 42px;
+left: 543px;
+top: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* ÁUDIO-DESCRIÇÃO */
+
+position: absolute;
+width: 194px;
+height: 42px;
+left: 825px;
+top: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* GALERIA */
+
+position: absolute;
+width: 88px;
+height: 42px;
+left: 1071px;
+top: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* CONTATO */
+
+position: absolute;
+width: 122px;
+height: 42px;
+left: 1211px;
+top: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 94px;
+height: 14px;
+left: 531px;
+top: 0px;
+
+background: #F4C57F;
+
+
+/* História oral, a voz plena no tempo presente. */
+
+position: absolute;
+width: 916px;
+height: 81px;
+left: 262px;
+top: 183px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 1440px;
+height: 934px;
+left: 0px;
+top: 1674px;
+
+background: #FFFCF6;
+
+
+/* Galeria */
+
+position: absolute;
+width: 916px;
+height: 81px;
+left: 262px;
+top: 1753px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Projetos */
+
+position: absolute;
+width: 916px;
+height: 81px;
+left: 262px;
+top: 799px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* As pesquisas em estreita conexão com os universos onde a experiência de “pertenço, logo existo” têm sido referências para construir o meu ser em deslocamento. Importante para articular matrizes/raízes no Rio Grande do Norte, Pará, o sertão do Piauí, Goiás, o cerrado onde nasci e vivo agora, e São Paulo onde vivi muito tempo. Modos de estar na terra e formar sentidos que as vezes desconversam entre si. Movimentos entendidos como migração e depois como diáspora, dada a dimensão dos cortes com as comunidades de minha ancestralidade, tornando caro e raro o sentimento de pertencimento. Mestrado em Etnomusicologia pela UnB-Universidade de Brasília e outro em História pela PUC-SP – Pontifícia Universidade Católica de São Paulo e graduação em Ciências Econômicas na mesma Universidade. Têm sido múltiplos os ofícios aos quais me dedico e que se articulam ao longo da vida. Docente, Pesquisadora, Brincante e artista popular, economista, cozinheira, percussionista em grupos e Teatro, co-criadora de grupos de Folias de Reis, Bumba meu Boi, rodas de música com tambores e cantos. Forma de criar e compartilhar a alegria. */
+
+position: absolute;
+width: 762px;
+height: 417px;
+left: 323px;
+top: 264px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+/* or 139% */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Espaço de acolhimento para os trabalhos que tenho realizado ou participado, caminhos por onde tenho andado articulando experiências. */
+
+position: absolute;
+width: 611px;
+height: 46px;
+left: 420px;
+top: 880px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+/* or 139% */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão */
+
+position: absolute;
+width: 632px;
+height: 20px;
+left: 393px;
+top: 1014px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* No bater da minha caixa estou convidando as foliãs */
+
+position: absolute;
+width: 494px;
+height: 20px;
+left: 462px;
+top: 1110px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Audiodescrição do Mundo! */
+
+position: absolute;
+width: 494px;
+height: 20px;
+left: 462px;
+top: 966px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* O Que é O Que é? Infâncias Kalunga */
+
+position: absolute;
+width: 551px;
+height: 20px;
+left: 433px;
+top: 1062px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 1440px;
+height: 472px;
+left: 0px;
+top: 1202px;
+
+background: #EEE5B2;
+
+
+/* Audiodescrição */
+
+position: absolute;
+width: 916px;
+height: 81px;
+left: 262px;
+top: 1271px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com baixa visão que, por esse caminho, pode acessar conteúdos imagéticos. Nesses trabalhos atuei como audiodescritora roteirista, elaborando o texto que descreve as telas de artistas visuais e gravando em estúdio. Em alguns momentos, trabalhei com parcerias. Tenho também a experiência de ler e gravar textos já elaborados. */
+
+position: absolute;
+width: 772px;
+height: 119px;
+left: 333px;
+top: 1352px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+/* or 139% */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Fauna Brasileira em Cores */
+
+position: absolute;
+width: 737px;
+height: 20px;
+left: 344px;
+top: 1497px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Chapada dos Veadeiros: Povos dos Campos Gerais */
+
+position: absolute;
+width: 577px;
+height: 20px;
+left: 424px;
+top: 1593px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* O Coração do Brasil */
+
+position: absolute;
+width: 644px;
+height: 20px;
+left: 390px;
+top: 1545px;
+
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* galeria_marise 1 */
+
+position: absolute;
+width: 741px;
+height: 692px;
+left: 349px;
+top: 1834px;
+
+background: url(galeria_marise);
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 1440px;
+height: 168px;
+left: 0px;
+top: 2596px;
+
+background: #F4C57F;
+
+
+/* Ellipse 5 */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 615px;
+top: 2647px;
+
+background: #FFFFFF;
+
+
+/* Ellipse 6 */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 670px;
+top: 2647px;
+
+background: #FFFFFF;
+
+
+/* Ellipse 7 */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 725px;
+top: 2647px;
+
+background: #FFFFFF;
+
+
+/* Ellipse 8 */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 780px;
+top: 2647px;
+
+background: #FFFFFF;
+
+
+/* © 2024 Marise Glória Barbosa. Todos os direitos reservados. */
+
+position: absolute;
+width: 611px;
+height: 26px;
+left: 414px;
+top: 2729px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+

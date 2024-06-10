@@ -1,21 +1,28 @@
-/* Classe para esconder descrições visualmente, mas mantê-las acessíveis para leitores de tela */
-.sr-only {
+  .menu-accessibility {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    z-index: 1000;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-}
-
-/* Ocultar todas as imagens inicialmente */
-.slide {
-    display: none;
-}
-
-/* Mostrar apenas a imagem ativa */
-.slide.active {
-    display: block;
-}
+    clip-path: inset(50%);
+  }

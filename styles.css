@@ -69,7 +69,7 @@ body {
 }
 
 /* Rectangle 3 */
-.rectangle-3 {
+#sobre-mim {
     width: 100%;
     height: auto;
     background: #E5D6B7;
@@ -77,7 +77,7 @@ body {
 }
 
 /* Rectangle 4 */
-.rectangle-4 {
+#projetos {
     width: 100%;
     height: auto;
     background: #F7C57A;
@@ -280,7 +280,7 @@ body {
 }
 
 /* Rectangle 5 */
-.rectangle-5 {
+#audiodescricao {
     width: 100%;
     height: auto;
     background: #C2D690;

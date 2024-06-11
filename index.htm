@@ -33,7 +33,8 @@
     </a>
     <nav>
         <ul class="nav-list">
-            <li><a class="sobre" href="#sobre-mim">Sobre Mim</a></li>
+            <li><a id="sobre-mim-link" class="sobre" href="#sobre-mim">Sobre Mim</a></li>
+<li><a class="sobre" href="#sobre-mim">Sobre Mim</a></li>
             <li><a class="projetos" href="#projetos">Projetos</a></li>
             <li><a class="audio-descricao" href="#audiodescricao">Audiodescrição</a></li>
 <li><a class="contato" href="#contato">Contato</a></li>
@@ -94,11 +95,17 @@
         <li class="center-list"><a class="link-title" href="https://www.instagram.com/yourinstagramlink" target="_blank">Instagram. O link abre em uma nova janela.</a></li>
     </ul>
 </section>
-    <p class="footer-text">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
+
+        <section> 
+            <a href="#sobre-mim-link" class="back-to-menu" aria-label="Voltar para o menu de navegação" onclick="focusFirstMenuItem()">Voltar ao menu</a>
+        </section> 
+
+<p class="footer-text">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
 </footer>
 <script src="accessibility.js"></script>
 <script src="carousel.js"></script>
 <script src="navigation.js"></script>
 <script src="secoes.js"></script>
+<script src="menu.js"></script>
 </body>
 </html>

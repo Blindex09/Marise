@@ -10,20 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-<button id="accessibilityButton" >Menu de Acessibilidade</button>
-<div class="accessibility-buttons" id="menuAccessibility">
+<button id="accessibilityButton">Menu de Acessibilidade</button>
+<section class="accessibility-buttons" id="menuAccessibility" style="display: none;">
     <ul>
-    <li><button onclick="adjustFontSize('increase')">Aumentar Fonte</button></li>
-    <li><button onclick="adjustFontSize('decrease')">Diminuir Fonte</button></li>
-    <li><button onclick="adjustZoom('increase')">Aumentar Zoom</button></li>
-    <li><button onclick="adjustZoom('decrease')">Diminuir Zoom</button></li>
-    <li><button onclick="adjustContrast('high')">Aumentar Contraste</button></li>
-    <li><button onclick="adjustContrast('low')">Diminuir Contraste</button></li>
-    <li><button onclick="adjustContrast('normal')">Contraste Normal</button></li>
-<!--    <li><button onclick="closeMenu()">Fechar o menu de acessibilidade</button></li>-->
+        <li><button id="font-increase">Aumentar Fonte</button></li>
+        <li><button id="font-decrease">Diminuir Fonte</button></li>
+        <li><button id="zoom-increase">Aumentar Zoom</button></li>
+        <li><button id="zoom-decrease">Diminuir Zoom</button></li>
+        <li><button id="contrast-high">Aumentar Contraste</button></li>
+        <li><button id="contrast-low">Diminuir Contraste</button></li>
+        <li><button id="contrast-normal">Contraste Normal</button></li>
+        <li><button id="close-menu">Fechar o menu de acessibilidade</button></li>
     </ul>
-</div>
-<div id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></div>
+</section>
+<section id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></section>
 <a class="skip-link" href="#projetos-heading">Pular para o conteúdo principal</a>
 <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
 <header class="header-bg">
@@ -39,69 +39,65 @@
             <li><a class="contato" href="#contato-heading">Contato</a></li>
         </ul>
     </nav>
-
+    <a class="galeria" href="#galeria">Galeria</a>
 </header>
 <main>
     <section id="sobre-mim">
-
-
-            <h2 class="historias">História oral, a voz plena no tempo presente</h2>
-            <p class="text-content">As pesquisas em estreita conexão com os universos onde a experiência de "pertenço,
-                logo existo" têm sido referências para construir o meu ser em deslocamento...</p>
+        <h2 id="sobre-mim-heading">Sobre mim</h2>
+        <p class="text-content">História oral, a voz plena no tempo presente</h2>
+        <p class="text-content">As pesquisas em estreita conexão com os universos onde a experiência de "pertenço,
+            logo existo" têm sido referências para construir o meu ser em deslocamento...</p>
 
     </section>
     <section id="projetos" aria-labelledby="projetos-heading">
-
-            <h2 id="projetos-heading" class="projetos-title">Projetos</h2>
-            <p class="text-content-small">Espaço de acolhimento para os trabalhos que tenho realizado ou participado,
-                caminhos por onde tenho andado articulando experiências.</p>
-            <ul class="project-list">
-                <li class="center-list"><a class="link-title" href="index3.htm">Assista ao documentário sobre As
-                    Caixeiras do Divino no Maranhão</a></li>
-                <li class="center-list"><a class="link-title" href="index2.htm">Projeto Infâncias Kalunga</a></li>
-                <li class="center-list"><a class="link-title" href="link_para_no_bater_da_minha_caixa">Acesse o conteúdo
-                    musical das caixeiras: No bater da minha caixa estou convidando as foliãs</a></li>
-            </ul>
+        <h2 id="projetos-heading" class="projetos-title">Projetos</h2>
+        <p class="text-content-small">Espaço de acolhimento para os trabalhos que tenho realizado ou participado,
+            caminhos por onde tenho andado articulando experiências.</p>
+        <ul class="project-list">
+            <li class="center-list"><a class="link-title" href="index2.htm">Assista ao documentário sobre As
+                Caixeiras do Divino no Maranhão</a></li>
+            <li class="center-list"><a class="link-title" href="index3.htm">Projeto Infâncias Kalunga</a></li>
+            <li class="center-list"><a class="link-title" href="index4.htm">Acesse o conteúdo
+                musical das caixeiras: No bater da minha caixa estou convidando as foliãs</a></li>
+        </ul>
 
     </section>
     <section id="audiodescricao" aria-labelledby="audiodescricao-heading">
-            <h2 id="audiodescricao-heading" class="audio-descricao-title">Audiodescrição</h2>
-            <p class="audio-descricao-text">A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com
-                baixa visão que, por esse caminho, pode acessar conteúdos imagéticos...</p>
-            <ul class="audiodescricao-list">
-                <li class="center-list"><a class="link-title-small"
-                                           href="https://exemplo.com/fauna-brasileira-em-cores">Saiba mais sobre o
-                    projeto Fauna Brasileira em Cores, de Marcos Brasil</a></li>
-                <li class="center-list"><a class="link-title-small" href="https://exemplo.com/o-coracao-do-brasil">Acesse
-                    a playlist O Coração do Brasil, de Cris Maia</a></li>
-                <li class="center-list"><a class="link-title-small"
-                                           href="https://exemplo.com/chapada-dos-veadeiros-povos-dos-campos-gerais">Chapada
-                    dos Veadeiros - Povos dos Campos Gerais</a></li>
-                <li class="center-list"><a class="link-title-small"
-                                           href="https://exemplo.com/chapada-dos-veadeiros-povos-dos-campos-gerais">Audiodescrição do Mundo</a></li>
-            </ul>
+        <h2 id="audiodescricao-heading" class="audio-descricao-title">Audiodescrição</h2>
+        <p class="audio-descricao-text">A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com
+            baixa visão que, por esse caminho, pode acessar conteúdos imagéticos...</p>
+        <ul class="audiodescricao-list">
+            <li class="center-list"><a class="link-title-small"
+                                       href="https://exemplo.com/fauna-brasileira-em-cores">Saiba mais sobre o
+                projeto Fauna Brasileira em Cores, de Marcos Brasil</a></li>
+            <li class="center-list"><a class="link-title-small" href="https://exemplo.com/o-coracao-do-brasil">Acesse
+                a playlist O Coração do Brasil, de Cris Maia</a></li>
+            <li class="center-list"><a class="link-title-small"
+                                       href="https://exemplo.com/chapada-dos-veadeiros-povos-dos-campos-gerais">Chapada
+                dos Veadeiros - Povos dos Campos Gerais</a></li>
+            <li class="center-list"><a class="link-title-small"
+                                       href="https://exemplo.com/chapada-dos-veadeiros-povos-dos-campos-gerais">Audiodescrição do Mundo</a></li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
     </section>
 </main>
 <footer class="footer rectangle-7">
-    <section id="redessociais" aria-labelledby="contato-heading">
-            <h2 id="contato-heading">Redes sociais</h2>
-            <ul class="social-links">
-                <li><a href="https://api.whatsapp.com/send/?phone=5561981714140">Whatsapp</a></li>
-                <li><a href="https://www.youtube.com/@marisegloriabarbosa1755">YouTube</a></li>
-                <li><a href="https://www.facebook.com/marise.barbosa.7">Facebook</a></li>
-                <li><a href="https://www.instagram.com/marise.barbosa.7/">Instagram</a></li>
-            </ul>
+
+    <h2 id="contato-heading">Redes sociais</h2>
+    <ul>
+        <li><a href="https://wa.me/yourwhatsapplink" target="_blank">WhatsApp. O link Abre em uma nova janela.</a></li>
+        <li><a href="https://www.youtube.com/youryoutubelink" target="_blank">YouTube. O link Abre em uma nova janela.</a></li>
+        <li><a href="https://www.facebook.com/yourfacebooklink" target="_blank">Facebook. O link Abre em uma nova janela.</a></li>
+        <li><a href="https://www.instagram.com/yourinstagramlink" target="_blank">Instagram. O link Abre em uma nova janela.</a></li>
+    </ul>
     </section>
-    <div>
-        <ul class="social-links">
-        <li><span class="ellipse ellipse-5"><a href="https://api.whatsapp.com/send/?phone=5561981714140">Whatsapp</a></span></li>
-        <li><span class="ellipse ellipse-6"><a href="https://www.youtube.com/@marisegloriabarbosa1755">YouTube</a></span></li>
-        <li><span class="ellipse ellipse-7"><a href="https://www.facebook.com/marise.barbosa.7">Facebook</a></span></li>
-        <li><span class="ellipse ellipse-8"><a href="https://www.instagram.com/marise.barbosa.7/">Instagram</a></span></li>
-        </ul>
-    </div>
     <p class="footer-text">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
 </footer>
-<script src="scripts.js"></script>
+<script src="accessibility.js"></script>
+<script src="carousel.js"></script>
+<script src="navigation.js"></script>
 </body>
 </html>

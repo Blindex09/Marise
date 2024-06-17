@@ -26,3 +26,696 @@
     border: 0;
     clip-path: inset(50%);
   }
+  /* Estilos Gerais */
+  html {
+      font-size: 6.25%;
+  }
+
+  body {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+      background: #FFFFFF;
+      font-family: 'Inter', serif;
+  }
+
+  /* Accessibility Buttons */
+  .accessibility-buttons {
+      position: fixed;
+      top: 50rem;
+      right: 10rem;
+      z-index: 1000;
+      background: #fff;
+      padding: 10rem;
+      text-align: center;
+      border-radius: 5rem;
+  }
+
+  .accessibility-buttons button {
+      display: block;
+      margin-bottom: 5rem;
+      padding: 10rem;
+      font-size: 20rem;
+      background: white;
+      color: #485652;
+      font-family: 'Inter', serif;
+      border: none;
+      text-align: center;
+      width: 100%;
+      border-radius: 3rem;
+      cursor: pointer;
+      text-decoration: underline;
+  }
+
+  .accessibility-buttons button:hover,
+  .accessibility-buttons button:focus {
+      background: #e3b555;
+      text-decoration: none;
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  #accessibilityButton {
+      position: fixed;
+      top: 10rem;
+      font-family: 'Inter', serif;
+      right: 10rem;
+      z-index: 1000;
+      font-size: 20rem;
+      background: white;
+      padding: 10rem;
+      border: 2rem solid #000;
+      border-radius: 5rem;
+  }
+  #accessibilityButton1 {
+      position: fixed;
+      top: 10rem;
+      right: 10rem;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24rem;
+      line-height: 29px;
+      color: #000000;
+      text-decoration: underline;
+      padding: 8px;
+  }
+
+  .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+      clip-path: inset(50%);
+  }
+
+  /* Skip Links */
+  .skip-link {
+      position: absolute;
+      left: -9999rem;
+      top: auto;
+      width: 1rem;
+      height: 1rem;
+      overflow: hidden;
+  }
+
+  .skip-link:focus {
+      left: 10rem;
+      top: 10rem;
+      width: auto;
+      height: auto;
+      font-size: 24rem;
+      padding: 10rem;
+      background: #fff;
+      color: #000;
+      border: 2rem solid #000;
+      border-radius: 5rem;
+      z-index: 1000;
+      text-decoration: none;
+  }
+
+  /* Rectangle 3 */
+  #sobre-mim {
+      width: 100%;
+      height: auto;
+      background: #E5D6B7;
+      padding: 20px 0;
+  }
+
+  /* Rectangle 4 */
+  #projetos {
+      width: 100%;
+      height: auto;
+      background: #F7C57A;
+      padding: 20px 0;
+  }
+
+  /* Rectangle 1 */
+  .header-bg {
+      height: auto;
+      background: #FFFCF6;
+      padding: 0 32px;
+      display: flex;
+      /*position: fixed;*/
+  }
+
+  /* Logosite_350x100_horizontal2-300x51 1 */
+  .logo img {
+      width: 100%;
+      max-width: 388px;
+      height: auto;
+      margin: 12px auto;
+      display: block;
+  }
+
+  /* Nav List */
+  .nav-list {
+      list-style-type: none;
+      margin-bottom: 6px;
+      text-align: center;
+      margin-top: 16px;
+  }
+
+  .nav-list li {
+      display: inline-block;
+      margin: 0 10px;
+  }
+
+  .nav-list a {
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24rem;
+      line-height: 29px;
+      color: #485652;
+      text-decoration: underline;
+      padding: 8px;
+  }
+
+  .nav-list a:hover,
+  .nav-list a:focus {
+      background: #FFFCF6;
+      text-decoration: none;
+      border-top: 8px solid #485652;
+  }
+
+  /* Project List */
+  .project-list,
+  .audiodescricao-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* PROJETOS */
+  .projetos {
+      font-style: 'Inter';
+      font-size: 24rem;
+      line-height: 29rem;
+      color: #000000;
+  }
+
+  /* SOBRE */
+  .sobre {
+      font-style: 'Inter';
+      font-size: 24rem;
+      line-height: 29rem;
+      color: #000000;
+  }
+
+  /* ÁUDIO-DESCRIÇÃO */
+  .audio-descricao {
+      font-style: 'Inter';
+      font-size: 24rem;
+      line-height: 29rem;
+      color: #000000;
+  }
+
+  /* GALERIA */
+  .galeria {
+      font-size: 24rem;
+      line-height: 29rem;
+      color: #000000;
+  }
+
+  /* CONTATO */
+  .contato {
+      font-style: 'Inter';
+      font-size: 24rem;
+      line-height: 29rem;
+      color: #000000;
+  }
+
+  /* Rectangle 2 */
+  .rectangle-2 {
+      width: 100%;
+      height: 14px;
+      background: #F4C57F;
+  }
+
+  /* História oral, a voz plena no tempo presente. */
+  .historias {
+      width: 100%;
+      max-width: 916rem;
+      margin: 32px auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36rem;
+      line-height: 46rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* Rectangle 6 */
+  .rectangle-6 {
+      width: 100%;
+      height: auto;
+      background: #FFFCF6;
+      padding: 20px 0;
+  }
+
+  /* Galeria */
+  .galeria-title {
+      width: 100%;
+      max-width: 916rem;
+      margin: 0 auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36rem;
+      line-height: 46rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* Projetos */
+  .projetos-title {
+      width: 100%;
+      max-width: 916rem;
+      margin: 32rem auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36rem;
+      line-height: 46rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* As pesquisas em estreita conexão com os universos onde a experiência de "pertenço, logo existo" têm sido referências para construir o meu ser em deslocamento... */
+  .text-content,
+  .text-content-small {
+      width: 100%;
+      max-width: 762rem;
+      margin: 0 auto;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 30rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão */
+  .center-list {
+      text-align: center;
+      margin: 24px 0;
+  }
+
+  .link-title,
+  .link-title-small {
+      width: 100%;
+      max-width: 632rem;
+      margin: 0 auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24rem;
+      line-height: 31rem;
+      text-align: center;
+      text-decoration: underline;
+      color: #000000;
+  }
+
+  .link-title:hover,
+  .link-title:focus,
+  .link-title-small:hover,
+  .link-title-small:focus {
+      text-decoration: none;
+      background: #f4c57f;
+      border-radius: 5px;
+  }
+
+  /* Rectangle 5 */
+  #audiodescricao {
+      width: 100%;
+      height: auto;
+      background: #C2D690;
+      padding: 20px 0;
+  }
+
+  /* Audiodescrição */
+  .audio-descricao-title {
+      width: 100%;
+      max-width: 916rem;
+      margin: 32rem auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36rem;
+      line-height: 46rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com baixa visão que, por esse caminho, pode acessar conteúdos imagéticos... */
+  .audio-descricao-text {
+      width: 100%;
+      max-width: 772rem;
+      margin: 0 auto;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 30rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* Fauna Brasileira em Cores */
+  .link-title-small {
+      width: 100%;
+      max-width: 737rem;
+      margin: 0 auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24rem;
+      line-height: 31rem;
+      text-align: center;
+      text-decoration: underline;
+      color: #000000;
+  }
+
+  /* Chapada dos Veadeiros: Povos dos Campos Gerais */
+  .link-title-small {
+      width: 100%;
+      max-width: 577rem;
+      margin: 0 auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24rem;
+      line-height: 31rem;
+      text-align: center;
+      text-decoration: underline;
+      color: #000000;
+  }
+
+  /* O Coração do Brasil */
+  .link-title-small {
+      width: 100%;
+      max-width: 644rem;
+      margin: 0 auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24rem;
+      line-height: 31rem;
+      text-align: center;
+      text-decoration: underline;
+      color: #000000;
+  }
+
+  /* galeria_marise 1 */
+  .galeria-marise {
+      width: 100%;
+      max-width: 741rem;
+      margin: 0 auto;
+      height: auto;
+      background: url('galeria_marise');
+  }
+
+  .slides {
+      margin-top: 10px;
+  }
+
+  .carousel-image {
+      object-fit: scale-down;
+      height: 400rem;
+      width: 100%;
+      max-width: 741rem;
+      margin: 0 auto;
+  }
+
+  /* Rectangle 7 */
+  .rectangle-7 {
+      width: 100%;
+      height: auto;
+      background: #F4C57F;
+      padding: 20px 0;
+  }
+
+  #contato-heading {
+      margin: 10px auto;
+      font-family: 'Abel', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36rem;
+  }
+
+  .numbertext {
+      color: #000000;
+      text-align: center;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-size: 16rem;
+      margin-top: 10px;
+  }
+
+
+  /* Ellipse 5 */
+  .ellipse-5,
+  .ellipse-6,
+  .ellipse-7,
+  .ellipse-8 {
+      display: inline-block;
+      /*display: none;*/
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      background: #FFFFFF;
+      border: 2px solid #000;
+      border-radius: 50%;
+  }
+
+  /* Social Links */
+  .social-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 5rem;
+      text-align: center;
+  }
+
+
+  /* CSS */
+  .button {
+      background: #5E5DF0;
+      border-radius: 999px;
+      box-shadow: #5E5DF0 0 10px 20px -10px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+  }
+
+  .social-links li {
+      display: inline-block;
+      margin-right: 10rem;
+  }
+
+  .social-links a {
+      font-size: 18rem;
+      color: #000;
+      text-decoration: underline;
+      padding: 5rem;
+  }
+
+  .social-links a:hover,
+  .social-links a:focus {
+      text-decoration: none;
+      background: #fff;
+
+      border-radius: 5rem;
+  }
+
+  /* Footer Text */
+  .footer-text {
+      width: 100%;
+      max-width: 611px;
+      margin: 0 auto;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14rem;
+      line-height: 18rem;
+      text-align: center;
+      color: #000000;
+  }
+
+  /* Screen Reader Only */
+  .sr-only {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      padding: 0;
+      margin: -1rem;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+  }
+
+  /* Media Queries */
+  @media (max-width: 1200px) {
+      .nav-list li {
+          display: block;
+          margin: 10rem 0;
+      }
+
+      .accessibility-buttons {
+          right: 10rem;
+          top: 10rem;
+      }
+  }
+
+  @media (max-width: 992px) {
+      .historias,
+      .projetos-title,
+      .galeria-title,
+      .audio-descricao-title {
+          font-size: 32rem;
+          line-height: 41rem;
+      }
+
+      .text-content,
+      .text-content-small {
+          font-size: 18rem;
+          line-height: 28rem;
+      }
+
+      .link-title,
+      .link-title-small {
+          font-size: 22rem;
+          line-height: 28rem;
+      }
+
+      .footer-text {
+          font-size: 12rem;
+          line-height: 16rem;
+      }
+
+      .accessibility-buttons button {
+          font-size: 14rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .nav-list {
+          text-align: left;
+      }
+
+      .nav-list li {
+          display: block;
+          margin: 5px 0;
+      }
+
+      .logo img {
+          max-width: 300rem;
+      }
+
+      .accessibility-buttons {
+          width: 100%;
+          padding: 10rem 5rem;
+      }
+
+      .accessibility-buttons button {
+          width: 100%;
+          margin-bottom: 5rem;
+      }
+
+      .ellipse-5,
+      .ellipse-6,
+      .ellipse-7,
+      .ellipse-8 {
+          width: 40px;
+          height: 40px;
+      }
+  }
+
+  @media (max-width: 576px) {
+      .historias,
+      .projetos-title,
+      .galeria-title,
+      .audio-descricao-title {
+          font-size: 28rem;
+          line-height: 36rem;
+      }
+
+      .text-content,
+      .text-content-small {
+          font-size: 16rem;
+          line-height: 26rem;
+      }
+
+      .link-title,
+      .link-title-small {
+          font-size: 20rem;
+          line-height: 26rem;
+      }
+
+      .footer-text {
+          font-size: 11rem;
+          line-height: 14rem;
+      }
+
+      .nav-list {
+          text-align: left;
+      }
+
+      .nav-list li {
+          display: block;
+          margin: 5px 0;
+      }
+
+      .logo img {
+          max-width: 250rem;
+      }
+
+      .accessibility-buttons {
+          width: 100%;
+          padding: 10rem 5rem;
+      }
+
+      .accessibility-buttons button {
+          width: 100%;
+          margin-bottom: 5rem;
+      }
+
+      .ellipse-5,
+      .ellipse-6,
+      .ellipse-7,
+      .ellipse-8 {
+          width: 35px;
+          height: 35px;
+      }
+  }
+
+  /* Ocultar todas as imagens inicialmente */
+  .slide {
+      display: none;
+  }
+
+  /* Mostrar apenas a imagem ativa */
+  .slide.active {
+      display: block;
+  }

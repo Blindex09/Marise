@@ -17,29 +17,28 @@ document.addEventListener("DOMContentLoaded", function() {
     normalContrastButton.addEventListener("click", () => adjustContrast('normal'));
 
     const accessibilityButton = document.getElementById("accessibilityButton");
+    const menu = document.getElementById("menuAccessibility");
+    let lastStatus = "";
+
     accessibilityButton.addEventListener("click", () => {
-        const menu = document.getElementById("menuAccessibility");
-        const feedback = document.getElementById("accessibilityFeedback");
-        if (menu.style.display === 'block') {
-            menu.style.display = 'none';
-            feedback.textContent = 'Menu de acessibilidade fechado.';
-        } else {
-            menu.style.display = 'block';
-            feedback.textContent = 'Menu de acessibilidade aberto.';
+        let newStatus = menu.style.display === 'block' ? 'Menu de acessibilidade fechado.' : 'Menu de acessibilidade aberto.';
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        if (newStatus !== lastStatus) {
+            announceStatus(newStatus);
+            lastStatus = newStatus;
         }
-        announceStatus(feedback.textContent);
     });
 
     const closeButton = document.getElementById("close-menu");
-    closeButton.addEventListener("click", closeMenu);
-
-    function closeMenu() {
-        const menu = document.getElementById("menuAccessibility");
-        const feedback = document.getElementById("accessibilityFeedback");
+    closeButton.addEventListener("click", () => {
+        if (menu.style.display === 'none') return; // Avoid redundant closing if already closed
         menu.style.display = 'none';
-        feedback.textContent = 'Menu de acessibilidade fechado.';
-        announceStatus(feedback.textContent);
-    }
+        let newStatus = 'Menu de acessibilidade fechado.';
+        if (newStatus !== lastStatus) {
+            announceStatus(newStatus);
+            lastStatus = newStatus;
+        }
+    });
 });
 
 let fontSize = 100;  // 100% font size
@@ -112,12 +111,9 @@ function announceContrast() {
 }
 
 function announceStatus(status) {
-    const announcement = document.createElement('div');
-    announcement.className = 'sr-only';
-    announcement.setAttribute('role', 'alert');
-    announcement.textContent = status;
-    document.body.appendChild(announcement);
+    const feedback = document.getElementById("accessibilityFeedback");
+    feedback.textContent = status;
     setTimeout(() => {
-        document.body.removeChild(announcement);
+        feedback.textContent = '';
     }, 1000);
 }

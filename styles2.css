@@ -8,14 +8,6 @@
     background: white;
     z-index: 1000;
   }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    margin-bottom: 5px;
-  }
   .visually-hidden {
     position: absolute;
     width: 1px;

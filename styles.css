@@ -45,11 +45,7 @@ body {
     background: #e3b555;
     text-decoration: none;
 }
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 #accessibilityButton {
     position: fixed;
     top: 10rem;
@@ -60,7 +56,6 @@ ul {
     background: white;
     padding: 10rem;
     border: 2rem solid #E0AE31;
-;
     border-radius: 5rem;
 }
 #accessibilityButton1 {
@@ -75,17 +70,6 @@ ul {
     color: #000000;
     text-decoration: underline;
     padding: 8px;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    clip-path: inset(50%);
 }
 
 /* Skip Links */
@@ -126,38 +110,39 @@ ul {
     width: 100%;
     height: auto;
     background: #BD5E36;
+    color: white;
     padding: 20px 0;
+}
+
+/* Rectangle 4 */
+#projetos a {
+    color: white;
 }
 
 /* Rectangle 1 */
 .header {
-    height: auto;
     background: #FFFCF6;
-    padding: 0 32px;
     display: flex;
     position: absolute;
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
-.logo img {
-    width: 100%;
-    max-width: 388px;
-    height: auto;
-    margin: 12px auto;
-    display: block;
+.logo {
+    position: absolute;
+    left: 32px;
+    top:12px;
 }
 
 /* Nav List */
 .nav-list {
-    list-style-type: none;
-    margin-bottom: 6px;
     text-align: center;
-    margin-top: 16px;
-}
-
-.nav-list li {
-    display: inline-block;
-    margin: 0 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    padding-top: 16px;
+    padding-left: 0;
 }
 
 .nav-list a {
@@ -176,7 +161,6 @@ ul {
     background: white;
     text-decoration: none;
     border-top: 8px solid #E0AE31;
-;
 }
 
 /* Project List */
@@ -192,27 +176,29 @@ ul {
 /* SOBRE */
 h2 {
     font-size: 32rem;
-    color: white;
     width: 100%;
     max-width: 916rem;
-    margin: 32rem auto;
+    margin: 32rem 20%;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
     text-align: left;
-    color: #000000;
 }
 
-
-
-
-/* CONTATO */
-.contato {
-    font-style: 'Inter';
-    font-size: 24rem;
-    line-height: 29rem;
-    color: #000000;
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
 }
+
+.contact-logo-item {
+    object-fit: contain;
+    height: 64px;
+    margin: 0 12px;
+}
+
 
 /* Rectangle 2 */
 .rectangle-2 {
@@ -232,7 +218,6 @@ h2 {
     font-size: 36rem;
     line-height: 46rem;
     text-align: center;
-    color: #000000;
 }
 
 /* Rectangle 6 */
@@ -248,26 +233,19 @@ h2 {
 p {
     width: 100%;
     max-width: 762rem;
-    margin: 0 auto;
+    margin: 0 20%;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20rem;
     line-height: 30rem;
-    color: #000000;
-}
-
- Umas Mulheres que dão no Couro: As Caixeiras do Divino no Maranhão
-.center-list {
-    text-align: left;
-    margin: 24px 0;
 }
 
 .link-title,
 .link-title-small {
     width: 100%;
     max-width: 632rem;
-    margin: 0 auto;
+    margin: 0 20%;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
@@ -275,7 +253,6 @@ p {
     line-height: 31rem;
     text-align: center;
     text-decoration: underline;
-    color: #000000;
 }
 
 .link-title:hover,
@@ -292,89 +269,12 @@ p {
     width: 100%;
     height: auto;
     background: #727F3A;
+    color: white;
     padding: 20px 0;
 }
 
-/* Audiodescrição */
-.audio-descricao-title {
-    width: 100%;
-    max-width: 916rem;
-    margin: 32rem auto;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36rem;
-    line-height: 46rem;
-    text-align: center;
-    color: #000000;
-}
-
-/* A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com baixa visão que, por esse caminho, pode acessar conteúdos imagéticos... */
-.audio-descricao-text {
-    width: 100%;
-    max-width: 772rem;
-    margin: 0 auto;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20rem;
-    line-height: 30rem;
-    text-align: center;
-    color: #000000;
-}
-
-/* Fauna Brasileira em Cores */
-.link-title-small {
-    width: 100%;
-    max-width: 737rem;
-    margin: 0 auto;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24rem;
-    line-height: 31rem;
-    text-align: center;
-    text-decoration: underline;
-    color: #000000;
-}
-
-/* Chapada dos Veadeiros: Povos dos Campos Gerais */
-.link-title-small {
-    width: 100%;
-    max-width: 577rem;
-    margin: 0 auto;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24rem;
-    line-height: 31rem;
-    text-align: center;
-    text-decoration: underline;
-    color: #000000;
-}
-
-/* O Coração do Brasil */
-.link-title-small {
-    width: 100%;
-    max-width: 644rem;
-    margin: 0 auto;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24rem;
-    line-height: 31rem;
-    text-align: center;
-    text-decoration: underline;
-    color: #000000;
-}
-
-/* galeria_marise 1 */
-.galeria-marise {
-    width: 100%;
-    max-width: 741rem;
-    margin: 0 auto;
-    height: auto;
-    background: url('galeria_marise');
+#audiodescricao a {
+    color: white;
 }
 
 .slides {
@@ -393,16 +293,9 @@ p {
 .rectangle-7 {
     width: 100%;
     height: auto;
-    background: #F4C57F;
+    background: #485652;
     padding: 20px 0;
-}
-
-#contato-heading {
-    margin: 10px auto;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36rem;
+    color: white;
 }
 
 .numbertext {
@@ -469,7 +362,6 @@ p {
 
 .social-links a {
     font-size: 18rem;
-    color: #000;
     text-decoration: underline;
     padding: 5rem;
 }
@@ -480,20 +372,6 @@ p {
     background: #fff;
 
     border-radius: 5rem;
-}
-
-/* Footer Text */
-.footer-text {
-    width: 100%;
-    max-width: 611px;
-    margin: 0 auto;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14rem;
-    line-height: 18rem;
-    text-align: center;
-    color: #000000;
 }
 
 /* Screen Reader Only */
@@ -510,11 +388,6 @@ p {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-    .nav-list li {
-        display: block;
-        margin: 10rem 0;
-    }
-
     .accessibility-buttons {
         right: 10rem;
         top: 10rem;
@@ -522,14 +395,6 @@ p {
 }
 
 @media (max-width: 992px) {
-    .historias,
-    .projetos-title,
-    .galeria-title,
-    .audio-descricao-title {
-        font-size: 32rem;
-        line-height: 41rem;
-    }
-
     .text-content,
     .text-content-small {
         font-size: 18rem;
@@ -540,12 +405,9 @@ p {
     .link-title-small {
         font-size: 22rem;
         line-height: 28rem;
+        margin: 0 20%;
     }
 
-    .footer-text {
-        font-size: 12rem;
-        line-height: 16rem;
-    }
 
     .accessibility-buttons button {
         font-size: 14rem;
@@ -553,15 +415,6 @@ p {
 }
 
 @media (max-width: 768px) {
-    .nav-list {
-        text-align: left;
-    }
-
-    .nav-list li {
-        display: block;
-        margin: 5px 0;
-    }
-
     .logo img {
         max-width: 300rem;
     }
@@ -604,20 +457,6 @@ p {
     .link-title-small {
         font-size: 20rem;
         line-height: 26rem;
-    }
-
-    .footer-text {
-        font-size: 11rem;
-        line-height: 14rem;
-    }
-
-    .nav-list {
-        text-align: left;
-    }
-
-    .nav-list li {
-        display: block;
-        margin: 5px 0;
     }
 
     .logo img {

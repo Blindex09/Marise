@@ -66,6 +66,11 @@ body {
     font-weight: 700;
     line-height: 24.2rem;
     color: #485652;
+    text-transform: uppercase;
+
+}
+.iframe{
+    align-content: center;
 }
 
 /* Rectangle 3 */
@@ -76,11 +81,10 @@ body {
     background: #E5D6B7;
 }
 section {
-    width: 100%;
     height: auto;
     padding: 20px 0;
+    margin-top: 15px;
 }
-
 /* Rectangle 4 */
 #projetos {
     width: 100%;

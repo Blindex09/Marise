@@ -6,6 +6,7 @@
     <title>O Que é O Que é? Infâncias Kalunga</title>
     <link rel="stylesheet" href="styles-subpages.css">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="audios.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
@@ -62,39 +63,46 @@
 <iframe src="https://www.youtube.com/embed/VgfJzhZU7nU?start=16" title="Vídeo do projeto no YouTube" allowfullscreen></iframe>
   <a href="https://www.youtube.com/watch?v=VgfJzhZU7nU&start=16" target="_blank">O link abre em uma nova aba.</a>
 
-        <h2 id="historias-de-audio">Histórias de áudio</h2>
-    <ul>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Oreiesuasfilhashistoria.mp3')">O rei e suas filhas - historia</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/JulianaeDomJorge.mp3')">Juliana e Dom Jorge</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/RolaRola.mp3')">Rola Rola</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Cundungueiro.mp3')">Cundungueiro</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Fortina.mp3')">Fortina</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/BrancadeNeverecriada.mp3')">Branca de Neve - recriada</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/BoiAzeitao.mp3')">Boi Azeitão</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/ChapeuzinhoVermelhorecriada.mp3')">Chapeuzinho Vermelho - recriada</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/SiaisiaizagariaeaeessemungandonumebomfiaisJabotieocuei.mp3')">Si ai si ai zagariaêaê, esse mungando num é bom fiais - Jaboti e o cuêi</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Nadandonaenchente.mp3')">Nadando na enchente</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/serradordeIaia.mp3')">serrador de Iaiá</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/RezapraSJose.mp3')">Reza pra S. José</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Boile.mp3')">Boilé</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Piranha.mp3')">Piranha</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Jovina.mp3')">Jovina</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Rondacarangueijonumepeixe.mp3')">Ronda - carangueijo num é peixe</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Passeinopedelaranja.mp3')">Passei no pé de laranja</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/candarimdesinha.mp3')">candarim de sinhá</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/barbuletapreta.mp3')">barbuleta preta</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Meninonaomaltrataessanega.mp3')">Menino nao maltrata essa nega</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/sodadedoejerce.mp3')">sodade do ejerce</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/castelomalassombrado.mp3')">castelo mal assombrado</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Mariquinhadabeiradorio.mp3')">Mariquinha da beira do rio</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Tataira.mp3')">Tataíra</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Chicochico.mp3')">Chico chico</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/BenditodoEspiritoSanto.mp3')">Bendito do Espirito Santo</a></li>
-        <li><a href="#" class="link" onclick="setAudioAndFocus('audiosinfanciascalunga/Bencaodepapaidemamaedevovo.mp3')">Benção de papai, de mamae, de vovó</a></li>
-    </ul>
-    <audio id="audioPlayer" controls tabindex="0">
-        <source src="audiosinfanciascalunga/Oreiesuasfilhashistoria.mp3" type="audio/mp3">
-    </audio>
+<h2 id="historias-de-audio">Histórias de áudio</h2>
+<ul>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(0)">O rei e suas filhas - história</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(1)">Juliana e Dom Jorge</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(2)">Rola Rola</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(3)">Cundungueiro</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(4)">Fortina</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(5)">Branca de Neve - recriada</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(6)">Boi Azeitão</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(7)">Chapeuzinho Vermelho - recriada</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(8)">Si ai si ai zagariaêaê, esse mungando num é bom fiais - Jaboti e o cuêi</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(9)">Nadando na enchente</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(10)">serrador de Iaiá</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(11)">Reza pra S. José</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(12)">Boilé</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(13)">Piranha</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(14)">Jovina</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(15)">Ronda - carangueijo num é peixe</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(16)">Passei no pé de laranja</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(17)">candarim de sinhá</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(18)">barbuleta preta</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(19)">Menino nao maltrata essa nega</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(20)">sodade do ejerce</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(21)">castelo mal assombrado</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(22)">Mariquinha da beira do rio</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(23)">Tataíra</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(24)">Chico chico</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(25)">Bendito do Espirito Santo</a></li>
+    <li><a href="#" class="link" onclick="setAudioAndFocus(26)">Benção de papai, de mamae, de vovó</a></li>
+</ul>
+<audio id="audioPlayer" controls tabindex="0">
+    <source src="audiosinfanciascalunga/Oreiesuasfilhashistoria.mp3" type="audio/mp3">
+</audio>
+<section class="nav-buttons">
+    <button class="nav-button" onclick="previousAudio()">Anterior</button>
+    <br>
+    <button class="nav-button" onclick="nextAudio()">Próximo</button>
+</section>
+<section id="audioFeedback" aria-live="assertive" style="position: absolute; left: -9999px;"></section>
+</main>
 
 <footer class="footer rectangle-7">
     <section id="contato" aria-labelledby="contato-heading">
@@ -115,6 +123,6 @@
     </footer>
 </section> 
 <script src="accessibility.js"></script>
-    <script src="audios.js"></script>
+<script src="infanciascalunga.js"></script>
 </body>
 </html>

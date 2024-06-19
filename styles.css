@@ -94,7 +94,6 @@ body {
 .header {
     background: #FFFCF6;
     display: flex;
-    position: absolute;
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
@@ -296,7 +295,7 @@ p {
     color: #FFFFFF;
     cursor: pointer;
     font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 700;
     line-height: 24px;
     opacity: 1;

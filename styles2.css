@@ -21,24 +21,24 @@
 /* Skip Links */
 .skip-link {
     position: absolute;
-    left: -9999rem;
+    left: -9999px;
     top: auto;
-    width: 1rem;
-    height: 1rem;
+    width: 1px;
+    height: 1px;
     overflow: hidden;
 }
 
 .skip-link:focus {
-    left: 10rem;
-    top: 10rem;
+    left: 10px;
+    top: 10px;
     width: auto;
     height: auto;
-    font-size: 24rem;
-    padding: 10rem;
+    font-size: 1.5rem;
+    padding: 10px;
     background: #fff;
     color: #000;
-    border: 2rem solid #000;
-    border-radius: 5rem;
+    border: 2px solid #000;
+    border-radius: 5px;
     z-index: 1000;
     text-decoration: none;
 }

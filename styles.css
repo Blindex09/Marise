@@ -59,7 +59,7 @@ body {
     font-family: Inter;
     right: 10px;
     z-index: 1000;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background: white;
     padding: 10px;
     border: 2px solid #E0AE31;
@@ -104,7 +104,6 @@ body {
     left: 32px;
     top: 12px;
 }
-
 /* Nav List */
 .nav-list {
     text-align: center;
@@ -116,11 +115,14 @@ body {
     padding-top: 16px;
     padding-left: 0;
 }
+nav{
+margin-left: 50px;
+}
 
 
 .nav-list a {
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #485652;
     padding: 8px;
     font-weight: 700;
@@ -145,7 +147,6 @@ body {
 
 
 h2{
-    width: 100%;
     max-width: 916px;
     margin: 32px 20%;
     font-family: 'Abel', serif;
@@ -339,7 +340,7 @@ p {
 @media (max-width: 992px) {
     .text-content,
     .text-content-small {
-        font-size: 18rem;
+        font-size: 1rem;
         line-height: 28px;
     }
 
@@ -371,13 +372,6 @@ p {
         margin-bottom: 5px;
     }
 
-    .ellipse-5,
-    .ellipse-6,
-    .ellipse-7,
-    .ellipse-8 {
-        width: 40px;
-        height: 40px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -413,14 +407,6 @@ p {
     .accessibility-buttons button {
         width: 100%;
         margin-bottom: 5px;
-    }
-
-    .ellipse-5,
-    .ellipse-6,
-    .ellipse-7,
-    .ellipse-8 {
-        width: 35px;
-        height: 35px;
     }
 }
 

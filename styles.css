@@ -9,35 +9,40 @@ body {
     margin: 0 auto;
     height: auto;
     background: #FFFFFF;
-    font-family: 'Inter', serif;
+    font-family: Inter;
 }
 
 /* Accessibility Buttons */
 .accessibility-buttons {
+    list-style-type: none;
     position: fixed;
     top: 50rem;
     right: 10rem;
     z-index: 1000;
     background: #fff;
     padding: 10rem;
+    color: #485652;
     text-align: center;
     border-radius: 5rem;
 }
 
 .accessibility-buttons button {
+    list-style-type: none;
     display: block;
     margin-bottom: 5rem;
     padding: 10rem;
     font-size: 20rem;
     background: white;
     color: #485652;
-    font-family: 'Inter', serif;
     border: none;
-    text-align: center;
     width: 100%;
     border-radius: 3rem;
     cursor: pointer;
-    text-decoration: underline;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24.2rem;
+    text-align: left;
+    text-decoration: none;
 }
 
 .accessibility-buttons button:hover,
@@ -49,7 +54,7 @@ body {
 #accessibilityButton {
     position: fixed;
     top: 10rem;
-    font-family: 'Inter', serif;
+    font-family: Inter;
     right: 10rem;
     z-index: 1000;
     font-size: 20rem;
@@ -57,44 +62,10 @@ body {
     padding: 10rem;
     border: 2rem solid #E0AE31;
     border-radius: 5rem;
-}
-#accessibilityButton1 {
-    position: fixed;
-    top: 10rem;
-    right: 10rem;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24rem;
-    line-height: 29px;
-    color: #000000;
-    text-decoration: underline;
-    padding: 8px;
-}
-
-/* Skip Links */
-.skip-link {
-    position: absolute;
-    left: -9999rem;
-    top: auto;
-    width: 1rem;
-    height: 1rem;
-    overflow: hidden;
-}
-
-.skip-link:focus {
-    left: 10rem;
-    top: 10rem;
-    width: auto;
-    height: auto;
-    font-size: 24rem;
-    padding: 10rem;
-    background: #fff;
-    color: #000;
-    border: 2rem solid #000;
-    border-radius: 5rem;
-    z-index: 1000;
-    text-decoration: none;
+    list-style-type: none;
+    font-weight: 700;
+    line-height: 24.2rem;
+    color: #485652;
 }
 
 /* Rectangle 3 */
@@ -146,14 +117,15 @@ body {
 }
 
 .nav-list a {
-    font-family: 'Inter', serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 24rem;
-    line-height: 29px;
+    font-size: 20rem;
     color: #485652;
-    text-decoration: underline;
     padding: 8px;
+    font-weight: 700;
+    line-height: 24.2rem;
+    text-align: center;
+    text-decoration: none;
+
 }
 
 .nav-list a:hover,
@@ -234,7 +206,7 @@ p {
     width: 100%;
     max-width: 762rem;
     margin: 0 20%;
-    font-family: 'Inter', serif;
+    font-family: Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 20rem;
@@ -260,8 +232,6 @@ p {
 .link-title-small:hover,
 .link-title-small:focus {
     text-decoration: none;
-    background: #f4c57f;
-    border-radius: 5px;
 }
 
 /* Rectangle 5 */
@@ -301,7 +271,7 @@ p {
 .numbertext {
     color: #000000;
     text-align: center;
-    font-family: 'Inter', serif;
+    font-family: Inter;
     font-style: normal;
     font-size: 16rem;
     margin-top: 10px;
@@ -490,4 +460,9 @@ p {
 /* Mostrar apenas a imagem ativa */
 .slide.active {
     display: block;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

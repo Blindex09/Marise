@@ -1,0 +1,470 @@
+/* Estilos Gerais */
+html {
+    font-size: 6.25%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: #FFFFFF;
+    font-family: Inter;
+}
+/* Accessibility Buttons */
+.accessibility-buttons {
+    list-style-type: none;
+    position: fixed;
+    top: 50rem;
+    right: 10rem;
+    z-index: 1000;
+    background: #fff;
+    padding: 10rem;
+    color: #485652;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+.accessibility-buttons button {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5rem;
+    padding: 10rem;
+    font-size: 20rem;
+    background: white;
+    color: #485652;
+    border: none;
+    width: 100%;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24.2rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.accessibility-buttons button:hover,
+.accessibility-buttons button:focus {
+    background: #e3b555;
+    text-decoration: none;
+}
+
+#accessibilityButton {
+    position: fixed;
+    top: 10rem;
+    font-family: Inter;
+    right: 10rem;
+    z-index: 1000;
+    font-size: 20rem;
+    background: white;
+    padding: 10rem;
+    border: 2rem solid #E0AE31;
+    border-radius: 5rem;
+    list-style-type: none;
+    font-weight: 700;
+    line-height: 24.2rem;
+    color: #485652;
+}
+
+/* Rectangle 3 */
+#sobre-mim {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: #E5D6B7;
+}
+section {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+/* Rectangle 4 */
+#projetos {
+    width: 100%;
+    height: auto;
+    background: #BD5E36;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Rectangle 4 */
+#projetos a {
+    color: white;
+}
+
+/* Rectangle 1 */
+.header {
+    background: #FFFCF6;
+    display: flex;
+    position: absolute;
+}
+
+/* Logosite_350x100_horizontal2-300x51 1 */
+.logo {
+    position: absolute;
+    left: 32px;
+    top:12px;
+}
+
+/* Nav List */
+.nav-list {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    padding-top: 16px;
+    padding-left: 0;
+}
+
+
+.nav-list a{
+    font-style: normal;
+    font-size: 20rem;
+    color: #485652;
+    padding: 8px;
+    font-weight: 700;
+    line-height: 24.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus{
+    text-decoration: none;
+    border-top: 8px solid #E0AE31;
+}
+
+/* Project List */
+.project-list,
+.audiodescricao-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* SOBRE */
+h2 {
+    font-size: 32rem;
+    width: 100%;
+    max-width: 916rem;
+    margin: 32rem 20%;
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+#assista-o-documentario{
+    background: #E0AE31;
+}
+h1 {
+    font-size: 32rem;
+    width: 100%;
+    max-width: 916rem;
+    margin: 32rem 20%;
+    font-family: Abel;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+}
+
+.contact-logo-item {
+    object-fit: contain;
+    height: 64px;
+    margin: 0 12px;
+}
+
+
+/* Rectangle 2 */
+.rectangle-2 {
+    width: 100%;
+    height: 14px;
+    background: #F4C57F;
+}
+
+/* História oral, a voz plena no tempo presente. */
+.historias {
+    width: 100%;
+    max-width: 916rem;
+    margin: 32px auto;
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36rem;
+    line-height: 46rem;
+    text-align: center;
+}
+
+/* Rectangle 6 */
+.rectangle-6 {
+    width: 100%;
+    height: auto;
+    background: #FFFCF6;
+    padding: 20px 0;
+}
+
+
+
+p {
+    width: 100%;
+    max-width: 762rem;
+    margin: 0 20%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 30rem;
+}
+
+.link-title,
+.link-title-small {
+    width: 100%;
+    max-width: 632rem;
+    margin: 0 20%;
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24rem;
+    line-height: 60rem;
+    text-decoration: underline;
+}
+
+.link-title:hover,
+.link-title:focus,
+.link-title-small:hover,
+.link-title-small:focus {
+    text-decoration: none;
+}
+
+/* Rectangle 5 */
+#audiodescricao {
+    width: 100%;
+    height: auto;
+    background: #727F3A;
+    color: white;
+    padding: 20px 0;
+}
+
+#audiodescricao a {
+    color: white;
+}
+
+.slides {
+    margin-top: 10px;
+}
+
+.carousel-image {
+    object-fit: scale-down;
+    height: 400rem;
+    width: 100%;
+    max-width: 741rem;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #485652;
+    padding: 20px 0;
+    color: white;
+}
+
+.numbertext {
+    color: #000000;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 16rem;
+    margin-top: 10px;
+}
+
+
+
+
+/* Social Links */
+.social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 5rem;
+    text-align: center;
+}
+
+
+/* CSS */
+.button {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10rem;
+}
+
+.social-links a {
+    font-size: 18rem;
+    text-decoration: underline;
+    padding: 5rem;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    text-decoration: none;
+    background: #fff;
+
+    border-radius: 5rem;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    margin: -1rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .accessibility-buttons {
+        right: 10rem;
+        top: 10rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-content,
+    .text-content-small {
+        font-size: 18rem;
+        line-height: 28rem;
+    }
+
+    .link-title,
+    .link-title-small {
+        font-size: 22rem;
+        line-height: 28rem;
+        margin: 0 20%;
+    }
+
+
+    .accessibility-buttons button {
+        font-size: 14rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 300rem;
+    }
+
+    .accessibility-buttons {
+        width: 100%;
+        padding: 10rem 5rem;
+    }
+
+    .accessibility-buttons button {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .ellipse-5,
+    .ellipse-6,
+    .ellipse-7,
+    .ellipse-8 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .historias,
+    .projetos-title,
+    .galeria-title,
+    .audio-descricao-title {
+        font-size: 28rem;
+        line-height: 36rem;
+    }
+
+    .text-content,
+    .text-content-small {
+        font-size: 16rem;
+        line-height: 26rem;
+    }
+
+    .link-title,
+    .link-title-small {
+        font-size: 20rem;
+        line-height: 26rem;
+    }
+
+    .logo img {
+        max-width: 250rem;
+    }
+
+    .accessibility-buttons {
+        width: 100%;
+        padding: 10rem 5rem;
+    }
+
+    .accessibility-buttons button {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .ellipse-5,
+    .ellipse-6,
+    .ellipse-7,
+    .ellipse-8 {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Ocultar todas as imagens inicialmente */
+.slide {
+    display: none;
+}
+
+/* Mostrar apenas a imagem ativa */
+.slide.active {
+    display: block;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

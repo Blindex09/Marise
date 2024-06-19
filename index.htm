@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles2.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
 <button id="accessibilityButton">MENU DE ACESSIBILIDADE</button>
@@ -46,10 +45,11 @@
 <a class="skip-link" href="#projetos-heading">Pular para o conteúdo principal</a>
 <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
 <header>
+    <a href="index.htm" class="logo">
+        <img src="Logosite_350x100_horizontal2-300x51.png" alt="">
+        <span class="sr-only">Página Inicial</span>
+    </a>
     <nav>
-        <a href="index.htm" class="logo">
-            <img src="Logosite_350x100_horizontal2-300x51.png" alt="Página Inicial" />
-        </a>
         <ul class="nav-list">
             <li><a id="sobre-mim-link" class="sobre" href="#sobre-mim">SOBRE MIM</a></li>
             <li><a class="projetos" href="#projetos">PROJETOS</a></li>
@@ -95,9 +95,9 @@
         </ul>
     </section>
     <section id="audiodescricao" aria-labelledby="audiodescricao-heading">
-        <h2 id="audiodescricao-heading">Audiodescrição</h2>
-        <article>
-            <p class="audio-descricao-text">A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com
+            <h2 id="audiodescricao-heading" class="audio-descricao-title">Audiodescrição</h2>
+            <article>
+           <p class="audio-descricao-text">A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com
                 baixa visão que, por esse caminho, pode acessar conteúdos imagéticos...</p>
             <p class="audio-descricao-text">Nesses trabalhos atuei como audiodescritora roteirista, elaborando o texto
                 que descreve as telas de artistas visuais e gravando em estúdio. Em alguns momentos, trabalhei com

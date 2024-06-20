@@ -8,7 +8,7 @@ body {
     width: 100%;
     margin: 0 auto;
     height: auto;
-    background: #FFFFFF;
+    background: #FFFCF6;;
     font-family: Inter;
 
 }
@@ -49,7 +49,7 @@ body {
 
 .accessibility-buttons button:hover,
 .accessibility-buttons button:focus {
-    background: #e3b555;
+    background: #E5D6B7;
     text-decoration: none;
 }
 
@@ -71,6 +71,7 @@ body {
 }
 
 /* Rectangle 3 */
+#main-content,
 #sobre-mim {
     width: 100%;
     height: auto;
@@ -92,7 +93,7 @@ body {
     color: white;
 }
 
-header {
+.header2 {
     width: 100%;
     position: fixed;
     align-content: center;
@@ -144,7 +145,6 @@ header {
     margin: 0;
     padding: 0;
 }
-
 
 h2{
     max-width: 916px;
@@ -218,7 +218,7 @@ p {
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 60px;
     text-decoration: underline;
 }

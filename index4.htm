@@ -12,7 +12,7 @@
 </head>
 <body>
     <button id="accessibilityButton">Menu de Acessibilidade</button>
-    <section class="accessibility-buttons" id="menuAccessibility" style="display: none;">
+    <section class="accessibility-buttons" id="menuAccessibility" style="display: none;margin-top: 10px">
         <ul>
             <li><button id="font-increase">Aumentar Fonte</button></li>
             <li><button id="font-decrease">Diminuir Fonte</button></li>
@@ -26,7 +26,7 @@
     </section>
     <section id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></section>
 <a class="skip-link" href="#projeto-titulo">Pular para o conteúdo principal</a>
-<br>
+<a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
     <header class="header2">
         <a href="index.htm" class="logo" >
             <img src="Logosite_350x100_horizontal2-300x51.png" alt="">
@@ -57,9 +57,9 @@
                 Coordenação interna de Rodrigo Ramassote e externa de Marise Barbosa. As fotos foram doadas por Juvenal Pereira e fazem parte do acervo do Iphan-MA.
             </blockquote>
         </section>
-<section id="conteudo-cantado-caixeiras" aria-labelledby="projeto-titulo">
+<section id="conteúdo-cantado-caixeiras" aria-labelledby="Ouça o conteúdo">
 <h2 class="h2subpages">Ouça o conteúdo das Caixeiras do Divino de Alcântara</h2>
-<ul>
+<ul class=audiolist>
     <li><a href="#" class="link" onclick="setAudioAndFocus(0)">aimeudeus</a></li>
     <li><a href="#" class="link" onclick="setAudioAndFocus(1)">ajoelheimeudeus</a></li>
     <li><a href="#" class="link" onclick="setAudioAndFocus(2)">serenodamadrugada</a></li>
@@ -141,7 +141,6 @@
 
         <p style="margin: 0 auto; text-align: center">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
     </footer>
-</section>    
 
 <script src="accessibility.js"></script>
 <script src="caixeiras.js"></script>

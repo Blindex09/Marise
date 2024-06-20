@@ -1,6 +1,6 @@
 /* Estilos Gerais */
 html {
-    font-size: 6.25%;
+    font-size: 100%;
 }
 
 body {
@@ -8,39 +8,41 @@ body {
     width: 100%;
     margin: 0 auto;
     height: auto;
-    background: #FFFFFF;
+    background: #FFFCF6;;
     font-family: Inter;
+
 }
+
 /* Accessibility Buttons */
 .accessibility-buttons {
     list-style-type: none;
     position: fixed;
-    top: 50rem;
-    right: 10rem;
+    top: 50px;
+    right: 10px;
     z-index: 1000;
     background: #fff;
-    padding: 10rem;
+    padding: 10px;
     color: #485652;
     text-align: center;
-    border-radius: 5rem;
+    border-radius: 5px;
 }
 
 .accessibility-buttons button {
     text-transform: uppercase;
     list-style-type: none;
     display: block;
-    margin-bottom: 5rem;
-    padding: 10rem;
-    font-size: 20rem;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 1.25rem;
     background: white;
     color: #485652;
     border: none;
     width: 100%;
-    border-radius: 3rem;
+    border-radius: 3px;
     cursor: pointer;
     font-style: normal;
     font-weight: 700;
-    line-height: 24.2rem;
+    line-height: 24.2px;
     text-align: left;
     text-decoration: none;
 }
@@ -53,38 +55,30 @@ body {
 
 #accessibilityButton {
     position: fixed;
-    top: 10rem;
+    top: 10px;
     font-family: Inter;
-    right: 10rem;
+    right: 10px;
     z-index: 1000;
-    font-size: 20rem;
+    font-size: 1rem;
     background: white;
-    padding: 10rem;
-    border: 2rem solid #E0AE31;
-    border-radius: 5rem;
+    padding: 10px;
+    border: 2px solid #E0AE31;
+    border-radius: 5px;
     list-style-type: none;
     font-weight: 700;
-    line-height: 24.2rem;
+    line-height: 24.2px;
     color: #485652;
-    text-transform: uppercase;
-
-}
-.iframe{
-    align-content: center;
 }
 
 /* Rectangle 3 */
+#main-content,
 #sobre-mim {
     width: 100%;
     height: auto;
-    padding: 20px 0;
     background: #E5D6B7;
+    padding: 100px 0;
 }
-section {
-    height: auto;
-    padding: 20px 0;
-    margin-top: 15px;
-}
+
 /* Rectangle 4 */
 #projetos {
     width: 100%;
@@ -99,20 +93,21 @@ section {
     color: white;
 }
 
-/* Rectangle 1 */
-.header {
+header {
+    width: 100%;
+    position: fixed;
+    align-content: center;
     background: #FFFCF6;
-    display: flex;
-    position: absolute;
+    display:flex;
+    flex-direction: row;
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
 .logo {
-    position: absolute;
+    /*position: absolute;*/
     left: 32px;
-    top:12px;
+    top: 12px;
 }
-
 /* Nav List */
 .nav-list {
     text-align: center;
@@ -126,19 +121,19 @@ section {
 }
 
 
-.nav-list a{
+.nav-list a {
     font-style: normal;
-    font-size: 20rem;
+    font-size: 1rem;
     color: #485652;
     padding: 8px;
     font-weight: 700;
-    line-height: 24.2rem;
+    line-height: 24.2px;
     text-align: center;
     text-decoration: none;
 }
 
 .nav-list a:hover,
-.nav-list a:focus{
+.nav-list a:focus {
     text-decoration: none;
     border-top: 8px solid #E0AE31;
 }
@@ -151,31 +146,14 @@ section {
     padding: 0;
 }
 
-
-
-/* SOBRE */
-h2 {
-    font-size: 32rem;
-    width: 100%;
-    max-width: 916rem;
-    margin: 32rem 20%;
+.h2subpages{
+    max-width: 916px;
+    margin: 32px 20%;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    text-align: left;
-}
-#assista-o-documentario{
-    background: #E0AE31;
-}
-h1 {
-    font-size: 32rem;
-    width: 100%;
-    max-width: 916rem;
-    margin: 32rem 20%;
-    font-family: Abel;
-    font-style: normal;
-    font-weight: 400;
     text-align: center;
+    font-size: 2rem;
 }
 
 .contact-list {
@@ -188,7 +166,7 @@ h1 {
 
 .contact-logo-item {
     object-fit: contain;
-    height: 64px;
+    height: 43px;
     margin: 0 12px;
 }
 
@@ -203,13 +181,13 @@ h1 {
 /* História oral, a voz plena no tempo presente. */
 .historias {
     width: 100%;
-    max-width: 916rem;
+    max-width: 916px;
     margin: 32px auto;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36rem;
-    line-height: 46rem;
+    font-size: 2rem;
+    line-height: 46px;
     text-align: center;
 }
 
@@ -222,27 +200,38 @@ h1 {
 }
 
 
-
 p {
     width: 100%;
-    max-width: 762rem;
+    max-width: 762px;
     margin: 0 20%;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    line-height: 30rem;
+    line-height: 30px;
+    text-align: center;
+}
+blockquote {
+    width: 100%;
+    max-width: 762px;
+    margin: 0 20%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    color: #485652;
+    line-height: 30px;
+    text-align: center;
 }
 
 .link-title,
 .link-title-small {
     width: 100%;
-    max-width: 632rem;
+    max-width: 632px;
     margin: 0 20%;
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24rem;
-    line-height: 60rem;
+    font-size: 1.5rem;
+    line-height: 60px;
     text-decoration: underline;
 }
 
@@ -272,13 +261,14 @@ p {
 
 .carousel-image {
     object-fit: scale-down;
-    height: 400rem;
+    height: 400px;
     width: 100%;
-    max-width: 741rem;
+    max-width: 741px;
     margin: 0 auto;
 }
 
-footer {
+/* Rectangle 7 */
+.rectangle-7 {
     width: 100%;
     height: auto;
     background: #485652;
@@ -286,23 +276,13 @@ footer {
     color: white;
 }
 
-.numbertext {
-    color: #000000;
-    text-align: center;
-    font-family: Inter;
-    font-style: normal;
-    font-size: 16rem;
-    margin-top: 10px;
-}
-
-
 
 
 /* Social Links */
 .social-links {
     list-style-type: none;
     margin: 0;
-    padding: 5rem;
+    padding: 5px;
     text-align: center;
 }
 
@@ -315,8 +295,8 @@ footer {
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
-    font-size: 16px;
+    font-family: Inter;
+    font-size: 16rem;
     font-weight: 700;
     line-height: 24px;
     opacity: 1;
@@ -332,13 +312,13 @@ footer {
 
 .social-links li {
     display: inline-block;
-    margin-right: 10rem;
+    margin-right: 10px;
 }
 
 .social-links a {
     font-size: 18rem;
     text-decoration: underline;
-    padding: 5rem;
+    padding: 5px;
 }
 
 .social-links a:hover,
@@ -346,16 +326,16 @@ footer {
     text-decoration: none;
     background: #fff;
 
-    border-radius: 5rem;
+    border-radius: 5px;
 }
 
 /* Screen Reader Only */
 .sr-only {
     position: absolute;
-    width: 1rem;
-    height: 1rem;
+    width: 1px;
+    height: 1px;
     padding: 0;
-    margin: -1rem;
+    margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
@@ -364,53 +344,46 @@ footer {
 /* Media Queries */
 @media (max-width: 1200px) {
     .accessibility-buttons {
-        right: 10rem;
-        top: 10rem;
+        right: 10px;
+        top: 10px;
     }
 }
 
 @media (max-width: 992px) {
     .text-content,
     .text-content-small {
-        font-size: 18rem;
-        line-height: 28rem;
+        font-size: 1rem;
+        line-height: 28px;
     }
 
     .link-title,
     .link-title-small {
-        font-size: 22rem;
-        line-height: 28rem;
+        font-size: 1.375rem;
+        line-height: 28px;
         margin: 0 20%;
     }
 
 
     .accessibility-buttons button {
-        font-size: 14rem;
+        font-size: 0.875rem;
     }
 }
 
 @media (max-width: 768px) {
     .logo img {
-        max-width: 300rem;
+        max-width: 300px;
     }
 
     .accessibility-buttons {
         width: 100%;
-        padding: 10rem 5rem;
+        padding: 10px 5px;
     }
 
     .accessibility-buttons button {
         width: 100%;
-        margin-bottom: 5rem;
+        margin-bottom: 5px;
     }
 
-    .ellipse-5,
-    .ellipse-6,
-    .ellipse-7,
-    .ellipse-8 {
-        width: 40px;
-        height: 40px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -418,42 +391,34 @@ footer {
     .projetos-title,
     .galeria-title,
     .audio-descricao-title {
-        font-size: 28rem;
-        line-height: 36rem;
+        font-size: 1.75rem;
+        line-height: 36px;
     }
 
     .text-content,
     .text-content-small {
-        font-size: 16rem;
-        line-height: 26rem;
+        font-size: 0.875rem;
+        line-height: 26px;
     }
 
     .link-title,
     .link-title-small {
-        font-size: 20rem;
-        line-height: 26rem;
+        font-size: 1.25rem;
+        line-height: 26px;
     }
 
     .logo img {
-        max-width: 250rem;
+        max-width: 250px;
     }
 
     .accessibility-buttons {
         width: 100%;
-        padding: 10rem 5rem;
+        padding: 10px 5px;
     }
 
     .accessibility-buttons button {
         width: 100%;
-        margin-bottom: 5rem;
-    }
-
-    .ellipse-5,
-    .ellipse-6,
-    .ellipse-7,
-    .ellipse-8 {
-        width: 35px;
-        height: 35px;
+        margin-bottom: 5px;
     }
 }
 
@@ -466,7 +431,8 @@ footer {
 .slide.active {
     display: block;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;

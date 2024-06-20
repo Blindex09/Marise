@@ -27,24 +27,25 @@
     <section id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></section>
 <a class="skip-link" href="#projeto-titulo">Pular para o conteúdo principal</a>
 <br>
-<a class="skip-link" href="#contato-heading">Pular para o rodapé</a>    <a href="index.htm" class="logo">
-        <img src="Logosite_350x100_horizontal2-300x51.png" alt="">
-        <span class="sr-only">Página Inicial</span>
-    </a>
-    <header>
-        <nav>
-            <ul>
-                                <li><a id="sobre-mim-link" class="sobre" href="index.htm#sobre-mim">Sobre Mim</a>
-<li><a class="projetos" href="index.htm#projetos">Projetos</a></li>
-                <li><a class="audio-descricao" href="index.htm#audiodescricao">Audiodescrição</a></li>
-                <li><a class="contato" href="index.htm#contato-heading">Contato</a></li>
+    <header class="header2">
+        <a href="index.htm" class="logo" >
+            <img src="Logosite_350x100_horizontal2-300x51.png" alt="">
+            <span class="sr-only">Página Inicial</span>
+        </a>
+        <nav style="margin-left: 50px;">
+            <ul class="nav-list">
+                <li><a id="sobre-mim-link" class="sobre" href="./index.htm/#sobre-mim">SOBRE MIM</a></li>
+                <li><a class="projetos" href="./index.htm/#projetos">PROJETOS</a></li>
+                <li><a class="audio-descricao" href="./index.htm/#audiodescricao">AUDIODESCRIÇÃO</a></li>
+                <li><a class="contato" href="./index.htm/#contato">CONTATO</a></li>
             </ul>
         </nav>
     </header>
-<a href="#projeto-titulo">Sobre o Projeto</a>    
+<a href="#projeto-titulo">Sobre o Projeto</a>
 <main>
         <section id="main-content" aria-labelledby="projeto-titulo">
-            <h1 id="projeto-titulo">Sobre o Projeto</h1>
+            <h1 id="projeto-titulo" class="visually-hidden">Sobre o Projeto</h1>
+            <h2 class="h2subpages">No bater da minha caixa estou convidando as foliãs</h2>
             <p>
                 Um livreto e um CD duplo com o repertório musical e ritual das Caixeiras de Alcântara. Gravado junto com as Caixeiras; Anica, Ana Benedita Ferreira e Marlene Silva.
                 Realizado em Alcântara em encontros para conversas e gravações três vezes por semana durante os meses de setembro a dezembro de 2007. Nesses encontros recebemos visitas de pessoas moradoras da cidade e de D. Severina Pires Belfort, Caixeira de Santa Rosa dos Pretos em Itapecuru Mirim.
@@ -56,8 +57,8 @@
                 Coordenação interna de Rodrigo Ramassote e externa de Marise Barbosa. As fotos foram doadas por Juvenal Pereira e fazem parte do acervo do Iphan-MA.
             </blockquote>
         </section>
-
-<h2>Ouça o conteúdo das Caixeiras do Divino de Alcântara</h2>
+<section id="conteudo-cantado-caixeiras" aria-labelledby="projeto-titulo">
+<h2 class="h2subpages">Ouça o conteúdo das Caixeiras do Divino de Alcântara</h2>
 <ul>
     <li><a href="#" class="link" onclick="setAudioAndFocus(0)">aimeudeus</a></li>
     <li><a href="#" class="link" onclick="setAudioAndFocus(1)">ajoelheimeudeus</a></li>
@@ -84,7 +85,7 @@
     <li><a href="#" class="link" onclick="setAudioAndFocus(22)">aeavemariaaeavemaria</a></li>
     <li><a href="#" class="link" onclick="setAudioAndFocus(23)">arreiaacaixanochao</a></li>
 </ul>
-
+    </section>
 <audio id="audioPlayer" controls tabindex="0">
     <source src="audiosinfanciascalunga/Oreiesuasfilhashistoria.mp3" type="audio/mp3">
 </audio>
@@ -96,20 +97,49 @@
 <section id="audioFeedback" aria-live="assertive" style="position: absolute; left: -9999px;"></section>
 </main>
 
-	    <section id="redessociais" aria-labelledby="contato-heading">
-<h2 id="contato-heading">Redes sociais</h2>
-<footer>
-            <ul>
-                <li><a href="https://wa.me/yourwhatsapplink" target="_blank">WhatsApp. O link Abre em uma nova janela.</a></li>
-                <li><a href="https://www.youtube.com/youryoutubelink" target="_blank">YouTube. O link Abre em uma nova janela.</a></li>
-                <li><a href="https://www.facebook.com/yourfacebooklink" target="_blank">Facebook. O link Abre em uma nova janela.</a></li>
-                <li><a href="https://www.instagram.com/yourinstagramlink" target="_blank">Instagram. O link Abre em uma nova janela.</a></li>
+    <footer class="rectangle-7">
+        <section id="contato" aria-labelledby="contato-heading">
+            <h2 id="contato-heading" class="visually-hidden">Redes sociais</h2>
+            <p class="visually-hidden">Conecte-se conosco através das seguintes plataformas e fique por dentro das
+                últimas atualizações e eventos.</p>
+            <ul class="contact-list">
+                <li>
+                    <a href="https://wa.me/5561981714140" target="_blank">
+                        <img class="contact-logo-item"
+                             src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/WhatsApp_white.png?raw=true"
+                             alt="WhatsApp. O link abre em uma nova janela."/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@marisegloriabarbosa1755" target="_blank">
+                        <img class="contact-logo-item"
+                             src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Youtube_white.png?raw=true"
+                             alt="Youtube. O link abre em uma nova janela."/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/marise.barbosa.7" target="_blank">
+                        <img class="contact-logo-item"
+                             src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Facebook_white.png?raw=true"
+                             alt="Facebook. O link abre em uma nova janela."/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/marise.barbosa.7/" target="_blank">
+                        <img class="contact-logo-item"
+                             src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Instagram_white.png?raw=true"
+                             alt="Instagram. O link abre em uma nova janela."/>
+                    </a>
+                </li>
             </ul>
-</section>
+        </section>
 
-<section> 
-<a href="#sobre-mim-link" class="back-to-menu" aria-label="Voltar para o menu de navegação" onclick="focusFirstMenuItem()">Voltar ao menu</a>
-        <p>&copy; 2023 Marise Glória Barbosa. Todos os direitos reservados.</p>
+        <section>
+            <a href="#sobre-mim-link" class="visually-hidden" aria-label="Voltar para o menu de navegação"
+               onclick="focusFirstMenuItem()">Voltar ao menu</a>
+        </section>
+
+        <p style="margin: 0 auto; text-align: center">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
     </footer>
 </section>    
 

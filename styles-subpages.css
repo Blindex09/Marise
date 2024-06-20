@@ -54,6 +54,7 @@ body {
 }
 
 #accessibilityButton {
+    text-transform: uppercase;
     position: fixed;
     top: 10px;
     font-family: Inter;
@@ -72,12 +73,13 @@ body {
 
 
 /* Rectangle 3 */
+#conteudo-principal,
 #main-content,
 #sobre-mim {
     width: 100%;
     height: auto;
     background: #E5D6B7;
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
 /* Rectangle 4 */
@@ -101,6 +103,7 @@ header {
     background: #FFFCF6;
     display:flex;
     flex-direction: row;
+    top: 0;
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
@@ -209,19 +212,17 @@ header {
 
 
 p {
-    width: 100%;
-    max-width: 762px;
-    margin: 0 20%;
+    margin: 0 10%;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
+    padding-top: 10px;
 }
 blockquote {
-    width: 100%;
-    max-width: 762px;
-    margin: 0 20%;
+    max-width: 100%;
+    margin: 0 10%;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -258,6 +259,14 @@ blockquote {
     background: #727F3A;
     color: white;
     padding: 20px 0;
+}
+
+#assista-o-documentario {
+    width: 100%;
+    height: auto;
+    background: #E0AE31;
+    padding: 20px 0;
+    align-content: center;
 }
 
 #audiodescricao a {
@@ -347,6 +356,14 @@ blockquote {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.audio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
 }
 
 /* Media Queries */

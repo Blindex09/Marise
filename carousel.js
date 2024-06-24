@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const status = document.getElementById("carousel-status");
     let index = 0;
     let interval;
+    const descriptionDuration = 8000; // 8 segundos para a descrição
+    const pauseDuration = 3000; // 3 segundos de pausa
 
     function startCarousel() {
-        interval = setInterval(showNextSlide, 15000); // Muda de imagem a cada 15 segundos
+        interval = setInterval(showNextSlide, descriptionDuration + pauseDuration);
         announceStatus(status.textContent);
     }
 
@@ -41,15 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
             slide.classList.remove('active');
         });
         status.textContent = "Carrossel parado";
-        announceStatus(status.textContent);
     }
 
     function updateStatus() {
         const currentSlide = slides[index];
-        const descriptionId = currentSlide.querySelector("img").getAttribute("aria-describedby");
-        const description = document.getElementById(descriptionId).textContent;
-        status.textContent = `Slide ${index + 1}: ${description}`;
-        announceStatus(status.textContent);
+        const description = currentSlide.querySelector("img").alt;
+        status.textContent = `Slide ${index + 1} de ${slides.length}: ${description}`;
     }
 
     stopButton.addEventListener("click", stopCarousel);
@@ -73,15 +72,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updateCarousel(); // Atualiza o carrossel imediatamente na carga inicial
-
-    function announceStatus(status) {
-        const announcement = document.createElement('div');
-        announcement.className = 'sr-only';
-        announcement.setAttribute('role', 'alert');
-        announcement.textContent = status;
-        document.body.appendChild(announcement);
-        setTimeout(() => {
-            document.body.removeChild(announcement);
-        }, 1000);
-    }
 });

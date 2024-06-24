@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Acessibilidade: permitir que os botões sejam operados com o teclado
-    [stopButton, prevButton, nextButton].forEach(button => {
+    [stopButton, prevButton, nextButton, startButton].forEach(button => {
         button.addEventListener("keydown", event => {
             if (event.key === "Enter" || event.key === " ") {
                 button.click();
@@ -73,9 +73,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updateCarousel(); // Atualiza o carrossel imediatamente na carga inicial
-    // startCarousel();
-});
 
-function announceStatus(status) {
-    console.log(status);
-}
+    function announceStatus(status) {
+        const announcement = document.createElement('div');
+        announcement.className = 'sr-only';
+        announcement.setAttribute('role', 'alert');
+        announcement.textContent = status;
+        document.body.appendChild(announcement);
+        setTimeout(() => {
+            document.body.removeChild(announcement);
+        }, 1000);
+    }
+});

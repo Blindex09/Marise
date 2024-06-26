@@ -10,6 +10,12 @@
       <link rel="stylesheet" href="../assets/css/styles2.css" />
       <link rel="stylesheet" href="styles.css" />
       <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+      />
+      <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
         rel="stylesheet"
       />
@@ -19,73 +25,189 @@
       />
     </head>
     <body>
-      <button id="accessibilityButton">Menu de Acessibilidade</button>
-      <section
-        class="accessibility-buttons"
-        id="menuAccessibility"
-        style="display: none"
-      >
-        <ul>
-          <li>
-            <button id="font-increase">Aumentar Fonte</button>
-          </li>
-          <li>
-            <button id="font-decrease">Diminuir Fonte</button>
-          </li>
-          <li>
-            <button id="zoom-increase">Aumentar Zoom</button>
-          </li>
-          <li>
-            <button id="zoom-decrease">Diminuir Zoom</button>
-          </li>
-          <li>
-            <button id="contrast-high">Aumentar Contraste</button>
-          </li>
-          <li>
-            <button id="contrast-low">Diminuir Contraste</button>
-          </li>
-          <li>
-            <button id="contrast-normal">Contraste Normal</button>
-          </li>
-          <li>
-            <button id="close-menu">Fechar o menu de acessibilidade</button>
-          </li>
-        </ul>
-      </section>
       <section
         id="accessibilityFeedback"
         aria-live="assertive"
         class="visually-hidden"
-      ></section>
-      <a class="skip-link" href="#titulo-mulheres"
-        >Pular para o conteúdo principal</a
       >
-      <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
-      <header>
-        <a href="../index.htm" class="logo">
-          <img src="../assets/img/logo.png" alt="" />
-          <span class="sr-only">Página Inicial</span>
-        </a>
-        <nav>
-          <ul class="nav-list">
-            <li>
-              <a id="sobre-mim-link" class="sobre" href="#sobre-mim"
-                >SOBRE MIM</a
-              >
-            </li>
-            <li><a class="projetos" href="#projetos">PROJETOS</a></li>
-            <li>
-              <a class="audio-descricao" href="#audiodescricao"
-                >AUDIODESCRIÇÃO</a
-              >
-            </li>
-            <li><a class="contato" href="#contato">CONTATO</a></li>
-          </ul>
-        </nav>
-      </header>
-      <a href="#assista-o-documentario" class="visually-hidden"
-        >Assista o documentário</a
-      >
+        <a class="skip-link" href="#projetos-heading"
+          >Pular para o conteúdo principal</a
+        >
+        <a href="#assista-o-documentario">Assista o documentário</a>
+        <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+      </section>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/img/logo.png"
+              class="logo-site"
+              alt="Logo Marise Glória Barbosa"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >SOBRE</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="btn-projetos"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PROJETOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="btn-projetos">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./documentario-caixeiras.htm"
+                    >
+                      Umas Mulheres que dão no Couro: As Caixeiras do Divino no
+                      Maranhão
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./infancias-kalunga.htm">
+                      O Que é O Que é? Infâncias Kalunga
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./conteudo-musical-caixeiras.htm"
+                    >
+                      No bater da minha caixa estou convidando as foliôas
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="btn-audiodescricao"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  AUDIODESCRIÇÃO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="btn-audiodescricao">
+                  <li>
+                    <a class="dropdown-item" href="./projeto-faunas.htm"
+                      >Fauna Brasileira em Cores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./o-coracao-do-brasil.htm"
+                      >O Coração do Brasil</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./chapada-dos-veadeiros.htm"
+                      >Chapada dos Veadeiros: Povos dos Campos Gerais</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTATOS</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto" aria-hidden="true">
+              <li class="nav-item">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="btn-acessibilidade"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  tabindex="-1"
+                >
+                  ACESSIBILIDADE
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="btn-acessibilidade"
+                >
+                  <a
+                    id="font-increase"
+                    class="dropdown-item dropdown"
+                    href="#"
+                    role="button"
+                    >Aumentar fonte
+                  </a>
+                  <a
+                    id="font-decrease"
+                    class="dropdown-item"
+                    href="#"
+                    role="button"
+                    >Diminuir fonte
+                  </a>
+                  <a
+                    id="zoom-increase"
+                    class="dropdown-item"
+                    href="#"
+                    role="button"
+                    >Aumentar Zoom
+                  </a>
+                  <a
+                    id="zoom-decrease"
+                    class="dropdown-item"
+                    href="#"
+                    role="button"
+                    >Diminuir Zoom
+                  </a>
+                  <a
+                    id="contrast-high"
+                    class="dropdown-item"
+                    href="#"
+                    role="button"
+                    >Aumentar Contraste
+                  </a>
+                  <a
+                    id="contrast-low"
+                    class="dropdown-item"
+                    href="#"
+                    role="button"
+                    >Diminuir Contraste
+                  </a>
+                  <a
+                    id="contrast-normal"
+                    class="dropdown-item"
+                    href="#"
+                    role="button"
+                    >Contraste Normal
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <main id="conteudo-principal" style="background: #e5d6b7">
         <h1 id="titulo-mulheres">
           Umas mulheres que dão no couro: As Caixeiras do Divino no Maranhão
@@ -219,6 +341,11 @@
         </p>
       </footer>
       <script src="../assets/js/accessibility.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
     </body>
   </html>
 </DOCTYPE>

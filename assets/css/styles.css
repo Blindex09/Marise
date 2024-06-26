@@ -121,11 +121,7 @@ h1, h2{
 }
 /* Nav List */
 
-.nav-link:hover{
-    text-decoration: none;
-    border-top: 3px solid #E0AE31;
-    margin-top: -3px;
-}
+
 
 .dropdown-toggle::after{
     border-top: .3em solid #E0AE31 !important;

@@ -23,31 +23,33 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   const accessibilityButton = document.getElementById("accessibilityButton");
-  const menu = document.getElementById("menuAccessibility");
-  let lastStatus = "";
+  if (accessibilityButton) {
+    const menu = document.getElementById("menuAccessibility");
+    let lastStatus = "";
 
-  accessibilityButton.addEventListener("click", () => {
-    let newStatus =
-      menu.style.display === "block"
-        ? "Menu de acessibilidade fechado."
-        : "Menu de acessibilidade aberto.";
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-    if (newStatus !== lastStatus) {
-      announceStatus(newStatus);
-      lastStatus = newStatus;
-    }
-  });
+    accessibilityButton.addEventListener("click", () => {
+      let newStatus =
+        menu.style.display === "block"
+          ? "Menu de acessibilidade fechado."
+          : "Menu de acessibilidade aberto.";
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+      if (newStatus !== lastStatus) {
+        announceStatus(newStatus);
+        lastStatus = newStatus;
+      }
+    });
 
-  const closeButton = document.getElementById("close-menu");
-  closeButton.addEventListener("click", () => {
-    if (menu.style.display === "none") return; // Avoid redundant closing if already closed
-    menu.style.display = "none";
-    let newStatus = "Menu de acessibilidade fechado.";
-    if (newStatus !== lastStatus) {
-      announceStatus(newStatus);
-      lastStatus = newStatus;
-    }
-  });
+    const closeButton = document.getElementById("close-menu");
+    closeButton.addEventListener("click", () => {
+      if (menu.style.display === "none") return; // Avoid redundant closing if already closed
+      menu.style.display = "none";
+      let newStatus = "Menu de acessibilidade fechado.";
+      if (newStatus !== lastStatus) {
+        announceStatus(newStatus);
+        lastStatus = newStatus;
+      }
+    });
+  }
 });
 
 let fontSize = 100; // 100% font size

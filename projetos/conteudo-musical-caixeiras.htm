@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repertório das Caixeiras de Alcântara</title>
+    <link rel="stylesheet" href="../assets/css/styles-subpages.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles2.css" />
+    <link rel="stylesheet" href="../assets/css/audios.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="accessibilityButton">Menu de Acessibilidade</button>
+    <section
+      class="accessibility-buttons"
+      id="menuAccessibility"
+      style="display: none"
+    >
+      <ul>
+        <li><button id="font-increase">Aumentar Fonte</button></li>
+        <li><button id="font-decrease">Diminuir Fonte</button></li>
+        <li><button id="zoom-increase">Aumentar Zoom</button></li>
+        <li><button id="zoom-decrease">Diminuir Zoom</button></li>
+        <li><button id="contrast-high">Aumentar Contraste</button></li>
+        <li><button id="contrast-low">Diminuir Contraste</button></li>
+        <li><button id="contrast-normal">Contraste Normal</button></li>
+        <li>
+          <button id="close-menu">Fechar o menu de acessibilidade</button>
+        </li>
+      </ul>
+    </section>
+    <section
+      id="accessibilityFeedback"
+      aria-live="assertive"
+      class="visually-hidden"
+    ></section>
+    <a class="skip-link" href="#projeto-titulo"
+      >Pular para o conteúdo principal</a
+    >
+    <br />
+    <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+    <a href="../index.htm" class="logo">
+      <img src="../assets/img/logo.png" alt="" />
+      <span class="sr-only">Página Inicial</span>
+    </a>
+
+    <header>
+      <a href="../index.htm" class="logo">
+        <img src="../assets/img/logo.png" alt="" />
+        <span class="sr-only">Página Inicial</span>
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a id="sobre-mim-link" class="sobre" href="../index.htm#sobre-mim"
+              >Sobre Mim</a
+            >
+          </li>
+          <li><a class="projetos" href="../index.htm#projetos">Projetos</a></li>
+          <li>
+            <a class="audio-descricao" href="../index.htm#audiodescricao"
+              >Audiodescrição</a
+            >
+          </li>
+          <li>
+            <a class="contato" href="../index.htm#contato-heading">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#projeto-titulo">Sobre o Projeto</a>
+    <main>
+      <section id="main-content" aria-labelledby="projeto-titulo">
+        <h1 id="projeto-titulo">Sobre o Projeto</h1>
+        <p>
+          Um livreto e um CD duplo com o repertório musical e ritual das
+          Caixeiras de Alcântara; Anica, Ana Benedita Ferreira e Marlene Silva,
+          construído em encontros para conversas, entrevistas e gravações três
+          vezes por semana de setembro a dezembro de 2007. Nesses encontros
+          recebemos visitas de pessoas moradoras da cidade e de D. Severina
+          Pires Belfort, Caixeira do Festejo de Santa Rosa dos Pretos em
+          Itapecuru Mirim. As gravações aconteceram em um estúdio móvel em minha
+          casa e operado por mim. Uma placa MOTU828 e um pré-amplificador
+          Behringer ADA8000 conectados a um Mac G4 onde rodava um Cubase. As
+          vozes das Caixeiras foram captadas com mic Samson CO2. O som das
+          Caixas captados em separado, com mics Shure Beta 57 e Beta 58. As
+          vozes das três Bandeirinhas que acompanham as Caixeiras foram gravadas
+          com dois Samson em figura 8, captando suas vozes na ambiência.
+          Microfones conectados ao pré-ampli com cabos Santo Ângelo e conexões
+          Neutrik. O Ponto de Cultura da Casa Fanti Ashanti emprestou os
+          pedestais para os microfones. Projeto do Iphan-MA para Salvaguarda do
+          Repertório das Caixeiras de Alcântara. Coordenação interna de Rodrigo
+          Ramassote e externa de Marise Barbosa. As fotos foram doadas por
+          Juvenal Pereira e fazem parte do acervo do Iphan-MA.
+        </p>
+
+        <p>O livreto com textos e fotografias está disponível para download.</p>
+        <a href="nobaterdaminhacaixa.pdf" download="no_bater_da_minha_caixa.pdf"
+          >download do livro no bater da minha caixa</a
+        >
+      </section>
+
+      <h2>Ouça o conteúdo das Caixeiras do Divino de Alcântara</h2>
+      <ul>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(0)">Aí Meu Deus</a>
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(1)"
+            >Ajoelhei Meu Deus</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(2)"
+            >Sereno da Madrugada</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(3)"
+            >Quando Deus Andou no Mundo</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(4)">Sou um Deus</a>
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(5)"
+            >Santo Antônio de Lisboa</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(6)"
+            >Ai Eu Vou Beber Água do Céu</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(7)">Severa</a>
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(8)"
+            >Epa Pai Miranda</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(9)"
+            >Vamos Salvar os Brasileiros</a
+          >
+        </li>
+        <li><a href="#" class="link" onclick="setAudioAndFocus(10)">Ea</a></li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(11)"
+            >Bom Jesus da Cana Verde</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(12)"
+            >Divino Espírito Santo Dobrado</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(13)"
+            >Areia Areia</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(14)"
+            >Alvorada Alcântara</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(15)"
+            >Alvorada Nova</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(16)">Prisão</a>
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(17)"
+            >Prisão do Passarinho Alvorada</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(18)"
+            >Ora Pro Nobis</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(19)"
+            >Não Saio sem me Benzer</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(20)"
+            >No Bater da Minha Caixa</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(21)"
+            >Aurora com Bandeirinhas Correção das Bandeirinhas</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(22)"
+            >Ae Ave Maria Ae Ave Maria</a
+          >
+        </li>
+        <li>
+          <a href="#" class="link" onclick="setAudioAndFocus(23)"
+            >Arreia a Caixa no Chão</a
+          >
+        </li>
+      </ul>
+      <audio id="audioPlayer" controls tabindex="0">
+        <source
+          src="audiosinfanciascalunga/Oreiesuasfilhashistoria.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <section class="nav-buttons">
+        <button class="nav-button" onclick="previousAudio()">Anterior</button>
+        <br />
+        <button class="nav-button" onclick="nextAudio()">Próximo</button>
+      </section>
+      <section
+        id="audioFeedback"
+        aria-live="assertive"
+        style="position: absolute; left: -9999px"
+      ></section>
+    </main>
+
+    <footer>
+      <section id="redessociais" aria-labelledby="contato-heading">
+        <h2 id="contato-heading">Redes sociais</h2>
+        <ul>
+          <li>
+            <a href="https://wa.me/yourwhatsapplink" target="_blank"
+              >WhatsApp. O link Abre em uma nova janela.</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/youryoutubelink" target="_blank"
+              >YouTube. O link Abre em uma nova janela.</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/yourfacebooklink" target="_blank"
+              >Facebook. O link Abre em uma nova janela.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/yourinstagramlink"
+              target="_blank"
+              >Instagram. O link Abre em uma nova janela.</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <a
+          href="#sobre-mim-link"
+          class="back-to-menu"
+          aria-label="Voltar para o menu de navegação"
+          onclick="focusFirstMenuItem()"
+          >Voltar ao menu</a
+        >
+        <p>&copy; 2023 Marise Glória Barbosa. Todos os direitos reservados.</p>
+      </section>
+    </footer>
+
+    <script src="../assets/js/accessibility.js"></script>
+    <script src="../assets/js/caixeiras.js"></script>
+  </body>
+</html>

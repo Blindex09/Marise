@@ -1,0 +1,28 @@
+        .link, .nav-button {
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #FFFCF6;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .link:hover, .nav-button:hover {
+            background-color: #E5D6B7;
+        ;
+        }
+        audio, .nav-buttons {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            outline: none;
+        }
+        audio:focus {
+            box-shadow: 0 0 3px 2px #E5D6B7;
+        }

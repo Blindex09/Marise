@@ -1,0 +1,427 @@
+/* Estilos Gerais */
+html {
+    font-size: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: #FFFCF6;;
+    font-family: Inter;
+
+}
+
+/* Accessibility Buttons */
+.accessibility-buttons {
+    list-style-type: none;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+    color: #485652;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.accessibility-buttons button {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 1.25rem;
+    background: white;
+    color: #485652;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.accessibility-buttons button:hover,
+.accessibility-buttons button:focus {
+    background: #E5D6B7;
+    text-decoration: none;
+}
+
+#accessibilityButton {
+    text-transform: uppercase;
+    position: fixed;
+    top: 10px;
+    font-family: Inter;
+    right: 10px;
+    z-index: 1000;
+    font-size: 1rem;
+    background: white;
+    padding: 10px;
+    border: 2px solid #E0AE31;
+    border-radius: 5px;
+    list-style-type: none;
+    font-weight: 700;
+    line-height: 24.2px;
+    color: #485652;
+}
+
+
+/* Rectangle 3 */
+#conteudo-principal,
+#main-content,
+#sobre-mim {
+    width: 100%;
+    height: auto;
+    background: #E5D6B7;
+    padding-top: 100px;
+}
+
+/* Rectangle 4 */
+#projetos {
+    width: 100%;
+    height: auto;
+    background: #BD5E36;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Rectangle 4 */
+#projetos a {
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    align-content: center;
+    background: #FFFCF6;
+    display:flex;
+    flex-direction: row;
+    top: 0;
+}
+
+/* Logosite_350x100_horizontal2-300x51 1 */
+.logo {
+    /*position: absolute;*/
+    left: 32px;
+    top: 12px;
+}
+/* Nav List */
+.nav-list {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    padding-top: 16px;
+    padding-left: 0;
+}
+
+
+.nav-list a {
+    font-style: normal;
+    font-size: 1rem;
+    color: #485652;
+    padding: 8px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    text-decoration: none;
+    border-top: 8px solid #E0AE31;
+}
+
+/* Project List */
+.project-list,
+.audiodescricao-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.h2subpages{
+    max-width: 916px;
+    margin: 32px 20%;
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+}
+
+.audiolist {
+    list-style: none;
+    flex-direction: row;
+    padding: 12px;
+    align-content: center;
+}
+
+.contact-logo-item {
+    object-fit: contain;
+    height: 43px;
+    margin: 0 12px;
+}
+
+
+/* Rectangle 2 */
+.rectangle-2 {
+    width: 100%;
+    height: 14px;
+    background: #F4C57F;
+}
+
+/* História oral, a voz plena no tempo presente. */
+.historias {
+    width: 100%;
+    max-width: 916px;
+    margin: 32px auto;
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 46px;
+    text-align: center;
+}
+
+/* Rectangle 6 */
+.rectangle-6 {
+    width: 100%;
+    height: auto;
+    background: #FFFCF6;
+    padding: 20px 0;
+}
+
+
+p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}
+blockquote {
+    max-width: 100%;
+    margin: 0 10%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    color: #485652;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Rectangle 5 */
+#conteúdo-cantado-caixeiras,
+#audiodescricao {
+    width: 100%;
+    height: auto;
+    background: #727F3A;
+    color: white;
+    padding: 20px 0;
+}
+
+#assista-o-documentario {
+    width: 100%;
+    height: auto;
+    background: #E0AE31;
+    padding: 20px 0;
+    align-content: center;
+}
+
+#audiodescricao a {
+    color: white;
+}
+
+.slides {
+    margin-top: 10px;
+}
+
+.carousel-image {
+    object-fit: scale-down;
+    height: 400px;
+    width: 100%;
+    max-width: 741px;
+    margin: 0 auto;
+}
+
+/* Rectangle 7 */
+.rectangle-7 {
+    width: 100%;
+    height: auto;
+    background: #485652;
+    padding: 20px 0;
+    color: white;
+}
+
+
+
+/* Social Links */
+.social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* CSS */
+.button {
+    background: #E5D6B7;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 16rem;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    font-size: 18rem;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    text-decoration: none;
+    background: #fff;
+
+    border-radius: 5px;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.audio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .accessibility-buttons {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-content,
+    .text-content-small {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+
+    .accessibility-buttons button {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 300px;
+    }
+
+    .accessibility-buttons {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .accessibility-buttons button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .historias,
+    .projetos-title,
+    .galeria-title,
+    .audio-descricao-title {
+        font-size: 1.75rem;
+        line-height: 36px;
+    }
+
+    .text-content,
+    .text-content-small {
+        font-size: 0.875rem;
+        line-height: 26px;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    .accessibility-buttons {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .accessibility-buttons button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Ocultar todas as imagens inicialmente */
+.slide {
+    display: none;
+}
+
+/* Mostrar apenas a imagem ativa */
+.slide.active {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

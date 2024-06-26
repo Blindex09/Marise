@@ -1,0 +1,145 @@
+<DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>O coração do Brasil</title>
+      <link rel="stylesheet" href="../assets/css/styles-subpages.css" />
+      <link rel="stylesheet" href="../assets/css/styles-subpages.css" />
+      <link rel="stylesheet" href="../assets/css/styles.css" />
+      <link rel="stylesheet" href="../assets/css/styles2.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <button id="accessibilityButton">Menu de Acessibilidade</button>
+      <section
+        class="accessibility-buttons"
+        id="menuAccessibility"
+        style="display: none"
+      >
+        <ul>
+          <li><button id="font-increase">Aumentar Fonte</button></li>
+          <li><button id="font-decrease">Diminuir Fonte</button></li>
+          <li><button id="zoom-increase">Aumentar Zoom</button></li>
+          <li><button id="zoom-decrease">Diminuir Zoom</button></li>
+          <li><button id="contrast-high">Aumentar Contraste</button></li>
+          <li><button id="contrast-low">Diminuir Contraste</button></li>
+          <li><button id="contrast-normal">Contraste Normal</button></li>
+          <li>
+            <button id="close-menu">Fechar o menu de acessibilidade</button>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="accessibilityFeedback"
+        aria-live="assertive"
+        class="visually-hidden"
+      ></section>
+      <a class="skip-link" href="#titulo-Brasil"
+        >Pular para o conteúdo principal</a
+      >
+      <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+      <header>
+        <a href="../index.htm" class="logo">
+          <img src="../assets/img/logo.png" alt="" />
+          <span class="sr-only">Página Inicial</span>
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a id="sobre-mim-link" class="sobre" href="../index.htm#sobre-mim"
+                >Sobre Mim</a
+              >
+            </li>
+            <li>
+              <a class="projetos" href="../index.htm#projetos">Projetos</a>
+            </li>
+            <li>
+              <a class="audio-descricao" href="../index.htm#audiodescricao"
+                >Audiodescrição</a
+              >
+            </li>
+            <li>
+              <a class="contato" href="../index.htm#contato-heading">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 id="titulo-Brasil">O coração do brasil</h1>
+        <blockquote>
+          <p>
+            Audiodescrição com elaboração do roteiro e gravação em estúdio de 33
+            telas da artista visual Cris Maia.
+          </p>
+        </blockquote>
+        <iframe
+          title="Projeto - O coração do Brasil"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VE_pS71o2Dk?rel=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          <a
+            href="#"
+            onclick="navigator.clipboard.writeText('https://youtu.be/VE_pS71o2Dk'); return false;"
+            >Copiar link do vídeo</a
+          >
+        </p>
+
+        <a
+          href="https://youtube.com/playlist?list=PLTn0g9zk1NTvpRZSQecT_cwB29uAnbph8&si=pPcsZfwkMe0Yq4SK"
+          target="_blank"
+          >Acesse a Playlist O coração do brasil. De Cris Maia. O link abre em
+          uma nova janela.</a
+        >
+      </main>
+
+      <footer class="footer rectangle-7">
+        <section id="contato" aria-labelledby="contato-heading">
+          <h2 id="contato-heading">Redes sociais</h2>
+          <ul>
+            <li>
+              <a href="https://wa.me/yourwhatsapplink" target="_blank"
+                >WhatsApp. O link Abre em uma nova janela.</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/youryoutubelink" target="_blank"
+                >YouTube. O link Abre em uma nova janela.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/yourfacebooklink"
+                target="_blank"
+                >Facebook. O link Abre em uma nova janela.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/yourinstagramlink"
+                target="_blank"
+                >Instagram. O link Abre em uma nova janela.</a
+              >
+            </li>
+          </ul>
+        </section>
+      </footer>
+      <script src="../assets/js/accessibility.js"></script>
+      <script src="../assets/js/navigation.js"></script>
+      <script src="../assets/js/secoes.js"></script>
+      <script src="../assets/js/menu.js"></script>
+    </body>
+  </html>
+</DOCTYPE>

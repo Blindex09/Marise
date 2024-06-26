@@ -13,6 +13,14 @@ body {
 
 }
 
+h2{
+    font-family: 'Abel', serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    font-size: 2rem;
+}
+
 /* Accessibility Buttons */
 .accessibility-buttons {
     list-style-type: none;
@@ -85,12 +93,17 @@ body {
     height: auto;
     background: #BD5E36;
     color: white;
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 /* Rectangle 4 */
 #projetos a {
     color: white;
+}
+
+#sobre-mim img{
+    width: 100%;
+    max-width: 500px;
 }
 
 .header2 {
@@ -103,39 +116,23 @@ body {
 }
 
 /* Logosite_350x100_horizontal2-300x51 1 */
-.logo {
-    /*position: absolute;*/
-    left: 32px;
-    top: 12px;
+.logo-site {
+    max-width: 200px;
 }
 /* Nav List */
-.nav-list {
-    text-align: center;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 60px;
-    padding-top: 16px;
-    padding-left: 0;
+
+.nav-link:hover{
+    text-decoration: none;
+    border-top: 3px solid #E0AE31;
+    margin-top: -3px;
 }
 
-
-.nav-list a {
-    font-style: normal;
-    font-size: 1rem;
-    color: #485652;
-    padding: 8px;
-    font-weight: 700;
-    line-height: 24.2px;
-    text-align: center;
-    text-decoration: none;
+.dropdown-toggle::after{
+    border-top: .3em solid #E0AE31 !important;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
-    text-decoration: none;
-    border-top: 8px solid #E0AE31;
+#btn-acessibilidade{
+    border: .1em solid #E0AE31 !important;
 }
 
 /* Project List */
@@ -144,16 +141,6 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-h2{
-    max-width: 916px;
-    margin: 32px 20%;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-    font-size: 2rem;
 }
 
 .contact-list {
@@ -201,33 +188,10 @@ h2{
 
 
 p {
-    width: 100%;
-    max-width: 762px;
-    margin: 0 20%;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-}
-
-.link-title,
-.link-title-small {
-    width: 100%;
-    max-width: 632px;
-    margin: 0 20%;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 60px;
-    text-decoration: underline;
-}
-
-.link-title:hover,
-.link-title:focus,
-.link-title-small:hover,
-.link-title-small:focus {
-    text-decoration: none;
 }
 
 /* Rectangle 5 */
@@ -236,7 +200,7 @@ p {
     height: auto;
     background: #727F3A;
     color: white;
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 #audiodescricao a {
@@ -344,13 +308,6 @@ p {
         line-height: 28px;
     }
 
-    .link-title,
-    .link-title-small {
-        font-size: 1.375rem;
-        line-height: 28px;
-        margin: 0 20%;
-    }
-
 
     .accessibility-buttons button {
         font-size: 0.875rem;
@@ -386,12 +343,6 @@ p {
     .text-content,
     .text-content-small {
         font-size: 0.875rem;
-        line-height: 26px;
-    }
-
-    .link-title,
-    .link-title-small {
-        font-size: 1.25rem;
         line-height: 26px;
     }
 

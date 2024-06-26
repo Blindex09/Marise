@@ -1,171 +1,450 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marise Glória Barbosa</title>
-    <meta name="description" content="Descrição do site de Marise Glória Barbosa.">
-        <link rel="stylesheet" href="styles-subpages.css">
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-</head>
-<body>
-<button id="accessibilityButton">MENU DE ACESSIBILIDADE</button>
-<section class="accessibility-buttons" id="menuAccessibility"
-         style="display: none;margin-top: 10px;">
-    <ul>
-        <li>
-            <button id="font-increase">Aumentar Fonte</button>
-        </li>
-        <li>
-            <button id="font-decrease">Diminuir Fonte</button>
-        </li>
-        <li>
-            <button id="zoom-increase">Aumentar Zoom</button>
-        </li>
-        <li>
-            <button id="zoom-decrease">Diminuir Zoom</button>
-        </li>
-        <li>
-            <button id="contrast-high">Aumentar Contraste</button>
-        </li>
-        <li>
-            <button id="contrast-low">Diminuir Contraste</button>
-        </li>
-        <li>
-            <button id="contrast-normal">Contraste Normal</button>
-        </li>
-        <li>
-            <button id="close-menu">Fechar o menu de acessibilidade</button>
-        </li>
-    </ul>
-</section>
-<section id="accessibilityFeedback" aria-live="assertive" class="visually-hidden"></section>
-<a class="skip-link" href="#projetos-heading">Pular para o conteúdo principal</a>
-<a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
-<header class="header2">
-    <a href="index.htm" class="logo" >
-        <img src="Logosite_350x100_horizontal2-300x51.png" alt="">
-        <span class="sr-only">Página Inicial</span>
-    </a>
-    <nav style="margin-left: 50px;">
-        <ul class="nav-list">
-            <li><a id="sobre-mim-link" class="sobre" href="#sobre-mim">SOBRE MIM</a></li>
-            <li><a class="projetos" href="#projetos">PROJETOS</a></li>
-            <li><a class="audio-descricao" href="#audiodescricao">AUDIODESCRIÇÃO</a></li>
-            <li><a class="contato" href="#contato">CONTATO</a></li>
-        </ul>
+    <meta
+      name="description"
+      content="Descrição do site de Marise Glória Barbosa."
+    />
+    <link rel="stylesheet" href="./assets/css/styles-subpages.css" />
+    <link rel="stylesheet" href="./assets/css/styles2.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section
+      id="accessibilityFeedback"
+      aria-live="assertive"
+      class="visually-hidden"
+    ></section>
+    <a class="skip-link" href="#projetos-heading"
+      >Pular para o conteúdo principal</a
+    >
+    <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/logo.png"
+            class="logo-site"
+            alt="Logo Marise Glória Barbosa"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SOBRE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="btn-projetos"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PROJETOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="btn-projetos">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./projetos/documentario-caixeiras.htm"
+                  >
+                    Umas Mulheres que dão no Couro: As Caixeiras do Divino no
+                    Maranhão
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./projetos/infancias-kalunga.htm"
+                  >
+                    O Que é O Que é? Infâncias Kalunga
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./projetos/conteudo-musical-caixeiras.htm"
+                  >
+                    No bater da minha caixa estou convidando as foliôas
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="btn-audiodescricao"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                AUDIODESCRIÇÃO
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="btn-audiodescricao">
+                <li>
+                  <a class="dropdown-item" href="./projetos/projeto-faunas.htm"
+                    >Fauna Brasileira em Cores</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./projetos/o-coracao-do-brasil.htm"
+                    >O Coração do Brasil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./projetos/chapada-dos-veadeiros.htm"
+                    >Chapada dos Veadeiros: Povos dos Campos Gerais</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTATOS</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto" aria-hidden="true">
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="btn-acessibilidade"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACESSIBILIDADE
+              </a>
+
+              <div
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="btn-acessibilidade"
+              >
+                <a
+                  id="font-increase"
+                  class="dropdown-item dropdown"
+                  href="#"
+                  role="button"
+                  >Aumentar fonte
+                </a>
+                <a
+                  id="font-decrease"
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  >Diminuir fonte
+                </a>
+                <a
+                  id="zoom-increase"
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  >Aumentar Zoom
+                </a>
+                <a
+                  id="zoom-decrease"
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  >Diminuir Zoom
+                </a>
+                <a
+                  id="contrast-high"
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  >Aumentar Contraste
+                </a>
+                <a
+                  id="contrast-low"
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  >Diminuir Contraste
+                </a>
+                <a
+                  id="contrast-normal"
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  >Contraste Normal
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-</header>
-<main>
-    <section id="sobre-mim">
-        <h2 id="sobre-mim-heading">Sobre mim</h2>
-        <p class="text-content">História oral, a voz plena no tempo presente</p>
-        <p class="text-content">As pesquisas em estreita conexão com os universos onde a experiência de "pertenço,
-            logo existo" têm sido referências para construir o meu ser em deslocamento...</p>
-        <p class="text-content">Importante para articular matrizes/raízes no Rio Grande do Norte, Pará, o sertão do
-            Piauí, Goiás, o cerrado onde nasci e vivo agora, e São Paulo onde vivi muito tempo. Modos de estar na terra
-            e formar sentidos que as vezes desconversam entre si.</p>
-        <p class="text-content">Movimentos entendidos como migração e depois como diáspora, dada a dimensão dos cortes
-            com as comunidades de minha ancestralidade, tornando caro e raro o sentimento de pertencimento.</p>
-    <h2>Formação Acadêmica</h2>
-    <p class="text-content">Mestrado em Etnomusicologia pela UnB-Universidade de Brasília e outro em História pela
-        PUC-SP – Pontifícia Universidade Católica de São Paulo e graduação em Ciências Econômicas na mesma
-        Universidade.</p>
-    <p class="text-content">Têm sido múltiplos os ofícios aos quais me dedico e que se articulam ao longo da vida.
-        Docente, Pesquisadora, Brincante e artista popular, economista, cozinheira, percussionista em grupos e Teatro,
-        co-criadora de grupos de Folias de Reis, Bumba meu Boi, rodas de música com tambores e cantos. Forma de criar e
-        compartilhar a alegria</p>.
-    </section>
-    <section id="projetos" aria-labelledby="projetos-heading">
-        <h2 id="projetos-heading" class="projetos-title">Projetos</h2>
-        <article>
-            <h3 class="visually-hidden">Espaço de acolhimento</h3>
-            <p class="text-content-small">Espaço de acolhimento para os trabalhos que tenho realizado ou participado,
-                caminhos por onde tenho andado articulando experiências.</p>
-        </article>
-        <ul class="project-list">
-            <li><a class="link-title" href="index2.htm">Assista ao documentário sobre As
-                Caixeiras do Divino no Maranhão</a></li>
-            <li><a class="link-title" href="index3.htm">Projeto Infâncias Kalunga</a></li>
-            <li><a class="link-title" href="index4.htm">Acesse o conteúdo
-                musical das caixeiras: No bater da minha caixa estou convidando as foliôa</a></li>
-        </ul>
-    </section>
-    <section id="audiodescricao" aria-labelledby="audiodescricao-heading">
-        <h2 id="audiodescricao-heading" class="audio-descricao-title">Audiodescrição</h2>
-        <article>
-            <p class="audio-descricao-text">A Audiodescrição traz a voz e a palavra como os olhos da pessoa cega ou com
-                baixa visão que, por esse caminho, pode acessar conteúdos imagéticos...</p>
-            <p class="audio-descricao-text">Nesses trabalhos atuei como audiodescritora roteirista, elaborando o texto
-                que descreve as telas de artistas visuais e gravando em estúdio. Em alguns momentos, trabalhei com
-                parcerias. Tenho também a experiência de ler e gravar textos já elaborados.</p>
-        </article>
-        <ul class="audiodescricao-list">
-            <li><a class="link-title-small"
-                   href="index5.htm">Saiba mais sobre o
-                projeto Fauna Brasileira em Cores, de Marcos Brasil</a></li>
-            <li><a class="link-title-small" href="index6.htm">Acesse
-                a playlist O Coração do Brasil, de Cris Maia</a></li>
-            <li><a class="link-title-small"
-                   href="index7.htm">Chapada
-                dos Veadeiros - Povos dos Campos Gerais</a></li>
-            <li><a class="link-title-small"
-                   href="index8.htm">Audiodescrição do Mundo</a></li>
-        </ul>
-    </section>
-</main>
+    <main>
+      <section id="sobre-mim">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h2 class="mb-4">
+                História oral, a voz plena no tempo presente.
+              </h2>
+              <p>
+                Pesquisas em estreita conexão com os universos onde “pertenço,
+                logo existo”, trazem referências para construção do meu ser em
+                deslocamento. Articulam matrizes/raízes indígenas e negras no
+                sertão do Piauí, no Rio Grande do Norte, Pará, Goiás, neste
+                cerrado onde nasci e vivo agora e em São Paulo onde vivi por
+                muito tempo. 
+              </p>
+              <p>
+                Movimentos, migrações, diásporas, medidas dos cortes com
+                ancestralidades, tornam caro e raro o sentido do pertencimento e
+                criam modos de fluidez e presença.
+              </p>
+              <p>
+                Mestrado em Etnomusicologia pela UnB-Universidade de Brasília e
+                outro em História pela PUC-SP – Pontifícia Universidade Católica
+                de São Paulo, Graduação em Ciências Econômicas na mesma
+                Universidade, se articulam a múltiplos ofícios ao longo da vida.
+                Docente, Pesquisadora, Historiadora, Etnomusicóloga, Brincante,
+                Economista, Percussionista em grupos e Teatro, co-criadora de
+                grupos de Folias de Reis, Bumba meu Boi, rodas de música com
+                tambores e cantos. Formas de criar e compartilhar a alegria.
+              </p>
+            </div>
+            <div class="col-sm">
+              <img src="./assets/img/oficial/foto-marise-home.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer class="rectangle-7">
-    <section id="contato" aria-labelledby="contato-heading">
+      <section id="projetos" aria-labelledby="projetos-heading">
+        <div class="container">
+          <h2 class="mb-5">Projetos</h2>
+          <div class="row">
+            <div class="col-sm pr-3">
+              <figure>
+                <img
+                  src="./assets/img/oficial/cultura-da-infancia-kalunga.png"
+                  alt=""
+                  role="presentation"
+                  class="w-100"
+                />
+                <figcaption class="mt-4">
+                  As crianças observando o processo de gravação da visita de
+                  Mestras e Mestre à escola onde foram brincar a dança do Boilé
+                  e contar e ouvir histórias com as crianças.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm">
+              <p>
+                Espaço de acolhimento para trabalhos que tenho realizado como
+                pesquisadora, caminhos por onde tenho andado articulando
+                experiências.
+              </p>
+              <ul class="project-list">
+                <li class="mb-2">
+                  <a
+                    class="link-title"
+                    href="./projetos/documentario-caixeiras.htm"
+                    >Assista ao documentário sobre As Caixeiras do Divino no
+                    Maranhão</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a class="link-title" href="./projetos/infancias-kalunga.htm"
+                    >Projeto Infâncias Kalunga</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-title"
+                    href="./projetos/conteudo-musical-caixeiras.htm"
+                    >Acesse o conteúdo musical das caixeiras: No bater da minha
+                    caixa estou convidando as foliôa</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="audiodescricao" aria-labelledby="audiodescricao-heading">
+        <div class="container">
+          <h2 id="audiodescricao-heading" class="audio-descricao-title">
+            Audiodescrição
+          </h2>
+          <div class="row">
+            <div class="col-sm">
+              <p>
+                A Audiodescrição traz a voz e a palavra como os olhos da pessoa
+                cega ou com baixa visão que, por esse caminho, pode acessar
+                conteúdos imagéticos. Nesses trabalhos atuei como
+                audiodescritora roteirista, elaborando o texto que descreve as
+                telas de artistas visuais e gravando em estúdio. Em alguns
+                momentos, trabalhei com parcerias. Tenho também a experiência de
+                ler e gravar textos já elaborados.
+              </p>
+              <ul class="audiodescricao-list">
+                <li class="mb-2">
+                  <a
+                    class="link-title-small"
+                    href="./projetos/projeto-faunas.htm"
+                    >Saiba mais sobre o projeto Fauna Brasileira em Cores, de
+                    Marcos Brasil</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-title-small"
+                    href="./projetos/o-coracao-do-brasil.htm"
+                    >Acesse a playlist O Coração do Brasil, de Cris Maia</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-title-small"
+                    href="./projetos/chapada-dos-veadeiros.htm"
+                    >Chapada dos Veadeiros - Povos dos Campos Gerais</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a class="link-title-small" href="#"
+                    >Audiodescrição do Mundo</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <figure>
+                <img
+                  src="./assets/img/oficial/equipe-ad.png"
+                  alt=""
+                  role="presentation"
+                  class="w-100"
+                />
+                <figcaption class="mt-4">
+                  Equipe de produção do Curso “Audiodescrição do Mundo!” com a
+                  professora e consultora em acessibilidade Viviane Santos.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rectangle-7">
+      <section id="contato" aria-labelledby="contato-heading">
         <h2 id="contato-heading" class="visually-hidden">Redes sociais</h2>
-        <p class="visually-hidden">Conecte-se conosco através das seguintes plataformas e fique por dentro das
-            últimas atualizações e eventos.</p>
+        <p class="visually-hidden">
+          Conecte-se conosco através das seguintes plataformas e fique por
+          dentro das últimas atualizações e eventos.
+        </p>
         <ul class="contact-list">
-            <li>
-                <a href="https://wa.me/5561981714140" target="_blank">
-                    <img class="contact-logo-item"
-                         src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/WhatsApp_white.png?raw=true"
-                         alt="WhatsApp. O link abre em uma nova janela."/>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@marisegloriabarbosa1755" target="_blank">
-                    <img class="contact-logo-item"
-                         src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Youtube_white.png?raw=true"
-                         alt="Youtube. O link abre em uma nova janela."/>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/marise.barbosa.7" target="_blank">
-                    <img class="contact-logo-item"
-                         src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Facebook_white.png?raw=true"
-                         alt="Facebook. O link abre em uma nova janela."/>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/marise.barbosa.7/" target="_blank">
-                    <img class="contact-logo-item"
-                         src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Instagram_white.png?raw=true"
-                         alt="Instagram. O link abre em uma nova janela."/>
-                </a>
-            </li>
+          <li>
+            <a href="https://wa.me/5561981714140" target="_blank">
+              <img
+                class="contact-logo-item"
+                src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/WhatsApp_white.png?raw=true"
+                alt="WhatsApp. O link abre em uma nova janela."
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@marisegloriabarbosa1755"
+              target="_blank"
+            >
+              <img
+                class="contact-logo-item"
+                src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Youtube_white.png?raw=true"
+                alt="Youtube. O link abre em uma nova janela."
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/marise.barbosa.7" target="_blank">
+              <img
+                class="contact-logo-item"
+                src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Facebook_white.png?raw=true"
+                alt="Facebook. O link abre em uma nova janela."
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/marise.barbosa.7/"
+              target="_blank"
+            >
+              <img
+                class="contact-logo-item"
+                src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Instagram_white.png?raw=true"
+                alt="Instagram. O link abre em uma nova janela."
+              />
+            </a>
+          </li>
         </ul>
-    </section>
+      </section>
 
-    <section>
-        <a href="#sobre-mim-link" class="visually-hidden" aria-label="Voltar para o menu de navegação"
-           onclick="focusFirstMenuItem()">Voltar ao menu</a>
-    </section>
+      <section>
+        <a
+          href="#sobre-mim-link"
+          class="visually-hidden"
+          aria-label="Voltar para o menu de navegação"
+          onclick="focusFirstMenuItem()"
+          >Voltar ao menu</a
+        >
+      </section>
 
-    <p style="margin: 0 auto; text-align: center">&copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.</p>
-</footer>
-<script src="accessibility.js"></script>
-<script src="carousel.js"></script>
-<script src="navigation.js"></script>
-<script src="secoes.js"></script>
-<script src="menu.js"></script>
-</body>
+      <p style="margin: 0 auto; text-align: center">
+        &copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="./assets/js/accessibility.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/secoes.js"></script>
+    <script src="./assets/js/menu.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

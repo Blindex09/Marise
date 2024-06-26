@@ -1,6 +1,6 @@
 /* Estilos Gerais */
 html {
-    font-size: 100%;
+    font-size: 18px;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
 }
 
-h2{
+h1, h2{
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
@@ -91,7 +91,7 @@ h2{
 #projetos {
     width: 100%;
     height: auto;
-    background: #BD5E36;
+    background: #AF5731;
     color: white;
     padding: 100px 0;
 }
@@ -198,7 +198,7 @@ p {
 #audiodescricao {
     width: 100%;
     height: auto;
-    background: #727F3A;
+    background: #6E7737;
     color: white;
     padding: 100px 0;
 }

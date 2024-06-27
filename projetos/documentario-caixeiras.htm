@@ -6,9 +6,7 @@
       <title>
         Umas mulheres que dão no couro: As Caixeiras do Divino no Maranhão
       </title>
-      <link rel="stylesheet" href="../assets/css/styles-subpages.css" />
-      <link rel="stylesheet" href="../assets/css/styles2.css" />
-      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="../assets/css/styles.css" />
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -23,6 +21,13 @@
         href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
         rel="stylesheet"
       />
+
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+      />
     </head>
     <body>
       <section
@@ -33,13 +38,12 @@
         <a class="skip-link" href="#projetos-heading"
           >Pular para o conteúdo principal</a
         >
-        <a href="#assista-o-documentario">Assista o documentário</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.htm">
             <img
               src="../assets/img/logo.png"
               class="logo-site"
@@ -60,7 +64,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  id="sobre-mim-link"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.htm#sobre-mim"
                   >SOBRE</a
                 >
               </li>
@@ -78,6 +86,7 @@
                 <ul class="dropdown-menu" aria-labelledby="btn-projetos">
                   <li>
                     <a
+                      id="btn-caixeiras"
                       class="dropdown-item"
                       href="./documentario-caixeiras.htm"
                     >
@@ -130,7 +139,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTATOS</a>
+                <a class="nav-link" href="../index.htm#contato">CONTATOS</a>
               </li>
             </ul>
 
@@ -143,7 +152,6 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  tabindex="-1"
                 >
                   ACESSIBILIDADE
                 </a>
@@ -208,65 +216,53 @@
         </div>
       </nav>
 
-      <main id="conteudo-principal" style="background: #e5d6b7">
-        <h1 id="titulo-mulheres">
-          Umas mulheres que dão no couro: As Caixeiras do Divino no Maranhão
-        </h1>
-        <article>
-          <p>
-            Conjunto de trabalhos apoiados em pesquisa extensa no universo das
-            Caixeiras em diferentes lugares do Maranhão. Um documentário com
-            1:40h de duração e um livro. Finalizados e lançados em 2007, e
-            disponibilizado em canal Youtube em 2023. Demorou! O título dialoga
-            com o fato de que essas mulheres são Sacerdotisas do Divino e tocam
-            tambores, instrumentos de percussão com superfície de couro.
-            Refere-se também à assertividade revelada em sua performance ao
-            tocar e cantar em uníssono, mantendo firmemente ritmos/toques
-            complexos e estreitamente relacionados aos diferentes tempos do
-            roteiro ritual da Festa do Divino. Um sofisticado conhecimento
-            desenvolvido no universo da oralidade. Quando começou? “Não sei,
-            quando cheguei já achei”, resposta constante. O documentário tem seu
-            roteiro dado pelos roteiros rituais de festa, gravados em diferentes
-            regiões e o tempo das narrativas é compassado, em sintonia com o
-            tempo da música propiciatória. Trabalho possível pelo Programa
-            Petrobras Cultural e apoios da Associação Cultural Cachuera! em São
-            Paulo-SP e Centro de Cultura Popular Domingos Vieira Filho em São
-            Luís-MA. Concepção, pesquisa, texto e direção de Marise Barbosa com
-            assistência de Jandir Goncalves. Projeto gráfico da designer Cláudia
-            Marinho. A Etnomusicóloga Ignez Ayala da UFPB e a Historiadora Yara
-            Aum Khoury da PUC-SP acompanharam o processo de gravações em campo.
-          </p>
-        </article>
-        <p>O livro em PDF será disponibilizado para download em breve.</p>
-        <p>
-          O canal no Youtube traz o documentário completo e uma versão dividida
-          em 29 partes acompanhadas por pequenos textos de apoio que apoiam a
-          compreensão do contexto.
-        </p>
-        <p>
-          O livro está disponibilizado em PDF e pode ser baixado. Para citações
-          é imprescindível citar a fonte.
-        </p>
-        <section id="assista-o-documentario">
-          <h2>
-            Assista o Filme documentário: As Caixeiras do Divino no Maranhão
-          </h2>
-          <iframe
-            title="Documentário 'Umas mulheres que dão no couro: As Caixeiras do Divino no Maranhão'"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/0liGxfOiJzQ"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <p>
-            <a
-              href="#"
-              onclick="navigator.clipboard.writeText('https://youtu.be/0liGxfOiJzQ'); return false;"
-              >Copiar link do vídeo</a
+      <main>
+        <section class="section-content bg-beige">
+          <div class="container text-center">
+            <h1 class="text-center">
+              Umas Mulheres que dão no Couro: <br />
+              As Caixeiras do Divino no Maranhão
+            </h1>
+            <img
+              src="../assets/img/oficial/banner-caixeiras.png"
+              alt=""
+              role="presentation"
+              class="my-4 w-100"
+            />
+            <p>
+              Conjunto de trabalhos apoiados em pesquisa extensa no universo das
+              Caixeiras em diferentes lugares do Maranhão. Um documentário com
+              1:40h de duração e um livro. Finalizados e lançados em 2007, e
+              disponibilizado em canal Youtube em 2023. Demorou!
+            </p>
+            <a href="#" class="bg-white p-2 rounded-pill text-decoration-none"
+              >Leia mais</a
             >
-          </p>
+          </div>
+        </section>
+
+        <section class="section-content bg-yellow">
+          <div class="container text-center">
+            <h2 class="text-center">
+              Assista o Filme documentário: As Caixeiras do Divino no Maranhão
+            </h2>
+            <iframe
+              title="Documentário 'Umas mulheres que dão no couro: As Caixeiras do Divino no Maranhão'"
+              src="https://www.youtube.com/embed/0liGxfOiJzQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="my-4 video-iframe"
+            ></iframe>
+            <p class="mb-4">
+              Um canal Youtube traz o documentário completo e uma versão
+              dividida em 29 partes acompanhadas por pequenos textos de apoio
+              que apoiam a compreensão do contexto.
+            </p>
+            <a href="https://youtu.be/0liGxfOiJzQ" class="btn-youtube">
+              Assista ao filme no YouTube
+            </a>
+          </div>
         </section>
       </main>
 
@@ -326,7 +322,7 @@
           </ul>
         </section>
 
-        <section>
+        <section class="container">
           <a
             href="#sobre-mim-link"
             class="visually-hidden"
@@ -334,11 +330,10 @@
             onclick="focusFirstMenuItem()"
             >Voltar ao menu</a
           >
+          <p class="text-center">
+            &copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.
+          </p>
         </section>
-
-        <p style="margin: 0 auto; width: 600px">
-          &copy; 2024 Marise Glória Barbosa. Todos os direitos reservados.
-        </p>
       </footer>
       <script src="../assets/js/accessibility.js"></script>
       <script

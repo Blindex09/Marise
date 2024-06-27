@@ -93,11 +93,11 @@ h1, h2{
 }
 
 .dropdown-toggle::after{
-    border-top: .3em solid #E0AE31 !important;
+    border-top: .3em solid var(--yellow) !important;
 }
 
 #btn-acessibilidade{
-    border: .1em solid #E0AE31 !important;
+    border: .1em solid var(--yellow) !important;
 }
 
 /* Project List */
@@ -143,11 +143,28 @@ p {
     font-weight: 400;
 }
 
+.img-projetos{
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-branco{
+    background-color: #fff;
+    color: #606060;
+    padding: 10px;
+    border-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 /* Rectangle 5 */
 #audiodescricao {
     width: 100%;
     height: auto;
-    background: #6E7737;
+    background: var(--dark-green);
     color: white;
     padding: 100px 0;
 }
@@ -187,30 +204,6 @@ p {
     text-align: center;
 }
 
-
-/* CSS */
-.button {
-    background: #5E5DF0;
-    border-radius: 999px;
-    box-shadow: #5E5DF0 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: Inter;
-    font-size: 16rem;
-    font-weight: 700;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    padding: 8px 18px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: fit-content;
-    word-break: break-word;
-    border: 0;
-}
-
 .social-links li {
     display: inline-block;
     margin-right: 10px;
@@ -230,19 +223,11 @@ p {
     border-radius: 5px;
 }
 
-/* Screen Reader Only */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
 @media (max-width: 992px) {
+    h1{
+        font-size: 22px !important;
+    }
+
     .text-content,
     .text-content-small {
         font-size: 1rem;
@@ -406,18 +391,6 @@ ul {
     background: #fff;
 
     border-radius: 5px;
-}
-
-/* Screen Reader Only */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
 }
 
 .audio-list {

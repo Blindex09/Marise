@@ -68,7 +68,7 @@ function adjustFontSize(action) {
 
 function announceFontSize() {
   const announcement = document.createElement("div");
-  announcement.className = "sr-only";
+  announcement.className = "sr-only sr-only-focusable";
   announcement.setAttribute("role", "alert");
   announcement.textContent = `Fonte ajustada para ${fontSize}%`;
   document.body.appendChild(announcement);
@@ -89,7 +89,7 @@ function adjustZoom(action) {
 
 function announceZoom() {
   const announcement = document.createElement("div");
-  announcement.className = "sr-only";
+  announcement.className = "sr-only sr-only-focusable";
   announcement.setAttribute("role", "alert");
   announcement.textContent = `Zoom ajustado para ${zoomLevel * 100}%`;
   document.body.appendChild(announcement);
@@ -112,7 +112,7 @@ function adjustContrast(level) {
 
 function announceContrast() {
   const announcement = document.createElement("div");
-  announcement.className = "sr-only";
+  announcement.className = "sr-only sr-only-focusable";
   announcement.setAttribute("role", "alert");
   announcement.textContent = `Contraste ajustado para ${contrast}`;
   document.body.appendChild(announcement);

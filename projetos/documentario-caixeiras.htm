@@ -224,10 +224,10 @@
               As Caixeiras do Divino no Maranhão
             </h1>
             <img
-              src="../assets/img/oficial/banner-caixeiras.png"
+              src="../assets/img/oficial/caixeiras/banner-caixeiras.png"
               alt=""
               role="presentation"
-              class="my-4 w-100"
+              class="my-4 w-75"
             />
             <p>
               Conjunto de trabalhos apoiados em pesquisa extensa no universo das
@@ -235,9 +235,42 @@
               1:40h de duração e um livro. Finalizados e lançados em 2007, e
               disponibilizado em canal Youtube em 2023. Demorou!
             </p>
-            <a href="#" class="bg-white p-2 rounded-pill text-decoration-none"
-              >Leia mais</a
-            >
+
+            <div class="hidden-content d-none">
+              <p>
+                O título dialoga com o fato de que essas mulheres são
+                Sacerdotisas do Divino e tocam tambores, instrumentos de
+                percussão com superfície de couro.
+              </p>
+              <p>
+                Refere-se também à assertividade revelada em sua performance ao
+                tocar e cantar em uníssono, mantendo firmemente ritmos/toques
+                complexos e estreitamente relacionados aos diferentes tempos do
+                roteiro ritual da Festa do Divino. Um sofisticado conhecimento
+                desenvolvido no universo da oralidade. 
+              </p>
+              <p>
+                Quando começou? “Não sei, quando cheguei já achei”, resposta
+                constante.  O documentário tem seu roteiro dado pelos roteiros
+                rituais de festa, gravados em diferentes regiões e o tempo das
+                narrativas é compassado, em sintonia com o tempo da música
+                propiciatória.
+              </p>
+              <p>
+                Trabalho possível pelo Programa Petrobras Cultural e apoios da
+                Associação Cultural Cachuera! em São Paulo-SP e Centro de
+                Cultura Popular Domingos Vieira Filho em São Luís-MA.
+              </p>
+              <p>
+                Concepção, pesquisa, texto e direção de Marise Barbosa com
+                assistência de Jandir Goncalves. Projeto gráfico da designer
+                Cláudia Marinho. A Etnomusicóloga Ignez Ayala da UFPB e a
+                Historiadora Yara Aum Khoury da PUC-SP acompanharam o processo
+                de gravações em campo.
+              </p>
+            </div>
+
+            <button class="btn-branco">Leia mais</button>
           </div>
         </section>
 
@@ -262,6 +295,57 @@
             <a href="https://youtu.be/0liGxfOiJzQ" class="btn-youtube">
               Assista ao filme no YouTube
             </a>
+          </div>
+        </section>
+
+        <section class="section-content bg-brown">
+          <div class="container text-center text-white">
+            <h2 class="text-center">Livro</h2>
+            <figure>
+              <img
+                src="../assets/img/oficial/caixeiras/caixeiras-livro.png"
+                alt=""
+                class="img-projetos"
+              />
+              <figcaption>
+                O livro em PDF será disponibilizado para download em breve.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section-content bg-green">
+          <div class="container text-center text-white">
+            <h2 class="text-center">Dissertações</h2>
+            <div class="mb-4">
+              <figure>
+                <img
+                  src="../assets/img/oficial/caixeiras/caixeiras-dissertacao-1.png"
+                  alt=""
+                  class="img-projetos"
+                />
+                <figcaption class="my-4">
+                  Dissertação de Mestrado em História pelo Programa de Pós
+                  Graduacão em História Social - PUC-SP, 2002
+                </figcaption>
+              </figure>
+              <a href="#" class="btn-branco">Link de acesso à dissertação</a>
+            </div>
+
+            <div class="mt-4">
+              <figure>
+                <img
+                  src="../assets/img/oficial/caixeiras/caixeiras-dissertacao-2.png"
+                  alt=""
+                  class="img-projetos"
+                />
+                <figcaption class="my-4">
+                  Dissertação do Mestrado em Música, Etnomusicologia, pelo
+                  Programa de Pós Graduação Música em Conexto - UnB, 2015
+                </figcaption>
+              </figure>
+              <a href="#" class="btn-branco">Link de acesso à dissertação</a>
+            </div>
           </div>
         </section>
       </main>
@@ -341,6 +425,18 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"
       ></script>
+
+      <script>
+        const btnLeiaMais = document.querySelector(".btn-branco");
+        const hiddenContent = document.querySelector(".hidden-content");
+
+        btnLeiaMais.addEventListener("click", () => {
+          hiddenContent.classList.toggle("d-none");
+          hiddenContent.focus();
+          hiddenContent.setAttribute("aria-live", "assertive");
+          btnLeiaMais.classList.toggle("d-none");
+        });
+      </script>
     </body>
   </html>
 </DOCTYPE>

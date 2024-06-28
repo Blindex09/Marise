@@ -8,8 +8,6 @@
       name="description"
       content="Descrição do site de Marise Glória Barbosa."
     />
-    <link rel="stylesheet" href="./assets/css/styles-subpages.css" />
-    <link rel="stylesheet" href="./assets/css/styles2.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -32,11 +30,12 @@
       id="accessibilityFeedback"
       aria-live="assertive"
       class="visually-hidden"
-    ></section>
-    <a class="skip-link" href="#projetos-heading"
-      >Pular para o conteúdo principal</a
     >
-    <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+      <a class="skip-link" href="#projetos-heading"
+        >Pular para o conteúdo principal</a
+      >
+      <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
+    </section>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -61,7 +60,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">SOBRE</a>
+              <a
+                id="sobre-mim-link"
+                class="nav-link active"
+                aria-current="page"
+                href="#sobre-mim"
+                >SOBRE</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -77,6 +82,7 @@
               <ul class="dropdown-menu" aria-labelledby="btn-projetos">
                 <li>
                   <a
+                    id="btn-caixeiras"
                     class="dropdown-item"
                     href="./projetos/documentario-caixeiras.htm"
                   >
@@ -133,10 +139,17 @@
                     >Chapada dos Veadeiros: Povos dos Campos Gerais</a
                   >
                 </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./projetos/audiodescricao-do-mundo.htm"
+                    >Audiodescrição do Mundo</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTATOS</a>
+              <a class="nav-link" href="#contato">CONTATOS</a>
             </li>
           </ul>
 
@@ -213,13 +226,13 @@
       </div>
     </nav>
     <main>
-      <section id="sobre-mim">
+      <section id="sobre-mim" class="section-content bg-beige">
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <h2 class="mb-4">
+              <h1 class="mb-4 projetos-heading">
                 História oral, a voz plena no tempo presente.
-              </h2>
+              </h1>
               <p>
                 Pesquisas em estreita conexão com os universos onde “pertenço,
                 logo existo”, trazem referências para construção do meu ser em
@@ -251,7 +264,11 @@
         </div>
       </section>
 
-      <section id="projetos" aria-labelledby="projetos-heading">
+      <section
+        id="projetos"
+        aria-labelledby="projetos-heading"
+        class="section-content bg-brown text-white"
+      >
         <div class="container">
           <h2 class="mb-5">Projetos</h2>
           <div class="row">
@@ -279,20 +296,20 @@
               <ul class="project-list">
                 <li class="mb-2">
                   <a
-                    class="link-title"
+                    class="text-white"
                     href="./projetos/documentario-caixeiras.htm"
                     >Assista ao documentário sobre As Caixeiras do Divino no
                     Maranhão</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a class="link-title" href="./projetos/infancias-kalunga.htm"
+                  <a class="text-white" href="./projetos/infancias-kalunga.htm"
                     >Projeto Infâncias Kalunga</a
                   >
                 </li>
                 <li>
                   <a
-                    class="link-title"
+                    class="text-white"
                     href="./projetos/conteudo-musical-caixeiras.htm"
                     >Acesse o conteúdo musical das caixeiras: No bater da minha
                     caixa estou convidando as foliôa</a
@@ -322,31 +339,23 @@
               </p>
               <ul class="audiodescricao-list">
                 <li class="mb-2">
-                  <a
-                    class="link-title-small"
-                    href="./projetos/projeto-faunas.htm"
+                  <a href="./projetos/projeto-faunas.htm"
                     >Saiba mais sobre o projeto Fauna Brasileira em Cores, de
                     Marcos Brasil</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a
-                    class="link-title-small"
-                    href="./projetos/o-coracao-do-brasil.htm"
+                  <a href="./projetos/o-coracao-do-brasil.htm"
                     >Acesse a playlist O Coração do Brasil, de Cris Maia</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a
-                    class="link-title-small"
-                    href="./projetos/chapada-dos-veadeiros.htm"
+                  <a href="./projetos/chapada-dos-veadeiros.htm"
                     >Chapada dos Veadeiros - Povos dos Campos Gerais</a
                   >
                 </li>
                 <li class="mb-4">
-                  <a class="link-title-small" href="#"
-                    >Audiodescrição do Mundo</a
-                  >
+                  <a href="#">Audiodescrição do Mundo</a>
                 </li>
               </ul>
             </div>
@@ -437,7 +446,6 @@
       </p>
     </footer>
     <script src="./assets/js/accessibility.js"></script>
-    <script src="./assets/js/navigation.js"></script>
     <script src="./assets/js/secoes.js"></script>
     <script src="./assets/js/menu.js"></script>
 

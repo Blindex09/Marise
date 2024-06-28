@@ -23,31 +23,33 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   const accessibilityButton = document.getElementById("accessibilityButton");
-  const menu = document.getElementById("menuAccessibility");
-  let lastStatus = "";
+  if (accessibilityButton) {
+    const menu = document.getElementById("menuAccessibility");
+    let lastStatus = "";
 
-  accessibilityButton.addEventListener("click", () => {
-    let newStatus =
-      menu.style.display === "block"
-        ? "Menu de acessibilidade fechado."
-        : "Menu de acessibilidade aberto.";
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-    if (newStatus !== lastStatus) {
-      announceStatus(newStatus);
-      lastStatus = newStatus;
-    }
-  });
+    accessibilityButton.addEventListener("click", () => {
+      let newStatus =
+        menu.style.display === "block"
+          ? "Menu de acessibilidade fechado."
+          : "Menu de acessibilidade aberto.";
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+      if (newStatus !== lastStatus) {
+        announceStatus(newStatus);
+        lastStatus = newStatus;
+      }
+    });
 
-  const closeButton = document.getElementById("close-menu");
-  closeButton.addEventListener("click", () => {
-    if (menu.style.display === "none") return; // Avoid redundant closing if already closed
-    menu.style.display = "none";
-    let newStatus = "Menu de acessibilidade fechado.";
-    if (newStatus !== lastStatus) {
-      announceStatus(newStatus);
-      lastStatus = newStatus;
-    }
-  });
+    const closeButton = document.getElementById("close-menu");
+    closeButton.addEventListener("click", () => {
+      if (menu.style.display === "none") return; // Avoid redundant closing if already closed
+      menu.style.display = "none";
+      let newStatus = "Menu de acessibilidade fechado.";
+      if (newStatus !== lastStatus) {
+        announceStatus(newStatus);
+        lastStatus = newStatus;
+      }
+    });
+  }
 });
 
 let fontSize = 100; // 100% font size
@@ -66,7 +68,7 @@ function adjustFontSize(action) {
 
 function announceFontSize() {
   const announcement = document.createElement("div");
-  announcement.className = "sr-only";
+  announcement.className = "sr-only sr-only-focusable";
   announcement.setAttribute("role", "alert");
   announcement.textContent = `Fonte ajustada para ${fontSize}%`;
   document.body.appendChild(announcement);
@@ -87,7 +89,7 @@ function adjustZoom(action) {
 
 function announceZoom() {
   const announcement = document.createElement("div");
-  announcement.className = "sr-only";
+  announcement.className = "sr-only sr-only-focusable";
   announcement.setAttribute("role", "alert");
   announcement.textContent = `Zoom ajustado para ${zoomLevel * 100}%`;
   document.body.appendChild(announcement);
@@ -110,7 +112,7 @@ function adjustContrast(level) {
 
 function announceContrast() {
   const announcement = document.createElement("div");
-  announcement.className = "sr-only";
+  announcement.className = "sr-only sr-only-focusable";
   announcement.setAttribute("role", "alert");
   announcement.textContent = `Contraste ajustado para ${contrast}`;
   document.body.appendChild(announcement);

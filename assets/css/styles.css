@@ -1,6 +1,14 @@
+:root {
+    --beige: #E5D6B7;
+    --brown: #BD5E36;
+    --yellow: #E0AE31;
+    --green: #727F3A;
+    --dark-green: #485652;
+  }
+
 /* Estilos Gerais */
 html {
-    font-size: 100%;
+    font-size: 18px;
 }
 
 body {
@@ -10,10 +18,9 @@ body {
     height: auto;
     background: #FFFCF6;;
     font-family: Inter;
-
 }
 
-h2{
+h1, h2{
     font-family: 'Abel', serif;
     font-style: normal;
     font-weight: 400;
@@ -21,118 +28,76 @@ h2{
     font-size: 2rem;
 }
 
-/* Accessibility Buttons */
-.accessibility-buttons {
-    list-style-type: none;
-    position: fixed;
-    top: 50px;
-    right: 10px;
-    z-index: 1000;
-    background: #fff;
-    padding: 10px;
-    color: #485652;
-    text-align: center;
-    border-radius: 5px;
+.bg-beige{
+    background: var(--beige);
 }
 
-.accessibility-buttons button {
-    text-transform: uppercase;
-    list-style-type: none;
-    display: block;
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 1.25rem;
-    background: white;
-    color: #485652;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24.2px;
-    text-align: left;
-    text-decoration: none;
+.bg-brown{
+    background: var(--brown);
 }
 
-.accessibility-buttons button:hover,
-.accessibility-buttons button:focus {
-    background: #E5D6B7;
-    text-decoration: none;
+.bg-green{
+    background: var(--green);
 }
 
-#accessibilityButton {
-    position: fixed;
+.bg-yellow{
+    background: var(--yellow);
+}
+
+.bg-dark-green{
+    background: var(--dark-green);
+}
+
+/* Skip Links */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 10px;
     top: 10px;
-    font-family: Inter;
-    right: 10px;
-    z-index: 1000;
-    font-size: 1rem;
-    background: white;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
     padding: 10px;
-    border: 2px solid #E0AE31;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
     border-radius: 5px;
-    list-style-type: none;
-    font-weight: 700;
-    line-height: 24.2px;
-    color: #485652;
+    z-index: 1000;
+    text-decoration: none;
 }
 
-/* Rectangle 3 */
-#main-content,
-#sobre-mim {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    clip-path: inset(50%);
+  }
+
+.section-content{
     width: 100%;
-    height: auto;
-    background: #E5D6B7;
     padding: 100px 0;
 }
-
-/* Rectangle 4 */
-#projetos {
-    width: 100%;
-    height: auto;
-    background: #BD5E36;
-    color: white;
-    padding: 100px 0;
-}
-
-/* Rectangle 4 */
-#projetos a {
-    color: white;
-}
-
-#sobre-mim img{
-    width: 100%;
-    max-width: 500px;
-}
-
-.header2 {
-    width: 100%;
-    position: fixed;
-    align-content: center;
-    background: #FFFCF6;
-    display:flex;
-    flex-direction: row;
-}
-
-/* Logosite_350x100_horizontal2-300x51 1 */
 .logo-site {
     max-width: 200px;
 }
-/* Nav List */
-
-.nav-link:hover{
-    text-decoration: none;
-    border-top: 3px solid #E0AE31;
-    margin-top: -3px;
-}
 
 .dropdown-toggle::after{
-    border-top: .3em solid #E0AE31 !important;
+    border-top: .3em solid var(--yellow) !important;
 }
 
 #btn-acessibilidade{
-    border: .1em solid #E0AE31 !important;
+    border: .1em solid var(--yellow) !important;
 }
 
 /* Project List */
@@ -149,6 +114,7 @@ h2{
     flex-direction: row;
     justify-content: center;
     padding: 24px;
+    background-color: var(--dark-green);
 }
 
 .contact-logo-item {
@@ -157,48 +123,48 @@ h2{
     margin: 0 12px;
 }
 
-
-/* Rectangle 2 */
-.rectangle-2 {
-    width: 100%;
-    height: 14px;
-    background: #F4C57F;
+.btn-youtube{
+    background: #FF0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
-/* História oral, a voz plena no tempo presente. */
-.historias {
-    width: 100%;
-    max-width: 916px;
-    margin: 32px auto;
-    font-family: 'Abel', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 46px;
-    text-align: center;
+.video-iframe{
+    width: 560px;
+    height: 315px;
 }
-
-/* Rectangle 6 */
-.rectangle-6 {
-    width: 100%;
-    height: auto;
-    background: #FFFCF6;
-    padding: 20px 0;
-}
-
 
 p {
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+}
+
+.img-projetos{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-branco{
+    background-color: #fff;
+    color: #606060;
+    padding: 10px;
+    border-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 /* Rectangle 5 */
 #audiodescricao {
     width: 100%;
     height: auto;
-    background: #727F3A;
+    background: var(--dark-green);
     color: white;
     padding: 100px 0;
 }
@@ -223,7 +189,7 @@ p {
 .rectangle-7 {
     width: 100%;
     height: auto;
-    background: #485652;
+    background: var(--dark-green);
     padding: 20px 0;
     color: white;
 }
@@ -238,14 +204,160 @@ p {
     text-align: center;
 }
 
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    font-size: 18rem;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    text-decoration: none;
+    background: #fff;
+
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    h1{
+        font-size: 22px !important;
+    }
+
+    .text-content,
+    .text-content-small {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .historias,
+    .projetos-title,
+    .galeria-title,
+    .audio-descricao-title {
+        font-size: 1.75rem;
+        line-height: 36px;
+    }
+
+    .text-content,
+    .text-content-small {
+        font-size: 0.875rem;
+        line-height: 26px;
+    }
+}
+
+/* Ocultar todas as imagens inicialmente */
+.slide {
+    display: none;
+}
+
+/* Mostrar apenas a imagem ativa */
+.slide.active {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* *********************************** */
+
+#conteudo-principal,
+#main-content,
+#sobre-mim {
+    width: 100%;
+    height: auto;
+    background: #E5D6B7;
+    padding-top: 100px;
+}
+
+/* Project List */
+.project-list,
+.audiodescricao-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+}
+
+.audiolist {
+    list-style: none;
+    flex-direction: row;
+    padding: 12px;
+    align-content: center;
+}
+
+.contact-logo-item {
+    object-fit: contain;
+    height: 43px;
+    margin: 0 12px;
+}
+
+/* Rectangle 5 */
+#conteúdo-cantado-caixeiras,
+#audiodescricao {
+    width: 100%;
+    height: auto;
+    background: #727F3A;
+    color: white;
+    padding: 20px 0;
+}
+
+#assista-o-documentario {
+    width: 100%;
+    height: auto;
+    background: #E0AE31;
+    padding: 20px 0;
+    align-content: center;
+}
+
+#audiodescricao a {
+    color: white;
+}
+
+.slides {
+    margin-top: 10px;
+}
+
+/* Rectangle 7 */
+.rectangle-7 {
+    width: 100%;
+    height: auto;
+    background: var(--dark-green);
+    padding: 20px 0;
+    color: white;
+}
+
+/* Social Links */
+.social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
 
 /* CSS */
 .button {
-    background: #5E5DF0;
+    background: #E5D6B7;
     border-radius: 999px;
-    box-shadow: #5E5DF0 0 10px 20px -10px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: black;
     cursor: pointer;
     font-family: Inter;
     font-size: 16rem;
@@ -281,24 +393,12 @@ p {
     border-radius: 5px;
 }
 
-/* Screen Reader Only */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    .accessibility-buttons {
-        right: 10px;
-        top: 10px;
-    }
+.audio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
 }
 
 @media (max-width: 992px) {
@@ -307,28 +407,6 @@ p {
         font-size: 1rem;
         line-height: 28px;
     }
-
-
-    .accessibility-buttons button {
-        font-size: 0.875rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo img {
-        max-width: 300px;
-    }
-
-    .accessibility-buttons {
-        width: 100%;
-        padding: 10px 5px;
-    }
-
-    .accessibility-buttons button {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
 }
 
 @media (max-width: 576px) {
@@ -340,24 +418,15 @@ p {
         line-height: 36px;
     }
 
+    .video-iframe{
+        width: 100%;
+        height: 250px;
+    }
+
     .text-content,
     .text-content-small {
         font-size: 0.875rem;
         line-height: 26px;
-    }
-
-    .logo img {
-        max-width: 250px;
-    }
-
-    .accessibility-buttons {
-        width: 100%;
-        padding: 10px 5px;
-    }
-
-    .accessibility-buttons button {
-        width: 100%;
-        margin-bottom: 5px;
     }
 }
 

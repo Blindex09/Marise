@@ -329,7 +329,7 @@
 
         <section class="section-content bg-green">
           <div class="container text-center text-white">
-            <h2 class="text-center">CD</h2>
+            <h2 class="text-center mb-4">CD</h2>
             <div>
               <audio controls style="width: 100%" id="audioPlayer">
                 <source
@@ -338,6 +338,21 @@
                 />
                 Seu browser não suporta elementos de <code>audio</code>.
               </audio>
+
+              <div class="mt-2">
+                <button
+                  class="btn btn-light"
+                  onclick="nextPreviousAudio('previous')"
+                >
+                  Anterior
+                </button>
+                <button
+                  class="btn btn-light"
+                  onclick="nextPreviousAudio('next')"
+                >
+                  Proximo
+                </button>
+              </div>
 
               <div class="list-group mt-4">
                 <button

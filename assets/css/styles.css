@@ -1,8 +1,8 @@
 :root {
     --beige: #E5D6B7;
-    --brown: #BD5E36;
+    --brown: #AF5731;
     --yellow: #E0AE31;
-    --green: #727F3A;
+    --green: #646C32;
     --dark-green: #485652;
   }
 
@@ -319,7 +319,7 @@ ul {
 #audiodescricao {
     width: 100%;
     height: auto;
-    background: #727F3A;
+    background: var(--green);
     color: white;
     padding: 20px 0;
 }

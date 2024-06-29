@@ -396,11 +396,11 @@
 
       <script>
         const btnLeiaMais = document.querySelector(".btn-branco");
-        const hiddenContent = document.querySelector(".hidden-content");
+        const hiddenContent = document.getElementById("conteudo-expandido");
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
-          hiddenContent[0].focus();
+          hiddenContent.focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
         });

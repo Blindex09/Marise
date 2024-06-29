@@ -43,9 +43,9 @@
         arrows: true,
         asNavFor: null,
         prevArrow:
-          '<button class="slick-prev" aria-label="Anterior" type="button">Previous</button>',
+          '<button class="slick-prev" aria-label="Anterior slide" type="button">Previous</button>',
         nextArrow:
-          '<button class="slick-next" aria-label="Próximo" type="button">Next</button>',
+          '<button class="slick-next" aria-label="Próximo slide" type="button">Next</button>',
         autoplay: false,
         autoplaySpeed: 3000,
         centerMode: false,
@@ -72,7 +72,7 @@
         respondTo: "window",
         responsive: null,
         rows: 1,
-        rtl: false,
+        rtl: true,
         slide: "",
         slidesPerRow: 1,
         slidesToShow: 1,

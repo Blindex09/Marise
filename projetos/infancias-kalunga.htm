@@ -229,8 +229,7 @@
             <h1 class="text-center">O Que é O Que é? Infâncias Kalunga</h1>
             <img
               src="../assets/img/infancia-kalunga/banner.png"
-              alt=""
-              role="presentation"
+              alt="Grupo de crianças brincam em um ambiente aberto e na frente delas há um texto que diz 'O Que é O Que é? Infâncias Kalunga'."
               class="my-4 w-75"
             />
             <p>
@@ -287,7 +286,7 @@
             <figure>
               <img
                 src="../assets/img/infancia-kalunga/perfil-youtube.png"
-                alt=""
+                alt="Tela do perfil do YouTube do canal O Que é O Que é? Infâncias Kalunga. O perfil tem 39 vídeos e 399 inscritos."
                 class="img-projetos"
               />
               <figcaption>
@@ -310,7 +309,7 @@
             <figure>
               <img
                 src="../assets/img/infancia-kalunga/capa-livro.png"
-                alt=""
+                alt="Capa do livro O Que é O Que é? Infâncias Kalunga. A capa é preta com ilustrações em marrom e verde simbolizando montanhas."
                 class="img-projetos"
               />
               <figcaption class="my-4">
@@ -330,55 +329,278 @@
         <section class="section-content bg-green">
           <div class="container text-center text-white">
             <h2 class="text-center">CD</h2>
-            <img
-              src="../assets/img/infancia-kalunga/playlist.png"
-              alt="Playlist do CD O Que é O Que é? Infâncias Kalunga contendo 27 itens."
-              class="img-projetos"
-            />
-            <div class="mt-4">
-              <a href="#" class="btn-branco">Ouça a playlist</a>
+            <div>
+              <audio controls style="width: 100%" id="audioPlayer">
+                <source
+                  src="../assets/audios/infancias-kalunga/barbuletapreta.mp3"
+                  type="audio/mpeg"
+                />
+                Seu browser não suporta elementos de <code>audio</code>.
+              </audio>
+
+              <ul class="list-group mt-4">
+                <!--  Monte a lista de audios presentes na pasta ../assets/audios/infancias-kalunga -->
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/barbuletapreta.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Barbuleta Preta
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Bencaodepapaidemamaedevovo.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Benção de papai, de mamãe e de vovó
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/BenditodoEspiritoSanto.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Bendito do Espirito Santo
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/BoiAzeitao.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Boi Azeitão
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Boile.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Boile
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/BrancadeNeverecriada.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Branca de Neve recriada
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/candarimdesinha.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Candarim de Sinhá
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/castelomalassombrado.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Castelo mal assombrado
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/ChapeuzinhoVermelhorecriada.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Chapeuzinho Vermelho recriada
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Chicochico.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Chico Chico
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Cundungueiro.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Cundungueiro
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Fortina.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Fortina
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Jovina.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Jovina
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/JulianaeDomJorge.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Juliana e Dom Jorge
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Mariquinhadabeiradorio.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Mariquinha da beira do rio
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Meninonaomaltrataessanega.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Menino não maltrata essa nega
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Nadandonaenchente.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Nadando na enchente
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Oreiesuasfilhashistoria.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  O rei e suas filhas - História
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Passeinopedelaranja.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Passei no pé de laranja
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Piranha.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Piranha
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/RezapraSJose.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Reza pra São José
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/RolaRola.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Rola Rola
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Rondacarangueijonumepeixe.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ronda - Carangueijo num é peixe
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/serradordelaia.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Serrador de laiá
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/siaisiai.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Si ai si ai zagariaeae, esse mungando num é bom fiais - Jaboti
+                  e o cuêi
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/sodadedoejerce.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Sodade do ejerce
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/infancias-kalunga/Tataira.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Tataíra
+                </li>
+              </ul>
             </div>
           </div>
         </section>
+
         <section class="section-content">
           <div class="container d-flex align-items-center flex-column">
             <h2 class="text-center">Galeria</h2>
             <div class="carrossel my-4">
               <img
                 src="../assets/img/infancia-kalunga/carrossel/1.png"
-                alt=""
+                alt="Um grupo de crianças sorri enquanto olham para uma filmadora em um tripé realizando o registro do momento. "
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/2.png"
-                alt=""
+                alt="Sete crianças brincam de pula corda com o auxílio de uma professora. A cena é registrada em um campo aberto com árvores ao fundo."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/3.png"
-                alt=""
+                alt="Oito crianças se dividem em 2 grupos e brincam de cabo de guerra. A cena é registrada em um campo aberto com árvores ao fundo."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/4.png"
-                alt=""
+                alt="Um menino de pele escura, vestido com camisa verde e bermuda jeans azul, monta um carrinho de brinquedo com pequenos pedaços de madeira."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/5.png"
-                alt=""
+                alt="Um mulher de pele escura fala para um grupo de pessoas. Todos estão sentados em cadeiras e a mulher aponta para frente."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/6.png"
-                alt=""
+                alt="Um grupo de crianças sobe em um caminhão em uma pequenas estrada de terra. Um homem mais velho as observa para subirem em segurança."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/7.png"
-                alt=""
+                alt="Um grupo de 5 mulheres bate palmas. A mulher mais velha, que está no centro é a mais velha e usa uma camisa listrada em tons de verde e uma saia preto e branco."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/8.png"
-                alt=""
+                alt="Dois meninos brincam. O menino da esquerda usa uma camisa vermelha e o da direita uma camisa verde. A cena é registrada em um campo aberto."
               />
               <img
                 src="../assets/img/infancia-kalunga/carrossel/9.png"
-                alt=""
+                alt="Duas crianças brincam em um local de areia. Elas disputam força, onde ambas seguram o ombro da adversária tentando derrubá-la."
               />
             </div>
           </div>
@@ -455,6 +677,7 @@
         </section>
       </footer>
       <script src="../assets/js/accessibility.js"></script>
+      <script src="../assets/js/audios.js"></script>
 
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
       <script src="../assets/plugins/slick/slick.js"></script>

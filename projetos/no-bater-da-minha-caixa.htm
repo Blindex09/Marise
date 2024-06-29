@@ -231,7 +231,7 @@
             </h1>
             <img
               src="../assets/img/no-bater-da-minha-caixa/banner.png"
-              alt=""
+              alt="Banner em tons de azul e vermelho contem o texto 'No bater da minha caixa estou convidando as foliôa. No banner há ilustração de uma pomba e o contorno de pessoas."
               role="presentation"
               class="my-4 w-75"
             />
@@ -286,7 +286,7 @@
             <figure>
               <img
                 src="../assets/img/no-bater-da-minha-caixa/capa-livro.png"
-                alt=""
+                alt="Capa do livro em tons de azul e vermelho contem o texto 'No bater da minha caixa estou convidando as foliôa. No banner há ilustração de uma pomba e o contorno de pessoas segurando tambores.."
                 class="img-projetos"
               />
               <figcaption class="my-4">
@@ -307,13 +307,210 @@
         <section class="section-content bg-green">
           <div class="container text-center text-white">
             <h2 class="text-center">CD</h2>
-            <img
-              src="../assets/img/no-bater-da-minha-caixa/playlist.png"
-              alt="Playlist do CD No bater da minha caixa estou convidando as foliôa"
-              class="img-projetos"
-            />
-            <div class="mt-4">
-              <a href="#" class="btn-branco">Ouça a playlist</a>
+            <div>
+              <audio controls style="width: 100%" id="audioPlayer">
+                <source
+                  src="../assets/audios/caixeiras/aimeudeus.mp3"
+                  type="audio/mpeg"
+                />
+                Seu browser não suporta elementos de <code>audio</code>.
+              </audio>
+
+              <ul class="list-group mt-4">
+                <!--  Monte a lista de audios presentes na pasta ../assets/audios/infancias-kalunga -->
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/aimeudeus.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ai meu Deus
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/ajoelheimeudeus.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ajoelhei meu Deus
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/serenodamadrugada.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Sereno da Madrugada
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/quandodeusandounomundo.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Quando Deus andou no mundo
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/soumdeus.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Só um Deus
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/santoantoniodelisboa.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Santo Antônio de Lisboa
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/aieuvoubeberaguadoceu.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ai eu vou beber água do céu
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/severa.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Severa
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/epapaimiranda.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ê papai miranda
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/vamossalvarosbrasileiros.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Vamos salvar os brasileiros
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/ea.mp3"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ea
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/bomjesusdacanaverde.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Bom Jesus da cana verde
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/divinoespiritosantodobrado.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Divino Espírito Santo dobrado
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/areiaareia.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Areia areia
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/alvoradaalcantara.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Alvorada - Alcântara
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/alvoradanova.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Alvorada nova
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/prisao.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Prisão
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/prisaodopassarinhoalvorada.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Prisão do passarinho
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/orapronobis.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Ora pro nobis
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/naosaiosemmebenzer.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Não saio sem me benzer
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/nobaterdaminhacaixa.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  No bater da minha caixa
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/auroracombandeirinhascorrecaodasbandeirinhas.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Aurora com bandeirinhas
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/aeavemariaaeavemaria.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Aê Ave Maria, aê Ave Maria
+                </li>
+                <li
+                  class="list-group-item"
+                  role="button"
+                  data-audio-url="/caixeiras/arreiaacaixanochao.m4a"
+                  onclick="setAudioAndFocus(this)"
+                >
+                  Arreia a caixa no chão
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -324,19 +521,19 @@
             <div class="carrossel my-4">
               <img
                 src="../assets/img/no-bater-da-minha-caixa/carrossel/1.png"
-                alt=""
+                alt="Três meninas cantam em um palco. Todas possuem pele escura, duas vestem vestidos pretos e a do meio utiliza vestido azul."
               />
               <img
                 src="../assets/img/no-bater-da-minha-caixa/carrossel/2.png"
-                alt=""
+                alt="Grupo de 7 mulheres utilizando vestidos vermelhos estão de costa para a câmera. Elas estão em uma rua e seguram tambores nas costas."
               />
               <img
                 src="../assets/img/no-bater-da-minha-caixa/carrossel/3.png"
-                alt=""
+                alt="Duas mulheres caminham de costa para a câmera em um trapiche. Ambas carregam pequenos tambores nas costas."
               />
               <img
                 src="../assets/img/no-bater-da-minha-caixa/carrossel/4.png"
-                alt=""
+                alt="Uma mulher idosa de pele escura, vestindo vestido claro e lenço na cabeça sorri olhando para o chão. Ao lado dela tem uma criança com sorriso resplandecente contemplando a mulher mais velha."
               />
             </div>
           </div>
@@ -413,6 +610,7 @@
         </section>
       </footer>
       <script src="../assets/js/accessibility.js"></script>
+      <script src="../assets/js/audios.js"></script>
 
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
       <script src="../assets/plugins/slick/slick.js"></script>

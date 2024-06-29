@@ -160,6 +160,12 @@ p {
     text-decoration: none;
 }
 
+.carrossel{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
 /* Rectangle 5 */
 #audiodescricao {
     width: 100%;

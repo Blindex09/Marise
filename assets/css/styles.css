@@ -50,27 +50,19 @@ h1, h2{
 
 /* Skip Links */
 .skip-link {
+    display: block;
     position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    left: -999px;
+    top: -999px;
+    visibility: hidden;
 }
 
 .skip-link:focus {
-    left: 10px;
-    top: 10px;
-    width: auto;
-    height: auto;
-    font-size: 1.5rem;
-    padding: 10px;
-    background: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 5px;
-    z-index: 1000;
-    text-decoration: none;
+    left: 0;
+    top: 0;
+    padding: 3px;
+    background: #ffc;
+    border:1px solid #990000;
 }
 
 .visually-hidden {
@@ -124,7 +116,7 @@ h1, h2{
 }
 
 .btn-youtube{
-    background: #FF0000;
+    background: #D60000;
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;

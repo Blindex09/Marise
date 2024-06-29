@@ -35,9 +35,7 @@
         aria-live="assertive"
         class="visually-hidden"
       >
-        <a class="skip-link" href="#projetos-heading"
-          >Pular para o conteúdo principal</a
-        >
+        <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
@@ -224,7 +222,7 @@
         </div>
       </nav>
 
-      <main>
+      <main id="main" aria-labelledby="h1">
         <section class="section-content bg-beige">
           <div class="container text-center">
             <h1 class="text-center">
@@ -242,7 +240,7 @@
               gravações três vezes por semana de setembro a dezembro de 2007. 
             </p>
 
-            <div class="hidden-content d-none">
+            <div class="hidden-content d-none" id="conteudo-expandido">
               <p>
                 Nesses encontros recebemos visitas de pessoas moradoras da
                 cidade e de D. Severina Pires Belfort, Caixeira do Festejo de
@@ -641,7 +639,7 @@
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
-          hiddenContent.focus();
+          hiddenContent[0].focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
         });

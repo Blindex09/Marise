@@ -35,9 +35,7 @@
         aria-live="assertive"
         class="visually-hidden"
       >
-        <a class="skip-link" href="#projetos-heading"
-          >Pular para o conteúdo principal</a
-        >
+        <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
@@ -224,7 +222,7 @@
         </div>
       </nav>
 
-      <main>
+      <main id="main" aria-labelledby="h1">
         <section class="section-content bg-beige">
           <div class="container text-center">
             <h1 class="text-center">O Que é O Que é? Infâncias Kalunga</h1>
@@ -240,7 +238,7 @@
               unem cultura, natureza, arte, vida, corpos, saberes.
             </p>
 
-            <div class="hidden-content d-none">
+            <div class="hidden-content d-none" id="conteudo-expandido">
               <p>
                 Poesia, vidas, ancestralidades. Um trabalho que nasceu do
                 empenho de conexão entre a formação de professores(as) Kalunga
@@ -681,7 +679,7 @@
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
-          hiddenContent.focus();
+          hiddenContent[0].focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
         });

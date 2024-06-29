@@ -37,9 +37,7 @@
         aria-live="assertive"
         class="visually-hidden"
       >
-        <a class="skip-link" href="#projetos-heading"
-          >Pular para o conteúdo principal</a
-        >
+        <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
@@ -226,7 +224,7 @@
         </div>
       </nav>
 
-      <main>
+      <main id="main" aria-labelledby="h1">
         <section class="section-content bg-beige">
           <div class="container text-center">
             <h1 class="text-center">
@@ -245,7 +243,7 @@
               disponibilizado em canal Youtube em 2023. Demorou!
             </p>
 
-            <div class="hidden-content d-none">
+            <div class="hidden-content d-none" id="conteudo-expandido">
               <p>
                 O título dialoga com o fato de que essas mulheres são
                 Sacerdotisas do Divino e tocam tambores, instrumentos de
@@ -469,7 +467,7 @@
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
-          hiddenContent.focus();
+          hiddenContent[0].focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
         });

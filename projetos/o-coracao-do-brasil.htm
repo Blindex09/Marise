@@ -34,9 +34,7 @@
         aria-live="assertive"
         class="visually-hidden"
       >
-        <a class="skip-link" href="#projetos-heading"
-          >Pular para o conteúdo principal</a
-        >
+        <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
@@ -332,7 +330,7 @@
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
-          hiddenContent.focus();
+          hiddenContent[0].focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
         });

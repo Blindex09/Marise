@@ -43,9 +43,9 @@
         arrows: true,
         asNavFor: null,
         prevArrow:
-          '<button class="slick-prev" aria-label="Anterior slide" type="button">Previous</button>',
+          '<button class="slick-prev" aria-label="Slide Anterior" type="button">Slide Anterior</button>',
         nextArrow:
-          '<button class="slick-next" aria-label="Próximo slide" type="button">Next</button>',
+          '<button class="slick-next" aria-label="Próximo Slide" type="button">Próximo Slide</button>',
         autoplay: false,
         autoplaySpeed: 3000,
         centerMode: false,
@@ -1368,6 +1368,10 @@
             role: "presentation",
           });
 
+          var slideAtual = _.$slides.get(i);
+          var img = slideAtual.querySelector("img");
+          var altText = img.getAttribute("alt");
+
           $(this)
             .find("button")
             .first()
@@ -1375,7 +1379,7 @@
               role: "tab",
               id: "slick-slide-control" + _.instanceUid + i,
               "aria-controls": "slick-slide" + _.instanceUid + mappedSlideIndex,
-              "aria-label": i + 1 + " of " + numDotGroups,
+              "aria-label": i + 1 + " de " + numDotGroups + " : " + altText,
               "aria-selected": null,
               tabindex: "-1",
             });

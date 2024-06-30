@@ -1,8 +1,8 @@
 :root {
     --beige: #E5D6B7;
-    --brown: #BD5E36;
+    --brown: #AF5731;
     --yellow: #E0AE31;
-    --green: #727F3A;
+    --green: #646C32;
     --dark-green: #485652;
   }
 
@@ -50,15 +50,6 @@ h1, h2{
 
 /* Skip Links */
 .skip-link {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip-link:focus {
     left: 10px;
     top: 10px;
     width: auto;
@@ -71,6 +62,14 @@ h1, h2{
     border-radius: 5px;
     z-index: 1000;
     text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    padding: 3px;
+    background: #ffc;
+    border:1px solid #990000;
 }
 
 .visually-hidden {
@@ -124,7 +123,7 @@ h1, h2{
 }
 
 .btn-youtube{
-    background: #FF0000;
+    background: #D60000;
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
@@ -319,7 +318,7 @@ ul {
 #audiodescricao {
     width: 100%;
     height: auto;
-    background: #727F3A;
+    background: var(--green);
     color: white;
     padding: 20px 0;
 }

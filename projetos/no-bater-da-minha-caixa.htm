@@ -35,9 +35,7 @@
         aria-live="assertive"
         class="visually-hidden"
       >
-        <a class="skip-link" href="#projetos-heading"
-          >Pular para o conteúdo principal</a
-        >
+        <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
@@ -62,7 +60,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0"
+              aria-label="Menu de navegação principal"
+            >
               <li class="nav-item">
                 <a
                   id="sobre-mim-link"
@@ -150,7 +151,7 @@
               </li>
             </ul>
 
-            <ul class="navbar-nav ml-auto" aria-hidden="true">
+            <ul class="navbar-nav ml-auto" aria-hidden="true" tabindex="-1">
               <li class="nav-item">
                 <a
                   class="nav-link dropdown-toggle"
@@ -159,6 +160,7 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  tabindex="-1"
                 >
                   ACESSIBILIDADE
                 </a>
@@ -223,7 +225,7 @@
         </div>
       </nav>
 
-      <main>
+      <main id="main" aria-labelledby="h1">
         <section class="section-content bg-beige">
           <div class="container text-center">
             <h1 class="text-center">
@@ -232,7 +234,6 @@
             <img
               src="../assets/img/no-bater-da-minha-caixa/banner.png"
               alt="Banner em tons de azul e vermelho contem o texto 'No bater da minha caixa estou convidando as foliôa. No banner há ilustração de uma pomba e o contorno de pessoas."
-              role="presentation"
               class="my-4 w-75"
             />
             <p>
@@ -242,7 +243,7 @@
               gravações três vezes por semana de setembro a dezembro de 2007. 
             </p>
 
-            <div class="hidden-content d-none">
+            <div class="hidden-content d-none" id="conteudo-expandido">
               <p>
                 Nesses encontros recebemos visitas de pessoas moradoras da
                 cidade e de D. Severina Pires Belfort, Caixeira do Festejo de
@@ -316,201 +317,216 @@
                 Seu browser não suporta elementos de <code>audio</code>.
               </audio>
 
-              <ul class="list-group mt-4">
+              <div class="mt-2">
+                <button
+                  class="btn btn-light"
+                  onclick="nextPreviousAudio('previous')"
+                >
+                  Anterior
+                </button>
+                <button
+                  class="btn btn-light"
+                  onclick="nextPreviousAudio('next')"
+                >
+                  Proximo
+                </button>
+              </div>
+
+              <div class="list-group mt-4">
                 <!--  Monte a lista de audios presentes na pasta ../assets/audios/infancias-kalunga -->
-                <li
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/aimeudeus.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Ai meu Deus
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/ajoelheimeudeus.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Ajoelhei meu Deus
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/serenodamadrugada.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Sereno da Madrugada
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/quandodeusandounomundo.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Quando Deus andou no mundo
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/soumdeus.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Só um Deus
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/santoantoniodelisboa.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Santo Antônio de Lisboa
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/aieuvoubeberaguadoceu.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Ai eu vou beber água do céu
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/severa.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Severa
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/epapaimiranda.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Ê papai miranda
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/vamossalvarosbrasileiros.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Vamos salvar os brasileiros
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/ea.mp3"
                   onclick="setAudioAndFocus(this)"
                 >
                   Ea
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/bomjesusdacanaverde.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Bom Jesus da cana verde
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/divinoespiritosantodobrado.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Divino Espírito Santo dobrado
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/areiaareia.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Areia areia
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/alvoradaalcantara.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Alvorada - Alcântara
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/alvoradanova.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Alvorada nova
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/prisao.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Prisão
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/prisaodopassarinhoalvorada.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Prisão do passarinho
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/orapronobis.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Ora pro nobis
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/naosaiosemmebenzer.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Não saio sem me benzer
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/nobaterdaminhacaixa.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   No bater da minha caixa
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/auroracombandeirinhascorrecaodasbandeirinhas.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Aurora com bandeirinhas
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/aeavemariaaeavemaria.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Aê Ave Maria, aê Ave Maria
-                </li>
-                <li
+                </button>
+                <button
                   class="list-group-item"
                   role="button"
                   data-audio-url="/caixeiras/arreiaacaixanochao.m4a"
                   onclick="setAudioAndFocus(this)"
                 >
                   Arreia a caixa no chão
-                </li>
-              </ul>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -614,6 +630,7 @@
 
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
       <script src="../assets/plugins/slick/slick.js"></script>
+      <script src="../assets/js/carousel.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -622,23 +639,13 @@
 
       <script>
         const btnLeiaMais = document.querySelector(".btn-branco");
-        const hiddenContent = document.querySelector(".hidden-content");
+        const hiddenContent = document.getElementById("conteudo-expandido");
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
           hiddenContent.focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
-        });
-
-        $(document).ready(function () {
-          $(".carrossel").slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-          });
         });
       </script>
     </body>

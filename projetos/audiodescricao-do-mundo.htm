@@ -35,9 +35,7 @@
         aria-live="assertive"
         class="visually-hidden"
       >
-        <a class="skip-link" href="#projetos-heading"
-          >Pular para o conteúdo principal</a
-        >
+        <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
         <a class="skip-link" href="#contato-heading">Pular para o rodapé</a>
       </section>
 
@@ -62,7 +60,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0"
+              aria-label="Menu de navegação principal"
+            >
               <li class="nav-item">
                 <a
                   id="sobre-mim-link"
@@ -150,7 +151,7 @@
               </li>
             </ul>
 
-            <ul class="navbar-nav ml-auto" aria-hidden="true">
+            <ul class="navbar-nav ml-auto" aria-hidden="true" tabindex="-1">
               <li class="nav-item">
                 <a
                   class="nav-link dropdown-toggle"
@@ -159,6 +160,7 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  tabindex="-1"
                 >
                   ACESSIBILIDADE
                 </a>
@@ -223,14 +225,13 @@
         </div>
       </nav>
 
-      <main>
+      <main id="main" aria-labelledby="h1">
         <section class="section-content bg-beige">
           <div class="container text-center">
             <h1 class="text-center">Audiodescrição do Mundo!</h1>
             <img
               src="../assets/img/audiodescricao-do-mundo/banner.png"
               alt="Banner em cor lilás escrito 'Audiodescrição do Mundo!' em letras brancas."
-              role="presentation"
               class="my-4 w-75"
             />
             <p>
@@ -244,7 +245,7 @@
               de pessoas em Alto Paraíso de Goiás, também fui aluna. 
             </p>
 
-            <div class="hidden-content d-none">
+            <div class="hidden-content d-none" id="conteudo-expandido">
               <p>
                 Com professor Tabuh e professoras Lídia Scarabele e a consultora
                 em acessibilidade, Viviane Santos Queiros, estudamos a linguagem
@@ -387,6 +388,7 @@
 
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
       <script src="../assets/plugins/slick/slick.js"></script>
+      <script src="../assets/js/carousel.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -395,23 +397,13 @@
 
       <script>
         const btnLeiaMais = document.querySelector(".btn-branco");
-        const hiddenContent = document.querySelector(".hidden-content");
+        const hiddenContent = document.getElementById("conteudo-expandido");
 
         btnLeiaMais.addEventListener("click", () => {
           hiddenContent.classList.toggle("d-none");
           hiddenContent.focus();
           hiddenContent.setAttribute("aria-live", "assertive");
           btnLeiaMais.classList.toggle("d-none");
-        });
-
-        $(document).ready(function () {
-          $(".carrossel").slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-          });
         });
       </script>
     </body>

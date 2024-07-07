@@ -228,6 +228,12 @@ p {
     border-radius: 5px;
 }
 
+.img-carrossel{
+    margin: 20px auto 0px auto;
+    max-width: 640px;
+    max-height: 400px;
+}
+
 @media (max-width: 992px) {
     h1{
         font-size: 22px !important;

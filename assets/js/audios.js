@@ -1,7 +1,7 @@
 function setAudioAndFocus(element) {
   var player = document.getElementById("audioPlayer");
   player.src = "../assets/audios" + element.dataset.audioUrl; // Atualiza o arquivo de áudio
-  player.ariaLabel = element.dataset.audioName; // Atualiza o nome do áudio
+  player.setAttribute('aria-label', 'Reproduzindo áudio: ' + element.dataset.audioName); // Atualiza o nome do áudio
   player.title = element.dataset.audioName; // Atualiza o nome do áudio
   player.load(); // Carrega o novo áudio
   player.focus(); // Direciona o foco para o player

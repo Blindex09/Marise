@@ -1,3 +1,3 @@
 function focusFirstMenuItem() {
-  document.getElementById("sobre-mim-link").focus();
+  document.getElementById("logo-site").focus();
 }

@@ -191,11 +191,16 @@ p {
 }
 
 /* Rectangle 7 */
-.rectangle-7 {
+.footer {
+    text-align: center;
     width: 100%;
     height: auto;
     background: var(--dark-green);
     padding: 20px 0;
+    color: white;
+}
+
+.footer a{
     color: white;
 }
 
@@ -346,7 +351,7 @@ ul {
 }
 
 /* Rectangle 7 */
-.rectangle-7 {
+.footer {
     width: 100%;
     height: auto;
     background: var(--dark-green);

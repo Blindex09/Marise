@@ -102,6 +102,7 @@ h2 {
 
 .content-about {
   display: flex;
+  align-items: center;
 }
 
 /* Project List */

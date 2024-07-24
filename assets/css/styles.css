@@ -100,6 +100,10 @@ h2 {
   border: 0.1em solid var(--yellow) !important;
 }
 
+.content-about {
+  display: flex;
+}
+
 /* Project List */
 .project-list,
 .audiodescricao-list {
@@ -241,6 +245,17 @@ p {
 @media (max-width: 992px) {
   h1 {
     font-size: 22px !important;
+  }
+
+  .content-about {
+    flex-direction: column-reverse;
+  }
+  .content-about h1 {
+    font-weight: bold;
+  }
+
+  .content-about img {
+    width: 100%;
   }
 
   .text-content,
